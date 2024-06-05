@@ -1,7 +1,7 @@
 var searchData=
 [
   ['getadditionalinformationfromraycastresults_0',['GetAdditionalInformationFromRaycastResults',['../class_bullet_dynamics_1_1_core_1_1_bullet_handler.html#ade13ec30175c5d3003865d492f3ac166',1,'BulletDynamics::Core::BulletHandler']]],
-  ['getapplicabledamage_1',['GetApplicableDamage',['../class_bullet_dynamics_1_1_damage_1_1_bullet_damage.html#acf79cde05a1923e75160477a99b1e208',1,'BulletDynamics::Damage::BulletDamage']]],
+  ['getapplicabledamage_1',['GetApplicableDamage',['../class_bullet_dynamics_1_1_damage_1_1_bullet_damage_handler.html#a211497ca4ebd5012f38d7292014492c5',1,'BulletDynamics::Damage::BulletDamageHandler']]],
   ['getbarrelexitpointzeroedrotation_2',['GetBarrelExitPointZeroedRotation',['../class_bullet_dynamics_1_1_core_1_1_bullet_utility.html#a33e25d2328e6190c86e9addcc5164976',1,'BulletDynamics::Core::BulletUtility']]],
   ['getdebugbulletpositions_3',['GetDebugBulletPositions',['../class_bullet_dynamics_1_1_core_1_1_bullet_environment_debug_visualizer.html#a87009c4e5be9ea368a1d0aff926d16ae',1,'BulletDynamics::Core::BulletEnvironmentDebugVisualizer']]],
   ['getdeltatime_4',['GetDeltaTime',['../class_bullet_dynamics_1_1_core_1_1_bullet_environment.html#af4dc5efc2a6f7bf09f80658ba312877b',1,'BulletDynamics::Core::BulletEnvironment']]],

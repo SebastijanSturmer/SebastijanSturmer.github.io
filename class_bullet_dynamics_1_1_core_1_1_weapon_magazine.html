@@ -26,6 +26,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="BulletDynamicsLogoSmall.png"/></td>
   <td id="projectalign">
    <div id="projectname">Bullet Dynamics<span id="projectnumber">&#160;v1.0.0</span>
    </div>
@@ -193,6 +194,8 @@ Properties</h2></td></tr>
 <div class="textblock"><p><br  />
  Component that works with <a class="el" href="class_bullet_dynamics_1_1_core_1_1_weapon.html" title="Component that allows the object to shoot the Bullets using Shoot method.   It supports fire rate set...">Weapon</a> to set it's <a class="el" href="class_bullet_dynamics_1_1_core_1_1_weapon.html#aaafc2869b90aa1fb6799566d87300461" title="Flag that blocks the Shoot method from firing a bullet if it is set to false.">Weapon.IsShootingEnabled</a> flag to false when the magazine is empty. <br  />
  Support reloading with <a class="el" href="#a39ba86f281161a7e4e8208565630a121" title="Sets the Weapon.IsShootingEnabled to false, and calls Reload after reloadDuration ....">Reload</a> method. </p>
+
+<p class="definition">Definition at line <a class="el" href="_weapon_magazine_8cs_source.html#l00012">12</a> of file <a class="el" href="_weapon_magazine_8cs_source.html">WeaponMagazine.cs</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="ae81ff48e1a8f5d193c7b831b88769ad1" name="ae81ff48e1a8f5d193c7b831b88769ad1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae81ff48e1a8f5d193c7b831b88769ad1">&#9670;&#160;</a></span>Awake()</h2>
@@ -216,6 +219,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_weapon_magazine_8cs_source.html#l00047">47</a> of file <a class="el" href="_weapon_magazine_8cs_source.html">WeaponMagazine.cs</a>.</p>
 
 </div>
 </div>
@@ -244,6 +249,8 @@ Properties</h2></td></tr>
 
 <p>Canceles the reload, activates the weapon shooting, and raises <a class="el" href="#a6188d1fa22775c26faa8e90e16cbd1b4" title="Event that is raised when the reload was canceled.">ReloadCanceled</a> event. </p>
 
+<p class="definition">Definition at line <a class="el" href="_weapon_magazine_8cs_source.html#l00094">94</a> of file <a class="el" href="_weapon_magazine_8cs_source.html">WeaponMagazine.cs</a>.</p>
+
 </div>
 </div>
 <a id="aad27d3bcfd966d2857c12ea35ebf954a" name="aad27d3bcfd966d2857c12ea35ebf954a"></a>
@@ -269,6 +276,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="_weapon_magazine_8cs_source.html#l00062">62</a> of file <a class="el" href="_weapon_magazine_8cs_source.html">WeaponMagazine.cs</a>.</p>
+
 </div>
 </div>
 <a id="a20eb29e51db7a0aa6f918500c2311898" name="a20eb29e51db7a0aa6f918500c2311898"></a>
@@ -293,6 +302,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_weapon_magazine_8cs_source.html#l00057">57</a> of file <a class="el" href="_weapon_magazine_8cs_source.html">WeaponMagazine.cs</a>.</p>
 
 </div>
 </div>
@@ -323,6 +334,8 @@ Properties</h2></td></tr>
  Handler for the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_weapon.html#aabd0022aea2038681637165f10509288" title="Event that is raised when this weapon has shot a Bullet.">Weapon.OnShoot</a> event. <br  />
  It will reduce the number of bullets inside the magazine by 1. </p>
 
+<p class="definition">Definition at line <a class="el" href="_weapon_magazine_8cs_source.html#l00129">129</a> of file <a class="el" href="_weapon_magazine_8cs_source.html">WeaponMagazine.cs</a>.</p>
+
 </div>
 </div>
 <a id="a5d3cba1b6d055909e45ec249d4fdaf83" name="a5d3cba1b6d055909e45ec249d4fdaf83"></a>
@@ -352,6 +365,8 @@ Properties</h2></td></tr>
  Resets the bullet count to the magazine size. <br  />
  It will raise <a class="el" href="#a0c028209cc8f0c5515def19222b58864" title="Event that is raised when the reload finished.">ReloadFinished</a> event. <br  />
  This method does not raise <a class="el" href="#af29b5d6be798745219f30648be5274a7" title="Event that is raised when the reload starts.">ReloadStarted</a> event since the reload is instant. </p>
+
+<p class="definition">Definition at line <a class="el" href="_weapon_magazine_8cs_source.html#l00085">85</a> of file <a class="el" href="_weapon_magazine_8cs_source.html">WeaponMagazine.cs</a>.</p>
 
 </div>
 </div>
@@ -389,6 +404,8 @@ Properties</h2></td></tr>
   </dd>
 </dl>
 
+<p class="definition">Definition at line <a class="el" href="_weapon_magazine_8cs_source.html#l00074">74</a> of file <a class="el" href="_weapon_magazine_8cs_source.html">WeaponMagazine.cs</a>.</p>
+
 </div>
 </div>
 <a id="a01eed4cda428dc1e7e48e4e673087580" name="a01eed4cda428dc1e7e48e4e673087580"></a>
@@ -416,6 +433,8 @@ Properties</h2></td></tr>
 
 <p>Coroutine that delays the ability to shoot by setting _fireRateDelayActive to false until the _fireRate delay doesn't pass. </p>
 <dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_weapon_magazine_8cs_source.html#l00116">116</a> of file <a class="el" href="_weapon_magazine_8cs_source.html">WeaponMagazine.cs</a>.</p>
 
 </div>
 </div>
@@ -450,6 +469,8 @@ Properties</h2></td></tr>
   </dd>
 </dl>
 
+<p class="definition">Definition at line <a class="el" href="_weapon_magazine_8cs_source.html#l00105">105</a> of file <a class="el" href="_weapon_magazine_8cs_source.html">WeaponMagazine.cs</a>.</p>
+
 </div>
 </div>
 <a id="ae90a2f71259f40d4977c367028dcba1f" name="ae90a2f71259f40d4977c367028dcba1f"></a>
@@ -474,6 +495,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_weapon_magazine_8cs_source.html#l00052">52</a> of file <a class="el" href="_weapon_magazine_8cs_source.html">WeaponMagazine.cs</a>.</p>
 
 </div>
 </div>
@@ -502,6 +525,8 @@ Properties</h2></td></tr>
 
 <p>Starts the <a class="el" href="#a01eed4cda428dc1e7e48e4e673087580" title="Coroutine that delays the ability to shoot by setting _fireRateDelayActive to false until the _fireRa...">ReloadCoroutine</a> in a safe way (by stopping current coroutine). </p>
 
+<p class="definition">Definition at line <a class="el" href="_weapon_magazine_8cs_source.html#l00138">138</a> of file <a class="el" href="_weapon_magazine_8cs_source.html">WeaponMagazine.cs</a>.</p>
+
 </div>
 </div>
 <a id="a1fae0abfb49be25a86b26d20c345f65b" name="a1fae0abfb49be25a86b26d20c345f65b"></a>
@@ -529,6 +554,8 @@ Properties</h2></td></tr>
 
 <p>Stops the <a class="el" href="#a01eed4cda428dc1e7e48e4e673087580" title="Coroutine that delays the ability to shoot by setting _fireRateDelayActive to false until the _fireRa...">ReloadCoroutine</a>. </p>
 
+<p class="definition">Definition at line <a class="el" href="_weapon_magazine_8cs_source.html#l00147">147</a> of file <a class="el" href="_weapon_magazine_8cs_source.html">WeaponMagazine.cs</a>.</p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -552,6 +579,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="_weapon_magazine_8cs_source.html#l00018">18</a> of file <a class="el" href="_weapon_magazine_8cs_source.html">WeaponMagazine.cs</a>.</p>
+
 </div>
 </div>
 <a id="a77cbafd166cf6cec523ceb4056a05cf1" name="a77cbafd166cf6cec523ceb4056a05cf1"></a>
@@ -574,6 +603,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="_weapon_magazine_8cs_source.html#l00016">16</a> of file <a class="el" href="_weapon_magazine_8cs_source.html">WeaponMagazine.cs</a>.</p>
+
 </div>
 </div>
 <a id="a77fdb8fea6bff57fb40d79b85293da29" name="a77fdb8fea6bff57fb40d79b85293da29"></a>
@@ -589,6 +620,8 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Event that is raised when the bullet count changes in this <a class="el" href="class_bullet_dynamics_1_1_core_1_1_weapon_magazine.html" title="Component that works with Weapon to set it&#39;s Weapon.IsShootingEnabled flag to false when the magazine...">WeaponMagazine</a>. </p>
+
+<p class="definition">Definition at line <a class="el" href="_weapon_magazine_8cs_source.html#l00033">33</a> of file <a class="el" href="_weapon_magazine_8cs_source.html">WeaponMagazine.cs</a>.</p>
 
 </div>
 </div>
@@ -606,6 +639,8 @@ Properties</h2></td></tr>
 
 <p>Event that is raised when the reload was canceled. </p>
 
+<p class="definition">Definition at line <a class="el" href="_weapon_magazine_8cs_source.html#l00045">45</a> of file <a class="el" href="_weapon_magazine_8cs_source.html">WeaponMagazine.cs</a>.</p>
+
 </div>
 </div>
 <a id="a0c028209cc8f0c5515def19222b58864" name="a0c028209cc8f0c5515def19222b58864"></a>
@@ -622,6 +657,8 @@ Properties</h2></td></tr>
 
 <p>Event that is raised when the reload finished. </p>
 
+<p class="definition">Definition at line <a class="el" href="_weapon_magazine_8cs_source.html#l00041">41</a> of file <a class="el" href="_weapon_magazine_8cs_source.html">WeaponMagazine.cs</a>.</p>
+
 </div>
 </div>
 <a id="af29b5d6be798745219f30648be5274a7" name="af29b5d6be798745219f30648be5274a7"></a>
@@ -637,6 +674,8 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Event that is raised when the reload starts. </p>
+
+<p class="definition">Definition at line <a class="el" href="_weapon_magazine_8cs_source.html#l00037">37</a> of file <a class="el" href="_weapon_magazine_8cs_source.html">WeaponMagazine.cs</a>.</p>
 
 </div>
 </div>
@@ -663,6 +702,8 @@ Properties</h2></td></tr>
 
 <p>Returns the current amount of bullets inside this magazine. </p>
 
+<p class="definition">Definition at line <a class="el" href="_weapon_magazine_8cs_source.html#l00028">28</a> of file <a class="el" href="_weapon_magazine_8cs_source.html">WeaponMagazine.cs</a>.</p>
+
 </div>
 </div>
 <a id="aa12352b363fdfab7b30b8c2cc5dc9b35" name="aa12352b363fdfab7b30b8c2cc5dc9b35"></a>
@@ -686,6 +727,8 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns the amount of bullets this magazine can hold. </p>
+
+<p class="definition">Definition at line <a class="el" href="_weapon_magazine_8cs_source.html#l00023">23</a> of file <a class="el" href="_weapon_magazine_8cs_source.html">WeaponMagazine.cs</a>.</p>
 
 </div>
 </div>

@@ -1,5 +1,7 @@
 var hierarchy =
 [
+    [ "BulletDynamics.Core.Bullet", "class_bullet_dynamics_1_1_core_1_1_bullet.html", null ],
+    [ "BulletDynamics.Damage.BulletDamageHandler.BulletDamageConnection", "class_bullet_dynamics_1_1_damage_1_1_bullet_damage_handler_1_1_bullet_damage_connection.html", null ],
     [ "BulletDynamics.Core.BulletHandler", "class_bullet_dynamics_1_1_core_1_1_bullet_handler.html", null ],
     [ "BulletDynamics.Core.BulletHitInfo", "struct_bullet_dynamics_1_1_core_1_1_bullet_hit_info.html", null ],
     [ "BulletDynamics.Core.BulletUtility", "class_bullet_dynamics_1_1_core_1_1_bullet_utility.html", null ],
@@ -14,15 +16,14 @@ var hierarchy =
     ] ],
     [ "BulletDynamics.Core.SurfacePhysicMaterial.MaterialData", "struct_bullet_dynamics_1_1_core_1_1_surface_physic_material_1_1_material_data.html", null ],
     [ "MonoBehaviour", null, [
-      [ "BulletDynamics.Core.Bullet", "class_bullet_dynamics_1_1_core_1_1_bullet.html", null ],
-      [ "BulletDynamics.Core.BulletCollisionEffect", "class_bullet_dynamics_1_1_core_1_1_bullet_collision_effect.html", null ],
       [ "BulletDynamics.Core.BulletEnvironment", "class_bullet_dynamics_1_1_core_1_1_bullet_environment.html", null ],
       [ "BulletDynamics.Core.BulletEnvironmentDebugVisualizer", "class_bullet_dynamics_1_1_core_1_1_bullet_environment_debug_visualizer.html", null ],
+      [ "BulletDynamics.Core.BulletVisualsHandler", "class_bullet_dynamics_1_1_core_1_1_bullet_visuals_handler.html", null ],
       [ "BulletDynamics.Core.DynamicSurface", "class_bullet_dynamics_1_1_core_1_1_dynamic_surface.html", null ],
       [ "BulletDynamics.Core.Weapon", "class_bullet_dynamics_1_1_core_1_1_weapon.html", null ],
       [ "BulletDynamics.Core.WeaponMagazine", "class_bullet_dynamics_1_1_core_1_1_weapon_magazine.html", null ],
       [ "BulletDynamics.Core.WeaponZeroing", "class_bullet_dynamics_1_1_core_1_1_weapon_zeroing.html", null ],
-      [ "BulletDynamics.Damage.BulletDamage", "class_bullet_dynamics_1_1_damage_1_1_bullet_damage.html", null ],
+      [ "BulletDynamics.Damage.BulletDamageHandler", "class_bullet_dynamics_1_1_damage_1_1_bullet_damage_handler.html", null ],
       [ "BulletDynamics.Example.BulletDynamicsExampleDamageableTarget", "class_bullet_dynamics_1_1_example_1_1_bullet_dynamics_example_damageable_target.html", null ],
       [ "BulletDynamics.Example.BulletDynamicsExampleOnHitEffectController", "class_bullet_dynamics_1_1_example_1_1_bullet_dynamics_example_on_hit_effect_controller.html", null ],
       [ "BulletDynamics.Example.BulletDynamicsExamplePlayerController", "class_bullet_dynamics_1_1_example_1_1_bullet_dynamics_example_player_controller.html", null ]

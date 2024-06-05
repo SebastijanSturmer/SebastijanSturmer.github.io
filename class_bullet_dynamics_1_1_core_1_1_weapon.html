@@ -26,6 +26,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="BulletDynamicsLogoSmall.png"/></td>
   <td id="projectalign">
    <div id="projectname">Bullet Dynamics<span id="projectnumber">&#160;v1.0.0</span>
    </div>
@@ -108,7 +109,7 @@ $(function(){initNavTree('class_bullet_dynamics_1_1_core_1_1_weapon.html',''); i
 <div class="contents">
 
 <p><br  />
- Component that allows the object to shoot the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Component that marks the object as a bullet.   Bullet should be added to the BulletEnvironment using ...">Bullet</a>s using <a class="el" href="#ac811c53f33bd53f9266e6e43c6a40b5c" title="Method that will create a new Bullet and shoot it from the OutputPoint.   It will raise the OnShoot a...">Shoot</a> method. <br  />
+ Component that allows the object to shoot the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Class that holds all of the relevant data of the Bullet.   Bullet should be added to the BulletEnviro...">Bullet</a>s using <a class="el" href="#ac811c53f33bd53f9266e6e43c6a40b5c" title="Method that will create a new Bullet and shoot it from the OutputPoint.   It will raise the OnShoot a...">Shoot</a> method. <br  />
  It supports fire rate setting which limits the <a class="el" href="#ac811c53f33bd53f9266e6e43c6a40b5c" title="Method that will create a new Bullet and shoot it from the OutputPoint.   It will raise the OnShoot a...">Shoot</a> method until the <a class="el" href="#ac625524da7af9d6650634910b641e307" title="Fire rate of this weapon.">FireRate</a> delay has been met.  
  <a href="#details">More...</a></p>
 <table class="memberdecls">
@@ -116,7 +117,7 @@ $(function(){initNavTree('class_bullet_dynamics_1_1_core_1_1_weapon.html',''); i
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ac811c53f33bd53f9266e6e43c6a40b5c" id="r_ac811c53f33bd53f9266e6e43c6a40b5c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac811c53f33bd53f9266e6e43c6a40b5c">Shoot</a> ()</td></tr>
 <tr class="memdesc:ac811c53f33bd53f9266e6e43c6a40b5c"><td class="mdescLeft">&#160;</td><td class="mdescRight"><br  />
- Method that will create a new <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Component that marks the object as a bullet.   Bullet should be added to the BulletEnvironment using ...">Bullet</a> and shoot it from the <a class="el" href="#ad21c4110b1719a1c2c91adb8dd84132a" title="Output point from which the Bullet will be instantiated when the Shoot is called.">OutputPoint</a>. <br  />
+ Method that will create a new <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Class that holds all of the relevant data of the Bullet.   Bullet should be added to the BulletEnviro...">Bullet</a> and shoot it from the <a class="el" href="#ad21c4110b1719a1c2c91adb8dd84132a" title="Output point from which the Bullet will be instantiated when the Shoot is called.">OutputPoint</a>. <br  />
  It will raise the <a class="el" href="#aabd0022aea2038681637165f10509288" title="Event that is raised when this weapon has shot a Bullet.">OnShoot</a> action after the bullet has been created.  <br /></td></tr>
 <tr class="separator:ac811c53f33bd53f9266e6e43c6a40b5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07ca6d6df16984cbd90286a54520b65a" id="r_a07ca6d6df16984cbd90286a54520b65a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a07ca6d6df16984cbd90286a54520b65a">SetIsShootingEnabled</a> (bool isEnabled)</td></tr>
@@ -129,7 +130,7 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:aabd0022aea2038681637165f10509288" id="r_aabd0022aea2038681637165f10509288"><td class="memItemLeft" align="right" valign="top">UnityEvent&lt; <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html">Bullet</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aabd0022aea2038681637165f10509288">OnShoot</a></td></tr>
-<tr class="memdesc:aabd0022aea2038681637165f10509288"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event that is raised when this weapon has shot a <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Component that marks the object as a bullet.   Bullet should be added to the BulletEnvironment using ...">Bullet</a>.  <br /></td></tr>
+<tr class="memdesc:aabd0022aea2038681637165f10509288"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event that is raised when this weapon has shot a <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Class that holds all of the relevant data of the Bullet.   Bullet should be added to the BulletEnviro...">Bullet</a>.  <br /></td></tr>
 <tr class="separator:aabd0022aea2038681637165f10509288"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
@@ -165,10 +166,10 @@ Properties</h2></td></tr>
 <tr class="memdesc:ac625524da7af9d6650634910b641e307"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fire rate of this weapon.  <br /></td></tr>
 <tr class="separator:ac625524da7af9d6650634910b641e307"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad21c4110b1719a1c2c91adb8dd84132a" id="r_ad21c4110b1719a1c2c91adb8dd84132a"><td class="memItemLeft" align="right" valign="top">virtual Transform&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad21c4110b1719a1c2c91adb8dd84132a">OutputPoint</a><code> [get]</code></td></tr>
-<tr class="memdesc:ad21c4110b1719a1c2c91adb8dd84132a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Output point from which the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Component that marks the object as a bullet.   Bullet should be added to the BulletEnvironment using ...">Bullet</a> will be instantiated when the <a class="el" href="#ac811c53f33bd53f9266e6e43c6a40b5c" title="Method that will create a new Bullet and shoot it from the OutputPoint.   It will raise the OnShoot a...">Shoot</a> is called.  <br /></td></tr>
+<tr class="memdesc:ad21c4110b1719a1c2c91adb8dd84132a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Output point from which the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Class that holds all of the relevant data of the Bullet.   Bullet should be added to the BulletEnviro...">Bullet</a> will be instantiated when the <a class="el" href="#ac811c53f33bd53f9266e6e43c6a40b5c" title="Method that will create a new Bullet and shoot it from the OutputPoint.   It will raise the OnShoot a...">Shoot</a> is called.  <br /></td></tr>
 <tr class="separator:ad21c4110b1719a1c2c91adb8dd84132a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb70a6d36e13207ef7958ce69c4211ae" id="r_aeb70a6d36e13207ef7958ce69c4211ae"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet_data.html">BulletData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeb70a6d36e13207ef7958ce69c4211ae">BulletData</a><code> [get]</code></td></tr>
-<tr class="memdesc:aeb70a6d36e13207ef7958ce69c4211ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data of the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Component that marks the object as a bullet.   Bullet should be added to the BulletEnvironment using ...">Bullet</a> that is used by this <a class="el" href="class_bullet_dynamics_1_1_core_1_1_weapon.html" title="Component that allows the object to shoot the Bullets using Shoot method.   It supports fire rate set...">Weapon</a>.  <br /></td></tr>
+<tr class="memdesc:aeb70a6d36e13207ef7958ce69c4211ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data of the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Class that holds all of the relevant data of the Bullet.   Bullet should be added to the BulletEnviro...">Bullet</a> that is used by this <a class="el" href="class_bullet_dynamics_1_1_core_1_1_weapon.html" title="Component that allows the object to shoot the Bullets using Shoot method.   It supports fire rate set...">Weapon</a>.  <br /></td></tr>
 <tr class="separator:aeb70a6d36e13207ef7958ce69c4211ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaafc2869b90aa1fb6799566d87300461" id="r_aaafc2869b90aa1fb6799566d87300461"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaafc2869b90aa1fb6799566d87300461">IsShootingEnabled</a><code> [get]</code></td></tr>
 <tr class="memdesc:aaafc2869b90aa1fb6799566d87300461"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flag that blocks the <a class="el" href="#ac811c53f33bd53f9266e6e43c6a40b5c" title="Method that will create a new Bullet and shoot it from the OutputPoint.   It will raise the OnShoot a...">Shoot</a> method from firing a bullet if it is set to false.  <br /></td></tr>
@@ -176,8 +177,10 @@ Properties</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><br  />
- Component that allows the object to shoot the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Component that marks the object as a bullet.   Bullet should be added to the BulletEnvironment using ...">Bullet</a>s using <a class="el" href="#ac811c53f33bd53f9266e6e43c6a40b5c" title="Method that will create a new Bullet and shoot it from the OutputPoint.   It will raise the OnShoot a...">Shoot</a> method. <br  />
+ Component that allows the object to shoot the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Class that holds all of the relevant data of the Bullet.   Bullet should be added to the BulletEnviro...">Bullet</a>s using <a class="el" href="#ac811c53f33bd53f9266e6e43c6a40b5c" title="Method that will create a new Bullet and shoot it from the OutputPoint.   It will raise the OnShoot a...">Shoot</a> method. <br  />
  It supports fire rate setting which limits the <a class="el" href="#ac811c53f33bd53f9266e6e43c6a40b5c" title="Method that will create a new Bullet and shoot it from the OutputPoint.   It will raise the OnShoot a...">Shoot</a> method until the <a class="el" href="#ac625524da7af9d6650634910b641e307" title="Fire rate of this weapon.">FireRate</a> delay has been met. </p>
+
+<p class="definition">Definition at line <a class="el" href="_weapon_8cs_source.html#l00011">11</a> of file <a class="el" href="_weapon_8cs_source.html">Weapon.cs</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="ac6b972fb5380aef333505d63f799aa5c" name="ac6b972fb5380aef333505d63f799aa5c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac6b972fb5380aef333505d63f799aa5c">&#9670;&#160;</a></span>FireRateLimitCoroutine()</h2>
@@ -204,6 +207,8 @@ Properties</h2></td></tr>
 
 <p>Coroutine that delays the ability to shoot by setting <a class="el" href="#ae284f24d8617ecb768fd6c15b84d72ef">_fireRateDelayActive</a> to false until the <a class="el" href="#a1b2c14cd41d226b4aa780aa88302122c">_fireRate</a> delay doesn't pass. </p>
 <dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_weapon_8cs_source.html#l00097">97</a> of file <a class="el" href="_weapon_8cs_source.html">Weapon.cs</a>.</p>
 
 </div>
 </div>
@@ -238,6 +243,8 @@ Properties</h2></td></tr>
   </dd>
 </dl>
 
+<p class="definition">Definition at line <a class="el" href="_weapon_8cs_source.html#l00088">88</a> of file <a class="el" href="_weapon_8cs_source.html">Weapon.cs</a>.</p>
+
 </div>
 </div>
 <a id="a07ca6d6df16984cbd90286a54520b65a" name="a07ca6d6df16984cbd90286a54520b65a"></a>
@@ -271,6 +278,8 @@ Properties</h2></td></tr>
   </dd>
 </dl>
 
+<p class="definition">Definition at line <a class="el" href="_weapon_8cs_source.html#l00079">79</a> of file <a class="el" href="_weapon_8cs_source.html">Weapon.cs</a>.</p>
+
 </div>
 </div>
 <a id="ac811c53f33bd53f9266e6e43c6a40b5c" name="ac811c53f33bd53f9266e6e43c6a40b5c"></a>
@@ -297,8 +306,10 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p><br  />
- Method that will create a new <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Component that marks the object as a bullet.   Bullet should be added to the BulletEnvironment using ...">Bullet</a> and shoot it from the <a class="el" href="#ad21c4110b1719a1c2c91adb8dd84132a" title="Output point from which the Bullet will be instantiated when the Shoot is called.">OutputPoint</a>. <br  />
+ Method that will create a new <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Class that holds all of the relevant data of the Bullet.   Bullet should be added to the BulletEnviro...">Bullet</a> and shoot it from the <a class="el" href="#ad21c4110b1719a1c2c91adb8dd84132a" title="Output point from which the Bullet will be instantiated when the Shoot is called.">OutputPoint</a>. <br  />
  It will raise the <a class="el" href="#aabd0022aea2038681637165f10509288" title="Event that is raised when this weapon has shot a Bullet.">OnShoot</a> action after the bullet has been created. </p>
+
+<p class="definition">Definition at line <a class="el" href="_weapon_8cs_source.html#l00057">57</a> of file <a class="el" href="_weapon_8cs_source.html">Weapon.cs</a>.</p>
 
 </div>
 </div>
@@ -327,6 +338,8 @@ Properties</h2></td></tr>
 
 <p>Starts the <a class="el" href="#ac6b972fb5380aef333505d63f799aa5c" title="Coroutine that delays the ability to shoot by setting _fireRateDelayActive to false until the _fireRa...">FireRateLimitCoroutine</a> in a safe way (by stopping current coroutine). </p>
 
+<p class="definition">Definition at line <a class="el" href="_weapon_8cs_source.html#l00108">108</a> of file <a class="el" href="_weapon_8cs_source.html">Weapon.cs</a>.</p>
+
 </div>
 </div>
 <a id="a1ac65f37f551477c324dbd57267e13c4" name="a1ac65f37f551477c324dbd57267e13c4"></a>
@@ -354,6 +367,8 @@ Properties</h2></td></tr>
 
 <p>Stops the <a class="el" href="#ac6b972fb5380aef333505d63f799aa5c" title="Coroutine that delays the ability to shoot by setting _fireRateDelayActive to false until the _fireRa...">FireRateLimitCoroutine</a>. </p>
 
+<p class="definition">Definition at line <a class="el" href="_weapon_8cs_source.html#l00117">117</a> of file <a class="el" href="_weapon_8cs_source.html">Weapon.cs</a>.</p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -377,6 +392,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="_weapon_8cs_source.html#l00017">17</a> of file <a class="el" href="_weapon_8cs_source.html">Weapon.cs</a>.</p>
+
 </div>
 </div>
 <a id="a1b2c14cd41d226b4aa780aa88302122c" name="a1b2c14cd41d226b4aa780aa88302122c"></a>
@@ -398,6 +415,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_weapon_8cs_source.html#l00014">14</a> of file <a class="el" href="_weapon_8cs_source.html">Weapon.cs</a>.</p>
 
 </div>
 </div>
@@ -421,6 +440,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="_weapon_8cs_source.html#l00019">19</a> of file <a class="el" href="_weapon_8cs_source.html">Weapon.cs</a>.</p>
+
 </div>
 </div>
 <a id="a35fd2ee14606f99e4e83777ec124bfff" name="a35fd2ee14606f99e4e83777ec124bfff"></a>
@@ -442,6 +463,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_weapon_8cs_source.html#l00021">21</a> of file <a class="el" href="_weapon_8cs_source.html">Weapon.cs</a>.</p>
 
 </div>
 </div>
@@ -465,6 +488,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="_weapon_8cs_source.html#l00020">20</a> of file <a class="el" href="_weapon_8cs_source.html">Weapon.cs</a>.</p>
+
 </div>
 </div>
 <a id="a0bc4acec76e1b117c423acb1752f4945" name="a0bc4acec76e1b117c423acb1752f4945"></a>
@@ -487,6 +512,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="_weapon_8cs_source.html#l00016">16</a> of file <a class="el" href="_weapon_8cs_source.html">Weapon.cs</a>.</p>
+
 </div>
 </div>
 <a id="aabd0022aea2038681637165f10509288" name="aabd0022aea2038681637165f10509288"></a>
@@ -501,7 +528,9 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Event that is raised when this weapon has shot a <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Component that marks the object as a bullet.   Bullet should be added to the BulletEnvironment using ...">Bullet</a>. </p>
+<p>Event that is raised when this weapon has shot a <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Class that holds all of the relevant data of the Bullet.   Bullet should be added to the BulletEnviro...">Bullet</a>. </p>
+
+<p class="definition">Definition at line <a class="el" href="_weapon_8cs_source.html#l00046">46</a> of file <a class="el" href="_weapon_8cs_source.html">Weapon.cs</a>.</p>
 
 </div>
 </div>
@@ -526,7 +555,9 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Data of the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Component that marks the object as a bullet.   Bullet should be added to the BulletEnvironment using ...">Bullet</a> that is used by this <a class="el" href="class_bullet_dynamics_1_1_core_1_1_weapon.html" title="Component that allows the object to shoot the Bullets using Shoot method.   It supports fire rate set...">Weapon</a>. </p>
+<p>Data of the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Class that holds all of the relevant data of the Bullet.   Bullet should be added to the BulletEnviro...">Bullet</a> that is used by this <a class="el" href="class_bullet_dynamics_1_1_core_1_1_weapon.html" title="Component that allows the object to shoot the Bullets using Shoot method.   It supports fire rate set...">Weapon</a>. </p>
+
+<p class="definition">Definition at line <a class="el" href="_weapon_8cs_source.html#l00036">36</a> of file <a class="el" href="_weapon_8cs_source.html">Weapon.cs</a>.</p>
 
 </div>
 </div>
@@ -552,6 +583,8 @@ Properties</h2></td></tr>
 
 <p>Fire rate of this weapon. </p>
 
+<p class="definition">Definition at line <a class="el" href="_weapon_8cs_source.html#l00026">26</a> of file <a class="el" href="_weapon_8cs_source.html">Weapon.cs</a>.</p>
+
 </div>
 </div>
 <a id="aaafc2869b90aa1fb6799566d87300461" name="aaafc2869b90aa1fb6799566d87300461"></a>
@@ -576,6 +609,8 @@ Properties</h2></td></tr>
 
 <p>Flag that blocks the <a class="el" href="#ac811c53f33bd53f9266e6e43c6a40b5c" title="Method that will create a new Bullet and shoot it from the OutputPoint.   It will raise the OnShoot a...">Shoot</a> method from firing a bullet if it is set to false. </p>
 
+<p class="definition">Definition at line <a class="el" href="_weapon_8cs_source.html#l00041">41</a> of file <a class="el" href="_weapon_8cs_source.html">Weapon.cs</a>.</p>
+
 </div>
 </div>
 <a id="ad21c4110b1719a1c2c91adb8dd84132a" name="ad21c4110b1719a1c2c91adb8dd84132a"></a>
@@ -598,7 +633,9 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Output point from which the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Component that marks the object as a bullet.   Bullet should be added to the BulletEnvironment using ...">Bullet</a> will be instantiated when the <a class="el" href="#ac811c53f33bd53f9266e6e43c6a40b5c" title="Method that will create a new Bullet and shoot it from the OutputPoint.   It will raise the OnShoot a...">Shoot</a> is called. </p>
+<p>Output point from which the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Class that holds all of the relevant data of the Bullet.   Bullet should be added to the BulletEnviro...">Bullet</a> will be instantiated when the <a class="el" href="#ac811c53f33bd53f9266e6e43c6a40b5c" title="Method that will create a new Bullet and shoot it from the OutputPoint.   It will raise the OnShoot a...">Shoot</a> is called. </p>
+
+<p class="definition">Definition at line <a class="el" href="_weapon_8cs_source.html#l00031">31</a> of file <a class="el" href="_weapon_8cs_source.html">Weapon.cs</a>.</p>
 
 </div>
 </div>

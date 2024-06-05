@@ -26,6 +26,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="BulletDynamicsLogoSmall.png"/></td>
   <td id="projectalign">
    <div id="projectname">Bullet Dynamics<span id="projectnumber">&#160;v1.0.0</span>
    </div>
@@ -109,51 +110,51 @@ $(function(){initNavTree('class_bullet_dynamics_1_1_core_1_1_bullet_environment.
 <div class="contents">
 
 <p><br  />
- Environment for the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Component that marks the object as a bullet.   Bullet should be added to the BulletEnvironment using ...">Bullet</a> Dynamics. <br  />
+ Environment for the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Class that holds all of the relevant data of the Bullet.   Bullet should be added to the BulletEnviro...">Bullet</a> Dynamics. <br  />
  This component handles the bullet physics using <a class="el" href="#aa7b0a35f18d3d568ccad560dddc9bf0b">FixedUpdate</a> and contains the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet_environment_data.html" title="Environment data used by the BulletEnvironment to control the Bullet&#39;s trajectory though the scene.">BulletEnvironmentData</a> that affects the bullets in the scene.  
  <a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a1ba61602ac407aefaf8a49e4fbdd8d88" id="r_a1ba61602ac407aefaf8a49e4fbdd8d88"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html">Bullet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1ba61602ac407aefaf8a49e4fbdd8d88">AddBullet</a> (<a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet_data.html">BulletData</a> bulletData, Transform outputPoint)</td></tr>
-<tr class="memdesc:a1ba61602ac407aefaf8a49e4fbdd8d88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates and adds the new bullet from the <em>bulletData</em>  to the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet_handler.html" title="Handler for the Bullet physics. It uses BulletJob for calculating the trajectories.">BulletHandler</a>. It uses the <em>outputPoint</em>  for the position and direction of the new <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Component that marks the object as a bullet.   Bullet should be added to the BulletEnvironment using ...">Bullet</a>.  <br /></td></tr>
+<tr class="memdesc:a1ba61602ac407aefaf8a49e4fbdd8d88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates and adds the new bullet from the <em>bulletData</em>  to the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet_handler.html" title="Handler for the Bullet physics. It uses BulletJob for calculating the trajectories.">BulletHandler</a>. It uses the <em>outputPoint</em>  for the position and direction of the new <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Class that holds all of the relevant data of the Bullet.   Bullet should be added to the BulletEnviro...">Bullet</a>.  <br /></td></tr>
 <tr class="separator:a1ba61602ac407aefaf8a49e4fbdd8d88"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0730e6f13c5f99a8def47f8724e0897d" id="r_a0730e6f13c5f99a8def47f8724e0897d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0730e6f13c5f99a8def47f8724e0897d">AddBullet</a> (<a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html">Bullet</a> bullet)</td></tr>
 <tr class="memdesc:a0730e6f13c5f99a8def47f8724e0897d"><td class="mdescLeft">&#160;</td><td class="mdescRight"><br  />
  Adds a <em>bullet</em>  to the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet_handler.html" title="Handler for the Bullet physics. It uses BulletJob for calculating the trajectories.">BulletHandler</a> so that it can be processed every frame. <br  />
- Use this method if the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Component that marks the object as a bullet.   Bullet should be added to the BulletEnvironment using ...">Bullet</a> needs to be created manually without using <a class="el" href="#a1ba61602ac407aefaf8a49e4fbdd8d88" title="Creates and adds the new bullet from the bulletData  to the BulletHandler. It uses the outputPoint  f...">AddBullet(BulletData, Transform)</a>.  <br /></td></tr>
+ Use this method if the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Class that holds all of the relevant data of the Bullet.   Bullet should be added to the BulletEnviro...">Bullet</a> needs to be created manually without using <a class="el" href="#a1ba61602ac407aefaf8a49e4fbdd8d88" title="Creates and adds the new bullet from the bulletData  to the BulletHandler. It uses the outputPoint  f...">AddBullet(BulletData, Transform)</a>.  <br /></td></tr>
 <tr class="separator:a0730e6f13c5f99a8def47f8724e0897d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb8f696bfd124755d2d235664155cad0" id="r_adb8f696bfd124755d2d235664155cad0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adb8f696bfd124755d2d235664155cad0">RemoveBullet</a> (<a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html">Bullet</a> bullet)</td></tr>
 <tr class="memdesc:adb8f696bfd124755d2d235664155cad0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a <em>bullet</em>  from the processing.  <br /></td></tr>
 <tr class="separator:adb8f696bfd124755d2d235664155cad0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af4dc5efc2a6f7bf09f80658ba312877b" id="r_af4dc5efc2a6f7bf09f80658ba312877b"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af4dc5efc2a6f7bf09f80658ba312877b">GetDeltaTime</a> ()</td></tr>
 <tr class="memdesc:af4dc5efc2a6f7bf09f80658ba312877b"><td class="mdescLeft">&#160;</td><td class="mdescRight"><br  />
- Returns the delta time for the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Component that marks the object as a bullet.   Bullet should be added to the BulletEnvironment using ...">Bullet</a> updates that is scaled by Time.timeScale.  <br /></td></tr>
+ Returns the delta time for the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Class that holds all of the relevant data of the Bullet.   Bullet should be added to the BulletEnviro...">Bullet</a> updates that is scaled by Time.timeScale.  <br /></td></tr>
 <tr class="separator:af4dc5efc2a6f7bf09f80658ba312877b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab65c76637d0bf3c8efd5992852a202a" id="r_aab65c76637d0bf3c8efd5992852a202a"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aab65c76637d0bf3c8efd5992852a202a">GetDeltaTimeUnscaled</a> ()</td></tr>
 <tr class="memdesc:aab65c76637d0bf3c8efd5992852a202a"><td class="mdescLeft">&#160;</td><td class="mdescRight"><br  />
- Returns the delta time for the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Component that marks the object as a bullet.   Bullet should be added to the BulletEnvironment using ...">Bullet</a> updates that is not scaled by Time.timeScale.  <br /></td></tr>
+ Returns the delta time for the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Class that holds all of the relevant data of the Bullet.   Bullet should be added to the BulletEnviro...">Bullet</a> updates that is not scaled by Time.timeScale.  <br /></td></tr>
 <tr class="separator:aab65c76637d0bf3c8efd5992852a202a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:aa0101cb1be0909c0ae789345ecab87a0" id="r_aa0101cb1be0909c0ae789345ecab87a0"><td class="memItemLeft" align="right" valign="top">UnityEvent&lt; <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html">Bullet</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa0101cb1be0909c0ae789345ecab87a0">OnBeforeBulletAdded</a></td></tr>
-<tr class="memdesc:aa0101cb1be0909c0ae789345ecab87a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event that is raised when the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Component that marks the object as a bullet.   Bullet should be added to the BulletEnvironment using ...">Bullet</a> will be added to the environment.  <br /></td></tr>
+<tr class="memdesc:aa0101cb1be0909c0ae789345ecab87a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event that is raised when the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Class that holds all of the relevant data of the Bullet.   Bullet should be added to the BulletEnviro...">Bullet</a> will be added to the environment.  <br /></td></tr>
 <tr class="separator:aa0101cb1be0909c0ae789345ecab87a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a92fb7f19918e145a89b3edfab6fc4918" id="r_a92fb7f19918e145a89b3edfab6fc4918"><td class="memItemLeft" align="right" valign="top">UnityEvent&lt; <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html">Bullet</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a92fb7f19918e145a89b3edfab6fc4918">OnBulletAdded</a></td></tr>
-<tr class="memdesc:a92fb7f19918e145a89b3edfab6fc4918"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event that is raised when the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Component that marks the object as a bullet.   Bullet should be added to the BulletEnvironment using ...">Bullet</a> has been added to the environment.  <br /></td></tr>
+<tr class="memdesc:a92fb7f19918e145a89b3edfab6fc4918"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event that is raised when the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Class that holds all of the relevant data of the Bullet.   Bullet should be added to the BulletEnviro...">Bullet</a> has been added to the environment.  <br /></td></tr>
 <tr class="separator:a92fb7f19918e145a89b3edfab6fc4918"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3726676e2b96a7944cabc46519e65f12" id="r_a3726676e2b96a7944cabc46519e65f12"><td class="memItemLeft" align="right" valign="top">UnityEvent&lt; <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html">Bullet</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3726676e2b96a7944cabc46519e65f12">OnBeforeBulletRemoved</a></td></tr>
-<tr class="memdesc:a3726676e2b96a7944cabc46519e65f12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event that is raised when the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Component that marks the object as a bullet.   Bullet should be added to the BulletEnvironment using ...">Bullet</a> will be removed from the environment.  <br /></td></tr>
+<tr class="memdesc:a3726676e2b96a7944cabc46519e65f12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event that is raised when the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Class that holds all of the relevant data of the Bullet.   Bullet should be added to the BulletEnviro...">Bullet</a> will be removed from the environment.  <br /></td></tr>
 <tr class="separator:a3726676e2b96a7944cabc46519e65f12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a257111ed8cfe65e9a09e649115952c82" id="r_a257111ed8cfe65e9a09e649115952c82"><td class="memItemLeft" align="right" valign="top">UnityEvent&lt; <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html">Bullet</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a257111ed8cfe65e9a09e649115952c82">OnBulletRemoved</a></td></tr>
-<tr class="memdesc:a257111ed8cfe65e9a09e649115952c82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event that is raised when the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Component that marks the object as a bullet.   Bullet should be added to the BulletEnvironment using ...">Bullet</a> has been removed from the environment.  <br /></td></tr>
+<tr class="memdesc:a257111ed8cfe65e9a09e649115952c82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event that is raised when the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Class that holds all of the relevant data of the Bullet.   Bullet should be added to the BulletEnviro...">Bullet</a> has been removed from the environment.  <br /></td></tr>
 <tr class="separator:a257111ed8cfe65e9a09e649115952c82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adcb0ae4e445cd3ef6e574dcc411e459e" id="r_adcb0ae4e445cd3ef6e574dcc411e459e"><td class="memItemLeft" align="right" valign="top">UnityEvent&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adcb0ae4e445cd3ef6e574dcc411e459e">OnBeforeBulletsUpdate</a></td></tr>
-<tr class="memdesc:adcb0ae4e445cd3ef6e574dcc411e459e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event that is raised when the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Component that marks the object as a bullet.   Bullet should be added to the BulletEnvironment using ...">Bullet</a>s will been updated by this environment.  <br /></td></tr>
+<tr class="memdesc:adcb0ae4e445cd3ef6e574dcc411e459e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event that is raised when the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Class that holds all of the relevant data of the Bullet.   Bullet should be added to the BulletEnviro...">Bullet</a>s will been updated by this environment.  <br /></td></tr>
 <tr class="separator:adcb0ae4e445cd3ef6e574dcc411e459e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6018ccb4b16df190b93234664c4e4c68" id="r_a6018ccb4b16df190b93234664c4e4c68"><td class="memItemLeft" align="right" valign="top">UnityEvent&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6018ccb4b16df190b93234664c4e4c68">OnBulletsUpdated</a></td></tr>
-<tr class="memdesc:a6018ccb4b16df190b93234664c4e4c68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event that is raised when the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Component that marks the object as a bullet.   Bullet should be added to the BulletEnvironment using ...">Bullet</a>s has been updated by this environment.  <br /></td></tr>
+<tr class="memdesc:a6018ccb4b16df190b93234664c4e4c68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event that is raised when the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Class that holds all of the relevant data of the Bullet.   Bullet should be added to the BulletEnviro...">Bullet</a>s has been updated by this environment.  <br /></td></tr>
 <tr class="separator:a6018ccb4b16df190b93234664c4e4c68"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
@@ -171,7 +172,7 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:aa7b0a35f18d3d568ccad560dddc9bf0b" id="r_aa7b0a35f18d3d568ccad560dddc9bf0b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa7b0a35f18d3d568ccad560dddc9bf0b">FixedUpdate</a> ()</td></tr>
 <tr class="separator:aa7b0a35f18d3d568ccad560dddc9bf0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7fbfeecb78399447c02610df13e3d7f2" id="r_a7fbfeecb78399447c02610df13e3d7f2"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet_handler.html">BulletHandler</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7fbfeecb78399447c02610df13e3d7f2">CreateBulletHandler</a> ()</td></tr>
-<tr class="memdesc:a7fbfeecb78399447c02610df13e3d7f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet_handler.html" title="Handler for the Bullet physics. It uses BulletJob for calculating the trajectories.">BulletHandler</a> that will be used for handling the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Component that marks the object as a bullet.   Bullet should be added to the BulletEnvironment using ...">Bullet</a>s in the scene.  <br /></td></tr>
+<tr class="memdesc:a7fbfeecb78399447c02610df13e3d7f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet_handler.html" title="Handler for the Bullet physics. It uses BulletJob for calculating the trajectories.">BulletHandler</a> that will be used for handling the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Class that holds all of the relevant data of the Bullet.   Bullet should be added to the BulletEnviro...">Bullet</a>s in the scene.  <br /></td></tr>
 <tr class="separator:a7fbfeecb78399447c02610df13e3d7f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
@@ -180,10 +181,6 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a45387defcd3acf1c8128c395ee709427"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a43c03c98c10d7e055803c6b6a0deda1f" id="r_a43c03c98c10d7e055803c6b6a0deda1f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet_handler.html">BulletHandler</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a43c03c98c10d7e055803c6b6a0deda1f">_bulletHandler</a> = null</td></tr>
 <tr class="separator:a43c03c98c10d7e055803c6b6a0deda1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad29a8184999c15de2b8a678ad7fcff50" id="r_ad29a8184999c15de2b8a678ad7fcff50"><td class="memItemLeft" align="right" valign="top">Transform&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad29a8184999c15de2b8a678ad7fcff50">_bulletHolder</a></td></tr>
-<tr class="separator:ad29a8184999c15de2b8a678ad7fcff50"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abeff64993457e13ef0e6685d576ad014" id="r_abeff64993457e13ef0e6685d576ad014"><td class="memItemLeft" align="right" valign="top">Transform&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abeff64993457e13ef0e6685d576ad014">_bulletOnHitEffectsHolder</a></td></tr>
-<tr class="separator:abeff64993457e13ef0e6685d576ad014"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="properties" name="properties"></a>
 Properties</h2></td></tr>
@@ -191,14 +188,8 @@ Properties</h2></td></tr>
 <tr class="memdesc:a1190df7b4a20ece69f1b4e8ad989b71d"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet_environment_data.html" title="Environment data used by the BulletEnvironment to control the Bullet&#39;s trajectory though the scene.">BulletEnvironmentData</a> that is used for the calculations.  <br /></td></tr>
 <tr class="separator:a1190df7b4a20ece69f1b4e8ad989b71d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a53afabf4f44fd0deced3353e976632f7" id="r_a53afabf4f44fd0deced3353e976632f7"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html">Bullet</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a53afabf4f44fd0deced3353e976632f7">Bullets</a><code> [get]</code></td></tr>
-<tr class="memdesc:a53afabf4f44fd0deced3353e976632f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of all of the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Component that marks the object as a bullet.   Bullet should be added to the BulletEnvironment using ...">Bullet</a>s handled by this environment.  <br /></td></tr>
+<tr class="memdesc:a53afabf4f44fd0deced3353e976632f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of all of the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Class that holds all of the relevant data of the Bullet.   Bullet should be added to the BulletEnviro...">Bullet</a>s handled by this environment.  <br /></td></tr>
 <tr class="separator:a53afabf4f44fd0deced3353e976632f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32b23e53dc6f6fe766ad35fac42eb099" id="r_a32b23e53dc6f6fe766ad35fac42eb099"><td class="memItemLeft" align="right" valign="top">Transform&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a32b23e53dc6f6fe766ad35fac42eb099">BulletHolder</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:a32b23e53dc6f6fe766ad35fac42eb099"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transform reference to the game object that holds all of the <a class="el" href="#a53afabf4f44fd0deced3353e976632f7" title="List of all of the Bullets handled by this environment.">Bullets</a>.  <br /></td></tr>
-<tr class="separator:a32b23e53dc6f6fe766ad35fac42eb099"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b0bdd2eb91a3352253e0fd4fe9f7524" id="r_a2b0bdd2eb91a3352253e0fd4fe9f7524"><td class="memItemLeft" align="right" valign="top">Transform&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2b0bdd2eb91a3352253e0fd4fe9f7524">BulletOnHitEffectsHolder</a><code> [get]</code></td></tr>
-<tr class="memdesc:a2b0bdd2eb91a3352253e0fd4fe9f7524"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transform reference to the game object that holds all of the <a class="el" href="#a53afabf4f44fd0deced3353e976632f7" title="List of all of the Bullets handled by this environment.">Bullets</a> on hit effects created by the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet_collision_effect.html" title="Component that instantiates a hit effect when the Bullet collides with the DynamicSurface.">BulletCollisionEffect</a>.  <br /></td></tr>
-<tr class="separator:a2b0bdd2eb91a3352253e0fd4fe9f7524"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49d98272151ec15df4878c0c5eda4eef" id="r_a49d98272151ec15df4878c0c5eda4eef"><td class="memItemLeft" align="right" valign="top">virtual Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a49d98272151ec15df4878c0c5eda4eef">Gravity</a><code> [get]</code></td></tr>
 <tr class="memdesc:a49d98272151ec15df4878c0c5eda4eef"><td class="mdescLeft">&#160;</td><td class="mdescRight"><br  />
  Returns the current bullet gravity. <br  />
@@ -217,8 +208,10 @@ Properties</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><br  />
- Environment for the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Component that marks the object as a bullet.   Bullet should be added to the BulletEnvironment using ...">Bullet</a> Dynamics. <br  />
+ Environment for the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Class that holds all of the relevant data of the Bullet.   Bullet should be added to the BulletEnviro...">Bullet</a> Dynamics. <br  />
  This component handles the bullet physics using <a class="el" href="#aa7b0a35f18d3d568ccad560dddc9bf0b">FixedUpdate</a> and contains the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet_environment_data.html" title="Environment data used by the BulletEnvironment to control the Bullet&#39;s trajectory though the scene.">BulletEnvironmentData</a> that affects the bullets in the scene. </p>
+
+<p class="definition">Definition at line <a class="el" href="_bullet_environment_8cs_source.html#l00011">11</a> of file <a class="el" href="_bullet_environment_8cs_source.html">BulletEnvironment.cs</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a0730e6f13c5f99a8def47f8724e0897d" name="a0730e6f13c5f99a8def47f8724e0897d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0730e6f13c5f99a8def47f8724e0897d">&#9670;&#160;</a></span>AddBullet() <span class="overload">[1/2]</span></h2>
@@ -245,13 +238,15 @@ Properties</h2></td></tr>
 
 <p><br  />
  Adds a <em>bullet</em>  to the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet_handler.html" title="Handler for the Bullet physics. It uses BulletJob for calculating the trajectories.">BulletHandler</a> so that it can be processed every frame. <br  />
- Use this method if the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Component that marks the object as a bullet.   Bullet should be added to the BulletEnvironment using ...">Bullet</a> needs to be created manually without using <a class="el" href="#a1ba61602ac407aefaf8a49e4fbdd8d88" title="Creates and adds the new bullet from the bulletData  to the BulletHandler. It uses the outputPoint  f...">AddBullet(BulletData, Transform)</a>. </p>
+ Use this method if the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Class that holds all of the relevant data of the Bullet.   Bullet should be added to the BulletEnviro...">Bullet</a> needs to be created manually without using <a class="el" href="#a1ba61602ac407aefaf8a49e4fbdd8d88" title="Creates and adds the new bullet from the bulletData  to the BulletHandler. It uses the outputPoint  f...">AddBullet(BulletData, Transform)</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">bullet</td><td><a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Component that marks the object as a bullet.   Bullet should be added to the BulletEnvironment using ...">Bullet</a> that will be added to the processing.</td></tr>
+    <tr><td class="paramname">bullet</td><td><a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Class that holds all of the relevant data of the Bullet.   Bullet should be added to the BulletEnviro...">Bullet</a> that will be added to the processing.</td></tr>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="_bullet_environment_8cs_source.html#l00159">159</a> of file <a class="el" href="_bullet_environment_8cs_source.html">BulletEnvironment.cs</a>.</p>
 
 </div>
 </div>
@@ -282,15 +277,17 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Creates and adds the new bullet from the <em>bulletData</em>  to the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet_handler.html" title="Handler for the Bullet physics. It uses BulletJob for calculating the trajectories.">BulletHandler</a>. It uses the <em>outputPoint</em>  for the position and direction of the new <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Component that marks the object as a bullet.   Bullet should be added to the BulletEnvironment using ...">Bullet</a>. </p>
+<p>Creates and adds the new bullet from the <em>bulletData</em>  to the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet_handler.html" title="Handler for the Bullet physics. It uses BulletJob for calculating the trajectories.">BulletHandler</a>. It uses the <em>outputPoint</em>  for the position and direction of the new <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Class that holds all of the relevant data of the Bullet.   Bullet should be added to the BulletEnviro...">Bullet</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">bulletData</td><td><a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet_data.html" title="Data that describes the physical behaviour of the bullet and holds the references of the bullet visua...">BulletData</a> that will be used to create a new <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Component that marks the object as a bullet.   Bullet should be added to the BulletEnvironment using ...">Bullet</a>.</td></tr>
-    <tr><td class="paramname">outputPoint</td><td>Transform reference to the output point from which the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Component that marks the object as a bullet.   Bullet should be added to the BulletEnvironment using ...">Bullet</a> will be instantiated.</td></tr>
+    <tr><td class="paramname">bulletData</td><td><a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet_data.html" title="Data that describes the physical behaviour of the bullet and holds the references of the bullet visua...">BulletData</a> that will be used to create a new <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Class that holds all of the relevant data of the Bullet.   Bullet should be added to the BulletEnviro...">Bullet</a>.</td></tr>
+    <tr><td class="paramname">outputPoint</td><td>Transform reference to the output point from which the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Class that holds all of the relevant data of the Bullet.   Bullet should be added to the BulletEnviro...">Bullet</a> will be instantiated.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Component that marks the object as a bullet.   Bullet should be added to the BulletEnvironment using ...">Bullet</a> that was created.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Class that holds all of the relevant data of the Bullet.   Bullet should be added to the BulletEnviro...">Bullet</a> that was created.</dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_bullet_environment_8cs_source.html#l00133">133</a> of file <a class="el" href="_bullet_environment_8cs_source.html">BulletEnvironment.cs</a>.</p>
 
 </div>
 </div>
@@ -317,6 +314,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="_bullet_environment_8cs_source.html#l00103">103</a> of file <a class="el" href="_bullet_environment_8cs_source.html">BulletEnvironment.cs</a>.</p>
+
 </div>
 </div>
 <a id="a7fbfeecb78399447c02610df13e3d7f2" name="a7fbfeecb78399447c02610df13e3d7f2"></a>
@@ -342,7 +341,9 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Creates a <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet_handler.html" title="Handler for the Bullet physics. It uses BulletJob for calculating the trajectories.">BulletHandler</a> that will be used for handling the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Component that marks the object as a bullet.   Bullet should be added to the BulletEnvironment using ...">Bullet</a>s in the scene. </p>
+<p>Creates a <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet_handler.html" title="Handler for the Bullet physics. It uses BulletJob for calculating the trajectories.">BulletHandler</a> that will be used for handling the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Class that holds all of the relevant data of the Bullet.   Bullet should be added to the BulletEnviro...">Bullet</a>s in the scene. </p>
+
+<p class="definition">Definition at line <a class="el" href="_bullet_environment_8cs_source.html#l00198">198</a> of file <a class="el" href="_bullet_environment_8cs_source.html">BulletEnvironment.cs</a>.</p>
 
 </div>
 </div>
@@ -368,6 +369,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_bullet_environment_8cs_source.html#l00119">119</a> of file <a class="el" href="_bullet_environment_8cs_source.html">BulletEnvironment.cs</a>.</p>
 
 </div>
 </div>
@@ -395,8 +398,10 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p><br  />
- Returns the delta time for the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Component that marks the object as a bullet.   Bullet should be added to the BulletEnvironment using ...">Bullet</a> updates that is scaled by Time.timeScale. </p>
+ Returns the delta time for the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Class that holds all of the relevant data of the Bullet.   Bullet should be added to the BulletEnviro...">Bullet</a> updates that is scaled by Time.timeScale. </p>
 <dl class="section return"><dt>Returns</dt><dd>Delta Time.</dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_bullet_environment_8cs_source.html#l00181">181</a> of file <a class="el" href="_bullet_environment_8cs_source.html">BulletEnvironment.cs</a>.</p>
 
 </div>
 </div>
@@ -424,8 +429,10 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p><br  />
- Returns the delta time for the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Component that marks the object as a bullet.   Bullet should be added to the BulletEnvironment using ...">Bullet</a> updates that is not scaled by Time.timeScale. </p>
+ Returns the delta time for the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Class that holds all of the relevant data of the Bullet.   Bullet should be added to the BulletEnviro...">Bullet</a> updates that is not scaled by Time.timeScale. </p>
 <dl class="section return"><dt>Returns</dt><dd>Delta Time.</dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_bullet_environment_8cs_source.html#l00190">190</a> of file <a class="el" href="_bullet_environment_8cs_source.html">BulletEnvironment.cs</a>.</p>
 
 </div>
 </div>
@@ -451,6 +458,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_bullet_environment_8cs_source.html#l00095">95</a> of file <a class="el" href="_bullet_environment_8cs_source.html">BulletEnvironment.cs</a>.</p>
 
 </div>
 </div>
@@ -480,10 +489,12 @@ Properties</h2></td></tr>
 <p>Removes a <em>bullet</em>  from the processing. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">bullet</td><td><a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Component that marks the object as a bullet.   Bullet should be added to the BulletEnvironment using ...">Bullet</a> that will be removed from the processing.</td></tr>
+    <tr><td class="paramname">bullet</td><td><a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Class that holds all of the relevant data of the Bullet.   Bullet should be added to the BulletEnviro...">Bullet</a> that will be removed from the processing.</td></tr>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="_bullet_environment_8cs_source.html#l00170">170</a> of file <a class="el" href="_bullet_environment_8cs_source.html">BulletEnvironment.cs</a>.</p>
 
 </div>
 </div>
@@ -508,49 +519,7 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<a id="ad29a8184999c15de2b8a678ad7fcff50" name="ad29a8184999c15de2b8a678ad7fcff50"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad29a8184999c15de2b8a678ad7fcff50">&#9670;&#160;</a></span>_bulletHolder</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Transform BulletDynamics.Core.BulletEnvironment._bulletHolder</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="abeff64993457e13ef0e6685d576ad014" name="abeff64993457e13ef0e6685d576ad014"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abeff64993457e13ef0e6685d576ad014">&#9670;&#160;</a></span>_bulletOnHitEffectsHolder</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Transform BulletDynamics.Core.BulletEnvironment._bulletOnHitEffectsHolder</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
+<p class="definition">Definition at line <a class="el" href="_bullet_environment_8cs_source.html#l00015">15</a> of file <a class="el" href="_bullet_environment_8cs_source.html">BulletEnvironment.cs</a>.</p>
 
 </div>
 </div>
@@ -573,6 +542,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_bullet_environment_8cs_source.html#l00013">13</a> of file <a class="el" href="_bullet_environment_8cs_source.html">BulletEnvironment.cs</a>.</p>
 
 </div>
 </div>
@@ -598,6 +569,8 @@ Properties</h2></td></tr>
 
 <p>Current instance of the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet_environment.html" title="Environment for the Bullet Dynamics.   This component handles the bullet physics using FixedUpdate an...">BulletEnvironment</a>. </p>
 
+<p class="definition">Definition at line <a class="el" href="_bullet_environment_8cs_source.html#l00020">20</a> of file <a class="el" href="_bullet_environment_8cs_source.html">BulletEnvironment.cs</a>.</p>
+
 </div>
 </div>
 <a id="aa0101cb1be0909c0ae789345ecab87a0" name="aa0101cb1be0909c0ae789345ecab87a0"></a>
@@ -612,7 +585,9 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Event that is raised when the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Component that marks the object as a bullet.   Bullet should be added to the BulletEnvironment using ...">Bullet</a> will be added to the environment. </p>
+<p>Event that is raised when the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Class that holds all of the relevant data of the Bullet.   Bullet should be added to the BulletEnviro...">Bullet</a> will be added to the environment. </p>
+
+<p class="definition">Definition at line <a class="el" href="_bullet_environment_8cs_source.html#l00068">68</a> of file <a class="el" href="_bullet_environment_8cs_source.html">BulletEnvironment.cs</a>.</p>
 
 </div>
 </div>
@@ -628,7 +603,9 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Event that is raised when the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Component that marks the object as a bullet.   Bullet should be added to the BulletEnvironment using ...">Bullet</a> will be removed from the environment. </p>
+<p>Event that is raised when the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Class that holds all of the relevant data of the Bullet.   Bullet should be added to the BulletEnviro...">Bullet</a> will be removed from the environment. </p>
+
+<p class="definition">Definition at line <a class="el" href="_bullet_environment_8cs_source.html#l00078">78</a> of file <a class="el" href="_bullet_environment_8cs_source.html">BulletEnvironment.cs</a>.</p>
 
 </div>
 </div>
@@ -644,7 +621,9 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Event that is raised when the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Component that marks the object as a bullet.   Bullet should be added to the BulletEnvironment using ...">Bullet</a>s will been updated by this environment. </p>
+<p>Event that is raised when the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Class that holds all of the relevant data of the Bullet.   Bullet should be added to the BulletEnviro...">Bullet</a>s will been updated by this environment. </p>
+
+<p class="definition">Definition at line <a class="el" href="_bullet_environment_8cs_source.html#l00088">88</a> of file <a class="el" href="_bullet_environment_8cs_source.html">BulletEnvironment.cs</a>.</p>
 
 </div>
 </div>
@@ -660,7 +639,9 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Event that is raised when the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Component that marks the object as a bullet.   Bullet should be added to the BulletEnvironment using ...">Bullet</a> has been added to the environment. </p>
+<p>Event that is raised when the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Class that holds all of the relevant data of the Bullet.   Bullet should be added to the BulletEnviro...">Bullet</a> has been added to the environment. </p>
+
+<p class="definition">Definition at line <a class="el" href="_bullet_environment_8cs_source.html#l00073">73</a> of file <a class="el" href="_bullet_environment_8cs_source.html">BulletEnvironment.cs</a>.</p>
 
 </div>
 </div>
@@ -676,7 +657,9 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Event that is raised when the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Component that marks the object as a bullet.   Bullet should be added to the BulletEnvironment using ...">Bullet</a> has been removed from the environment. </p>
+<p>Event that is raised when the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Class that holds all of the relevant data of the Bullet.   Bullet should be added to the BulletEnviro...">Bullet</a> has been removed from the environment. </p>
+
+<p class="definition">Definition at line <a class="el" href="_bullet_environment_8cs_source.html#l00083">83</a> of file <a class="el" href="_bullet_environment_8cs_source.html">BulletEnvironment.cs</a>.</p>
 
 </div>
 </div>
@@ -692,7 +675,9 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Event that is raised when the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Component that marks the object as a bullet.   Bullet should be added to the BulletEnvironment using ...">Bullet</a>s has been updated by this environment. </p>
+<p>Event that is raised when the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Class that holds all of the relevant data of the Bullet.   Bullet should be added to the BulletEnviro...">Bullet</a>s has been updated by this environment. </p>
+
+<p class="definition">Definition at line <a class="el" href="_bullet_environment_8cs_source.html#l00093">93</a> of file <a class="el" href="_bullet_environment_8cs_source.html">BulletEnvironment.cs</a>.</p>
 
 </div>
 </div>
@@ -719,53 +704,7 @@ Properties</h2></td></tr>
 
 <p>Returns the current density of the air. </p>
 
-</div>
-</div>
-<a id="a32b23e53dc6f6fe766ad35fac42eb099" name="a32b23e53dc6f6fe766ad35fac42eb099"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a32b23e53dc6f6fe766ad35fac42eb099">&#9670;&#160;</a></span>BulletHolder</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Transform BulletDynamics.Core.BulletEnvironment.BulletHolder</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Transform reference to the game object that holds all of the <a class="el" href="#a53afabf4f44fd0deced3353e976632f7" title="List of all of the Bullets handled by this environment.">Bullets</a>. </p>
-
-</div>
-</div>
-<a id="a2b0bdd2eb91a3352253e0fd4fe9f7524" name="a2b0bdd2eb91a3352253e0fd4fe9f7524"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2b0bdd2eb91a3352253e0fd4fe9f7524">&#9670;&#160;</a></span>BulletOnHitEffectsHolder</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Transform BulletDynamics.Core.BulletEnvironment.BulletOnHitEffectsHolder</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">get</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Transform reference to the game object that holds all of the <a class="el" href="#a53afabf4f44fd0deced3353e976632f7" title="List of all of the Bullets handled by this environment.">Bullets</a> on hit effects created by the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet_collision_effect.html" title="Component that instantiates a hit effect when the Bullet collides with the DynamicSurface.">BulletCollisionEffect</a>. </p>
+<p class="definition">Definition at line <a class="el" href="_bullet_environment_8cs_source.html#l00058">58</a> of file <a class="el" href="_bullet_environment_8cs_source.html">BulletEnvironment.cs</a>.</p>
 
 </div>
 </div>
@@ -789,7 +728,9 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>List of all of the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Component that marks the object as a bullet.   Bullet should be added to the BulletEnvironment using ...">Bullet</a>s handled by this environment. </p>
+<p>List of all of the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Class that holds all of the relevant data of the Bullet.   Bullet should be added to the BulletEnviro...">Bullet</a>s handled by this environment. </p>
+
+<p class="definition">Definition at line <a class="el" href="_bullet_environment_8cs_source.html#l00030">30</a> of file <a class="el" href="_bullet_environment_8cs_source.html">BulletEnvironment.cs</a>.</p>
 
 </div>
 </div>
@@ -814,6 +755,8 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p><a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet_environment_data.html" title="Environment data used by the BulletEnvironment to control the Bullet&#39;s trajectory though the scene.">BulletEnvironmentData</a> that is used for the calculations. </p>
+
+<p class="definition">Definition at line <a class="el" href="_bullet_environment_8cs_source.html#l00025">25</a> of file <a class="el" href="_bullet_environment_8cs_source.html">BulletEnvironment.cs</a>.</p>
 
 </div>
 </div>
@@ -842,6 +785,8 @@ Properties</h2></td></tr>
  If <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet_environment_data.html#aa4c62fa8a2cc7516d8f5253b6276f43a" title="Value that indicates if the bullets should override Unity gravity for trajectories.">BulletEnvironmentData.OverrideUnityGravity</a> is set to true, <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet_environment_data.html#a0feeb869b26dfb9f377d2765b244e2b5" title="This value is used as gravity if the OverrideUnityGravity is set to false.">BulletEnvironmentData.Gravity</a> is used. <br  />
  If <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet_environment_data.html#aa4c62fa8a2cc7516d8f5253b6276f43a" title="Value that indicates if the bullets should override Unity gravity for trajectories.">BulletEnvironmentData.OverrideUnityGravity</a> is set to false, Physics.gravity is used. </p>
 
+<p class="definition">Definition at line <a class="el" href="_bullet_environment_8cs_source.html#l00037">37</a> of file <a class="el" href="_bullet_environment_8cs_source.html">BulletEnvironment.cs</a>.</p>
+
 </div>
 </div>
 <a id="aa1d8f5ce2352a1746dbb5fe416201b12" name="aa1d8f5ce2352a1746dbb5fe416201b12"></a>
@@ -866,6 +811,8 @@ Properties</h2></td></tr>
 
 <p>Returns the maximum allowed offset from the world origin at which the bullets will expire. </p>
 
+<p class="definition">Definition at line <a class="el" href="_bullet_environment_8cs_source.html#l00063">63</a> of file <a class="el" href="_bullet_environment_8cs_source.html">BulletEnvironment.cs</a>.</p>
+
 </div>
 </div>
 <a id="a0d5e55c0f4920a8f9a348373d48195a4" name="a0d5e55c0f4920a8f9a348373d48195a4"></a>
@@ -889,6 +836,8 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns the current wind speed. </p>
+
+<p class="definition">Definition at line <a class="el" href="_bullet_environment_8cs_source.html#l00053">53</a> of file <a class="el" href="_bullet_environment_8cs_source.html">BulletEnvironment.cs</a>.</p>
 
 </div>
 </div>

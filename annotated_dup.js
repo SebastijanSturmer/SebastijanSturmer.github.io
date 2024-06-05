@@ -3,7 +3,6 @@ var annotated_dup =
     [ "BulletDynamics", "namespace_bullet_dynamics.html", [
       [ "Core", "namespace_bullet_dynamics_1_1_core.html", [
         [ "Bullet", "class_bullet_dynamics_1_1_core_1_1_bullet.html", "class_bullet_dynamics_1_1_core_1_1_bullet" ],
-        [ "BulletCollisionEffect", "class_bullet_dynamics_1_1_core_1_1_bullet_collision_effect.html", "class_bullet_dynamics_1_1_core_1_1_bullet_collision_effect" ],
         [ "BulletData", "class_bullet_dynamics_1_1_core_1_1_bullet_data.html", "class_bullet_dynamics_1_1_core_1_1_bullet_data" ],
         [ "BulletEnvironment", "class_bullet_dynamics_1_1_core_1_1_bullet_environment.html", "class_bullet_dynamics_1_1_core_1_1_bullet_environment" ],
         [ "BulletEnvironmentData", "class_bullet_dynamics_1_1_core_1_1_bullet_environment_data.html", "class_bullet_dynamics_1_1_core_1_1_bullet_environment_data" ],
@@ -12,6 +11,7 @@ var annotated_dup =
         [ "BulletHitInfo", "struct_bullet_dynamics_1_1_core_1_1_bullet_hit_info.html", "struct_bullet_dynamics_1_1_core_1_1_bullet_hit_info" ],
         [ "BulletJob", "struct_bullet_dynamics_1_1_core_1_1_bullet_job.html", "struct_bullet_dynamics_1_1_core_1_1_bullet_job" ],
         [ "BulletUtility", "class_bullet_dynamics_1_1_core_1_1_bullet_utility.html", null ],
+        [ "BulletVisualsHandler", "class_bullet_dynamics_1_1_core_1_1_bullet_visuals_handler.html", "class_bullet_dynamics_1_1_core_1_1_bullet_visuals_handler" ],
         [ "DynamicSurface", "class_bullet_dynamics_1_1_core_1_1_dynamic_surface.html", "class_bullet_dynamics_1_1_core_1_1_dynamic_surface" ],
         [ "RaycastDistanceComparer", "class_bullet_dynamics_1_1_core_1_1_raycast_distance_comparer.html", "class_bullet_dynamics_1_1_core_1_1_raycast_distance_comparer" ],
         [ "SurfacePhysicMaterial", "class_bullet_dynamics_1_1_core_1_1_surface_physic_material.html", "class_bullet_dynamics_1_1_core_1_1_surface_physic_material" ],
@@ -20,7 +20,7 @@ var annotated_dup =
         [ "WeaponZeroing", "class_bullet_dynamics_1_1_core_1_1_weapon_zeroing.html", "class_bullet_dynamics_1_1_core_1_1_weapon_zeroing" ]
       ] ],
       [ "Damage", "namespace_bullet_dynamics_1_1_damage.html", [
-        [ "BulletDamage", "class_bullet_dynamics_1_1_damage_1_1_bullet_damage.html", "class_bullet_dynamics_1_1_damage_1_1_bullet_damage" ],
+        [ "BulletDamageHandler", "class_bullet_dynamics_1_1_damage_1_1_bullet_damage_handler.html", "class_bullet_dynamics_1_1_damage_1_1_bullet_damage_handler" ],
         [ "IDamageableByBullet", "interface_bullet_dynamics_1_1_damage_1_1_i_damageable_by_bullet.html", "interface_bullet_dynamics_1_1_damage_1_1_i_damageable_by_bullet" ]
       ] ],
       [ "Example", "namespace_bullet_dynamics_1_1_example.html", [

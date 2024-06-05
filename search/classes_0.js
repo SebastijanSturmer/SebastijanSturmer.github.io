@@ -1,8 +1,8 @@
 var searchData=
 [
   ['bullet_0',['Bullet',['../class_bullet_dynamics_1_1_core_1_1_bullet.html',1,'BulletDynamics::Core']]],
-  ['bulletcollisioneffect_1',['BulletCollisionEffect',['../class_bullet_dynamics_1_1_core_1_1_bullet_collision_effect.html',1,'BulletDynamics::Core']]],
-  ['bulletdamage_2',['BulletDamage',['../class_bullet_dynamics_1_1_damage_1_1_bullet_damage.html',1,'BulletDynamics::Damage']]],
+  ['bulletdamageconnection_1',['BulletDamageConnection',['../class_bullet_dynamics_1_1_damage_1_1_bullet_damage_handler_1_1_bullet_damage_connection.html',1,'BulletDynamics::Damage::BulletDamageHandler']]],
+  ['bulletdamagehandler_2',['BulletDamageHandler',['../class_bullet_dynamics_1_1_damage_1_1_bullet_damage_handler.html',1,'BulletDynamics::Damage']]],
   ['bulletdata_3',['BulletData',['../class_bullet_dynamics_1_1_core_1_1_bullet_data.html',1,'BulletDynamics::Core']]],
   ['bulletdynamicsexampledamageabletarget_4',['BulletDynamicsExampleDamageableTarget',['../class_bullet_dynamics_1_1_example_1_1_bullet_dynamics_example_damageable_target.html',1,'BulletDynamics::Example']]],
   ['bulletdynamicsexampleonhiteffectcontroller_5',['BulletDynamicsExampleOnHitEffectController',['../class_bullet_dynamics_1_1_example_1_1_bullet_dynamics_example_on_hit_effect_controller.html',1,'BulletDynamics::Example']]],
@@ -13,5 +13,6 @@ var searchData=
   ['bullethandler_10',['BulletHandler',['../class_bullet_dynamics_1_1_core_1_1_bullet_handler.html',1,'BulletDynamics::Core']]],
   ['bullethitinfo_11',['BulletHitInfo',['../struct_bullet_dynamics_1_1_core_1_1_bullet_hit_info.html',1,'BulletDynamics::Core']]],
   ['bulletjob_12',['BulletJob',['../struct_bullet_dynamics_1_1_core_1_1_bullet_job.html',1,'BulletDynamics::Core']]],
-  ['bulletutility_13',['BulletUtility',['../class_bullet_dynamics_1_1_core_1_1_bullet_utility.html',1,'BulletDynamics::Core']]]
+  ['bulletutility_13',['BulletUtility',['../class_bullet_dynamics_1_1_core_1_1_bullet_utility.html',1,'BulletDynamics::Core']]],
+  ['bulletvisualshandler_14',['BulletVisualsHandler',['../class_bullet_dynamics_1_1_core_1_1_bullet_visuals_handler.html',1,'BulletDynamics::Core']]]
 ];

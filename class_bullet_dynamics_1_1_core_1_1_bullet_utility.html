@@ -26,6 +26,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="BulletDynamicsLogoSmall.png"/></td>
   <td id="projectalign">
    <div id="projectname">Bullet Dynamics<span id="projectnumber">&#160;v1.0.0</span>
    </div>
@@ -103,7 +104,7 @@ $(function(){initNavTree('class_bullet_dynamics_1_1_core_1_1_bullet_utility.html
 </div><!--header-->
 <div class="contents">
 
-<p>Utility class that provides the methods that can be used to calculate the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Component that marks the object as a bullet.   Bullet should be added to the BulletEnvironment using ...">Bullet</a>'ss trajectory.  
+<p>Utility class that provides the methods that can be used to calculate the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Class that holds all of the relevant data of the Bullet.   Bullet should be added to the BulletEnviro...">Bullet</a>'ss trajectory.  
  <a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
@@ -118,7 +119,7 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:aecc51fff2fca2e487710f95f4a23d21e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb1313f55e78ce1a832c8be2df27f7c0" id="r_abb1313f55e78ce1a832c8be2df27f7c0"><td class="memItemLeft" align="right" valign="top">static Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abb1313f55e78ce1a832c8be2df27f7c0">GetVelocityLossOfSurface</a> (Vector3 normalizedVelocity, float velocityLossPerCentimeterOfThickness, float surfaceThickness)</td></tr>
 <tr class="memdesc:abb1313f55e78ce1a832c8be2df27f7c0"><td class="mdescLeft">&#160;</td><td class="mdescRight"><br  />
- Calculates the velocity loss of the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Component that marks the object as a bullet.   Bullet should be added to the BulletEnvironment using ...">Bullet</a> based on the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_dynamic_surface.html" title="Component that marks the object as the surface that the Bullets can interact with....">DynamicSurface</a> that it hit and it's thickness. <br  />
+ Calculates the velocity loss of the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Class that holds all of the relevant data of the Bullet.   Bullet should be added to the BulletEnviro...">Bullet</a> based on the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_dynamic_surface.html" title="Component that marks the object as the surface that the Bullets can interact with....">DynamicSurface</a> that it hit and it's thickness. <br  />
  It uses <a class="el" href="struct_bullet_dynamics_1_1_core_1_1_surface_physic_material_1_1_material_data.html#a6efd7df76fc41ab9fd737b3f145fbd6b" title="Value that specifies how much speed will the bullet lose while traveling through this material.">SurfacePhysicMaterial.MaterialData.SpeedLossPerCentimeterOfThickness</a> of the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_dynamic_surface.html" title="Component that marks the object as the surface that the Bullets can interact with....">DynamicSurface</a> and the <em>surfaceThickness</em>  to calculate the velocity loss.  <br /></td></tr>
 <tr class="separator:abb1313f55e78ce1a832c8be2df27f7c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a81d712e316c8fb692c5c3c36fa497b80" id="r_a81d712e316c8fb692c5c3c36fa497b80"><td class="memItemLeft" align="right" valign="top">static Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a81d712e316c8fb692c5c3c36fa497b80">GetRicochetVelocity</a> (Vector3 currentVelocity, Vector3 currentNormalizedVelocity, Vector3 surfaceNormal, float penetrationPercentage)</td></tr>
@@ -141,7 +142,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a89d0091de98e08a5473d713a98bc00db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Utility class that provides the methods that can be used to calculate the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Component that marks the object as a bullet.   Bullet should be added to the BulletEnvironment using ...">Bullet</a>'ss trajectory. </p>
+<div class="textblock"><p>Utility class that provides the methods that can be used to calculate the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Class that holds all of the relevant data of the Bullet.   Bullet should be added to the BulletEnviro...">Bullet</a>'ss trajectory. </p>
+
+<p class="definition">Definition at line <a class="el" href="_bullet_utility_8cs_source.html#l00008">8</a> of file <a class="el" href="_bullet_utility_8cs_source.html">BulletUtility.cs</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a388892c08f2bf39b57dd338934a84249" name="a388892c08f2bf39b57dd338934a84249"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a388892c08f2bf39b57dd338934a84249">&#9670;&#160;</a></span>CalculateNewBulletPositionAndVelocity()</h2>
@@ -213,19 +216,21 @@ Static Public Member Functions</h2></td></tr>
 <p>Calculates the new bullet position and velocity for the next frame based on the provided parameters. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">currentVelocity</td><td>Current velocity of the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Component that marks the object as a bullet.   Bullet should be added to the BulletEnvironment using ...">Bullet</a>.</td></tr>
-    <tr><td class="paramname">currentPosition</td><td>Current position of the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Component that marks the object as a bullet.   Bullet should be added to the BulletEnvironment using ...">Bullet</a>.</td></tr>
-    <tr><td class="paramname">dragCoefficient</td><td>Drag coefficient of the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Component that marks the object as a bullet.   Bullet should be added to the BulletEnvironment using ...">Bullet</a>. This value can be found in <a class="el" href="struct_bullet_dynamics_1_1_core_1_1_bullet_data_1_1_physic_data.html#ada83b592fb6d6c6f23f3d13fa7e0ec3f">BulletData.PhysicData.DragCoefficient</a>.</td></tr>
-    <tr><td class="paramname">referenceArea</td><td>Reference area of the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Component that marks the object as a bullet.   Bullet should be added to the BulletEnvironment using ...">Bullet</a>. This value can be found in <a class="el" href="struct_bullet_dynamics_1_1_core_1_1_bullet_data_1_1_physic_data.html#aff64d6c45eaad048575b5eab42eabb4c">BulletData.PhysicData.ReferenceArea</a>.</td></tr>
+    <tr><td class="paramname">currentVelocity</td><td>Current velocity of the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Class that holds all of the relevant data of the Bullet.   Bullet should be added to the BulletEnviro...">Bullet</a>.</td></tr>
+    <tr><td class="paramname">currentPosition</td><td>Current position of the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Class that holds all of the relevant data of the Bullet.   Bullet should be added to the BulletEnviro...">Bullet</a>.</td></tr>
+    <tr><td class="paramname">dragCoefficient</td><td>Drag coefficient of the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Class that holds all of the relevant data of the Bullet.   Bullet should be added to the BulletEnviro...">Bullet</a>. This value can be found in <a class="el" href="struct_bullet_dynamics_1_1_core_1_1_bullet_data_1_1_physic_data.html#ada83b592fb6d6c6f23f3d13fa7e0ec3f" title="Drag that will be applied to the bullet while it travels through the air.">BulletData.PhysicData.DragCoefficient</a>.</td></tr>
+    <tr><td class="paramname">referenceArea</td><td>Reference area of the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Class that holds all of the relevant data of the Bullet.   Bullet should be added to the BulletEnviro...">Bullet</a>. This value can be found in <a class="el" href="struct_bullet_dynamics_1_1_core_1_1_bullet_data_1_1_physic_data.html#aff64d6c45eaad048575b5eab42eabb4c" title="Area of the bullet that the drag is applied to (in m^2).">BulletData.PhysicData.ReferenceArea</a>.</td></tr>
     <tr><td class="paramname">gravity</td><td>Gravity of the world. This value can be found in <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet_environment.html#a49d98272151ec15df4878c0c5eda4eef" title="Returns the current bullet gravity.   If BulletEnvironmentData.OverrideUnityGravity is set to true,...">BulletEnvironment.Gravity</a>.</td></tr>
     <tr><td class="paramname">wind</td><td>Velocity of the wind in the world. This value can be found in <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet_environment.html#a0d5e55c0f4920a8f9a348373d48195a4" title="Returns the current wind speed.">BulletEnvironment.Wind</a>.</td></tr>
     <tr><td class="paramname">airDensity</td><td>Air density of the world. This value can be found in <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet_environment.html#a0aeca4e2d5ede87b40a43327ee9e7220" title="Returns the current density of the air.">BulletEnvironment.AirDensity</a>.</td></tr>
     <tr><td class="paramname">timeStep</td><td>Time step of the physics. This value can be found in <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet_environment.html#af4dc5efc2a6f7bf09f80658ba312877b" title="Returns the delta time for the Bullet updates that is scaled by Time.timeScale.">BulletEnvironment.GetDeltaTime</a>.</td></tr>
-    <tr><td class="paramname">newPosition</td><td>Newly calculated position of the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Component that marks the object as a bullet.   Bullet should be added to the BulletEnvironment using ...">Bullet</a>.</td></tr>
-    <tr><td class="paramname">newVelocity</td><td>Newly calculated velocity of the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Component that marks the object as a bullet.   Bullet should be added to the BulletEnvironment using ...">Bullet</a>.</td></tr>
+    <tr><td class="paramname">newPosition</td><td>Newly calculated position of the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Class that holds all of the relevant data of the Bullet.   Bullet should be added to the BulletEnviro...">Bullet</a>.</td></tr>
+    <tr><td class="paramname">newVelocity</td><td>Newly calculated velocity of the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Class that holds all of the relevant data of the Bullet.   Bullet should be added to the BulletEnviro...">Bullet</a>.</td></tr>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="_bullet_utility_8cs_source.html#l00181">181</a> of file <a class="el" href="_bullet_utility_8cs_source.html">BulletUtility.cs</a>.</p>
 
 </div>
 </div>
@@ -285,9 +290,9 @@ Static Public Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">distance</td><td>Distance that the barrel should be zeroed to.</td></tr>
-    <tr><td class="paramname">bulletInitialVelocity</td><td>Initial velocity of the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Component that marks the object as a bullet.   Bullet should be added to the BulletEnvironment using ...">Bullet</a>. Use <a class="el" href="struct_bullet_dynamics_1_1_core_1_1_bullet_data_1_1_physic_data.html#a727d447288aabeb6f3c48ea2143cc884">BulletData.PhysicData.InitialVelocity</a>.</td></tr>
-    <tr><td class="paramname">dragCoefficient</td><td>Drag coefficient of the bullet. Use <a class="el" href="struct_bullet_dynamics_1_1_core_1_1_bullet_data_1_1_physic_data.html#ada83b592fb6d6c6f23f3d13fa7e0ec3f">BulletData.PhysicData.DragCoefficient</a>.</td></tr>
-    <tr><td class="paramname">referenceArea</td><td>Reference area for the drag of the bullet. Use <a class="el" href="struct_bullet_dynamics_1_1_core_1_1_bullet_data_1_1_physic_data.html#aff64d6c45eaad048575b5eab42eabb4c">BulletData.PhysicData.ReferenceArea</a>.</td></tr>
+    <tr><td class="paramname">bulletInitialVelocity</td><td>Initial velocity of the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Class that holds all of the relevant data of the Bullet.   Bullet should be added to the BulletEnviro...">Bullet</a>. Use <a class="el" href="struct_bullet_dynamics_1_1_core_1_1_bullet_data_1_1_physic_data.html#a727d447288aabeb6f3c48ea2143cc884" title="Initial velocity of the bullet when the bullet exits the barrel.">BulletData.PhysicData.InitialVelocity</a>.</td></tr>
+    <tr><td class="paramname">dragCoefficient</td><td>Drag coefficient of the bullet. Use <a class="el" href="struct_bullet_dynamics_1_1_core_1_1_bullet_data_1_1_physic_data.html#ada83b592fb6d6c6f23f3d13fa7e0ec3f" title="Drag that will be applied to the bullet while it travels through the air.">BulletData.PhysicData.DragCoefficient</a>.</td></tr>
+    <tr><td class="paramname">referenceArea</td><td>Reference area for the drag of the bullet. Use <a class="el" href="struct_bullet_dynamics_1_1_core_1_1_bullet_data_1_1_physic_data.html#aff64d6c45eaad048575b5eab42eabb4c" title="Area of the bullet that the drag is applied to (in m^2).">BulletData.PhysicData.ReferenceArea</a>.</td></tr>
     <tr><td class="paramname">gravity</td><td>Gravity that affects the bullet. Use <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet_environment.html#a49d98272151ec15df4878c0c5eda4eef" title="Returns the current bullet gravity.   If BulletEnvironmentData.OverrideUnityGravity is set to true,...">BulletEnvironment.Gravity</a>.</td></tr>
     <tr><td class="paramname">airDensity</td><td>Air density of the scene. Use <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet_environment.html#a0aeca4e2d5ede87b40a43327ee9e7220" title="Returns the current density of the air.">BulletEnvironment.AirDensity</a>.</td></tr>
     <tr><td class="paramname">timeStep</td><td>Time step of the simulation that can be set to a smaller value to make the calculation more accurate.</td></tr>
@@ -295,6 +300,8 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Up/Down rotation that should be applied to the exit point of the barrel.</dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_bullet_utility_8cs_source.html#l00109">109</a> of file <a class="el" href="_bullet_utility_8cs_source.html">BulletUtility.cs</a>.</p>
 
 </div>
 </div>
@@ -352,6 +359,8 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Vector3 of the drag force that can be considered as the velocity loss.</dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_bullet_utility_8cs_source.html#l00019">19</a> of file <a class="el" href="_bullet_utility_8cs_source.html">BulletUtility.cs</a>.</p>
 
 </div>
 </div>
@@ -418,15 +427,17 @@ Static Public Member Functions</h2></td></tr>
     <tr><td class="paramname">gravity</td><td>Gravity that affects the bullet. Use <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet_environment.html#a49d98272151ec15df4878c0c5eda4eef" title="Returns the current bullet gravity.   If BulletEnvironmentData.OverrideUnityGravity is set to true,...">BulletEnvironment.Gravity</a>.</td></tr>
     <tr><td class="paramname">wind</td><td>Wind speed that affects the bullet. Use <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet_environment.html#a0d5e55c0f4920a8f9a348373d48195a4" title="Returns the current wind speed.">BulletEnvironment.Wind</a>.</td></tr>
     <tr><td class="paramname">airDensity</td><td>Air density that affects the bullet. Use <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet_environment.html#a0aeca4e2d5ede87b40a43327ee9e7220" title="Returns the current density of the air.">BulletEnvironment.AirDensity</a>.</td></tr>
-    <tr><td class="paramname">velocity</td><td>Current velocity of the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Component that marks the object as a bullet.   Bullet should be added to the BulletEnvironment using ...">Bullet</a>. Use <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html#a49a5f6ae14498e08f6bc3ca6e0b9b822" title="Returns the current velocity of this bullet.">Bullet.Velocity</a>.</td></tr>
-    <tr><td class="paramname">dragCoefficient</td><td>Drag coefficient of the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Component that marks the object as a bullet.   Bullet should be added to the BulletEnvironment using ...">Bullet</a>. Use <a class="el" href="struct_bullet_dynamics_1_1_core_1_1_bullet_data_1_1_physic_data.html#ada83b592fb6d6c6f23f3d13fa7e0ec3f">BulletData.PhysicData.DragCoefficient</a> of the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Component that marks the object as a bullet.   Bullet should be added to the BulletEnvironment using ...">Bullet</a>.</td></tr>
-    <tr><td class="paramname">referenceArea</td><td>Reference Area of the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Component that marks the object as a bullet.   Bullet should be added to the BulletEnvironment using ...">Bullet</a>. Use <a class="el" href="struct_bullet_dynamics_1_1_core_1_1_bullet_data_1_1_physic_data.html#aff64d6c45eaad048575b5eab42eabb4c">BulletData.PhysicData.ReferenceArea</a> of the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Component that marks the object as a bullet.   Bullet should be added to the BulletEnvironment using ...">Bullet</a>.</td></tr>
-    <tr><td class="paramname">normalizedVelocity</td><td>Normalized velocity of the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Component that marks the object as a bullet.   Bullet should be added to the BulletEnvironment using ...">Bullet</a>. Use Vector3.normalized of the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Component that marks the object as a bullet.   Bullet should be added to the BulletEnvironment using ...">Bullet</a>'s velocity.</td></tr>
+    <tr><td class="paramname">velocity</td><td>Current velocity of the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Class that holds all of the relevant data of the Bullet.   Bullet should be added to the BulletEnviro...">Bullet</a>. Use <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html#a49a5f6ae14498e08f6bc3ca6e0b9b822" title="Returns the current velocity of this bullet.">Bullet.Velocity</a>.</td></tr>
+    <tr><td class="paramname">dragCoefficient</td><td>Drag coefficient of the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Class that holds all of the relevant data of the Bullet.   Bullet should be added to the BulletEnviro...">Bullet</a>. Use <a class="el" href="struct_bullet_dynamics_1_1_core_1_1_bullet_data_1_1_physic_data.html#ada83b592fb6d6c6f23f3d13fa7e0ec3f" title="Drag that will be applied to the bullet while it travels through the air.">BulletData.PhysicData.DragCoefficient</a> of the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Class that holds all of the relevant data of the Bullet.   Bullet should be added to the BulletEnviro...">Bullet</a>.</td></tr>
+    <tr><td class="paramname">referenceArea</td><td>Reference Area of the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Class that holds all of the relevant data of the Bullet.   Bullet should be added to the BulletEnviro...">Bullet</a>. Use <a class="el" href="struct_bullet_dynamics_1_1_core_1_1_bullet_data_1_1_physic_data.html#aff64d6c45eaad048575b5eab42eabb4c" title="Area of the bullet that the drag is applied to (in m^2).">BulletData.PhysicData.ReferenceArea</a> of the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Class that holds all of the relevant data of the Bullet.   Bullet should be added to the BulletEnviro...">Bullet</a>.</td></tr>
+    <tr><td class="paramname">normalizedVelocity</td><td>Normalized velocity of the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Class that holds all of the relevant data of the Bullet.   Bullet should be added to the BulletEnviro...">Bullet</a>. Use Vector3.normalized of the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Class that holds all of the relevant data of the Bullet.   Bullet should be added to the BulletEnviro...">Bullet</a>'s velocity.</td></tr>
     <tr><td class="paramname">deltaTime</td><td>Time delta between frames. Use Time.fixedDeltaTime.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Vector3 of the velocity loss that should be applied to the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Component that marks the object as a bullet.   Bullet should be added to the BulletEnvironment using ...">Bullet</a>.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Vector3 of the velocity loss that should be applied to the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Class that holds all of the relevant data of the Bullet.   Bullet should be added to the BulletEnviro...">Bullet</a>.</dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_bullet_utility_8cs_source.html#l00079">79</a> of file <a class="el" href="_bullet_utility_8cs_source.html">BulletUtility.cs</a>.</p>
 
 </div>
 </div>
@@ -477,7 +488,9 @@ Static Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Vector3 of the velocity loss that should be applied to the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Component that marks the object as a bullet.   Bullet should be added to the BulletEnvironment using ...">Bullet</a>.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Vector3 of the velocity loss that should be applied to the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Class that holds all of the relevant data of the Bullet.   Bullet should be added to the BulletEnviro...">Bullet</a>.</dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_bullet_utility_8cs_source.html#l00093">93</a> of file <a class="el" href="_bullet_utility_8cs_source.html">BulletUtility.cs</a>.</p>
 
 </div>
 </div>
@@ -523,14 +536,16 @@ Static Public Member Functions</h2></td></tr>
  It uses the ricochet ability of the surface and the penetration ability of the bullet with the angle to calculates the percentage. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">penetrationAbility</td><td>Penetration ability of the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Component that marks the object as a bullet.   Bullet should be added to the BulletEnvironment using ...">Bullet</a>.</td></tr>
-    <tr><td class="paramname">normalizedVelocity</td><td>Normalized velocity of the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Component that marks the object as a bullet.   Bullet should be added to the BulletEnvironment using ...">Bullet</a>.</td></tr>
-    <tr><td class="paramname">surfaceNormal</td><td>Normal of the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_dynamic_surface.html" title="Component that marks the object as the surface that the Bullets can interact with....">DynamicSurface</a> that the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Component that marks the object as a bullet.   Bullet should be added to the BulletEnvironment using ...">Bullet</a> hit.</td></tr>
-    <tr><td class="paramname">ricochetAbility</td><td>Ricochet ability of the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_dynamic_surface.html" title="Component that marks the object as the surface that the Bullets can interact with....">DynamicSurface</a> that the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Component that marks the object as a bullet.   Bullet should be added to the BulletEnvironment using ...">Bullet</a> hit.</td></tr>
+    <tr><td class="paramname">penetrationAbility</td><td>Penetration ability of the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Class that holds all of the relevant data of the Bullet.   Bullet should be added to the BulletEnviro...">Bullet</a>.</td></tr>
+    <tr><td class="paramname">normalizedVelocity</td><td>Normalized velocity of the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Class that holds all of the relevant data of the Bullet.   Bullet should be added to the BulletEnviro...">Bullet</a>.</td></tr>
+    <tr><td class="paramname">surfaceNormal</td><td>Normal of the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_dynamic_surface.html" title="Component that marks the object as the surface that the Bullets can interact with....">DynamicSurface</a> that the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Class that holds all of the relevant data of the Bullet.   Bullet should be added to the BulletEnviro...">Bullet</a> hit.</td></tr>
+    <tr><td class="paramname">ricochetAbility</td><td>Ricochet ability of the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_dynamic_surface.html" title="Component that marks the object as the surface that the Bullets can interact with....">DynamicSurface</a> that the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Class that holds all of the relevant data of the Bullet.   Bullet should be added to the BulletEnviro...">Bullet</a> hit.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Percentage of the penetration that can be used to determine if the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Component that marks the object as a bullet.   Bullet should be added to the BulletEnvironment using ...">Bullet</a> penetrated the surface (value &gt; 0) and how much velocity should be lost (value between 0 and 1 is the percentage).</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Percentage of the penetration that can be used to determine if the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Class that holds all of the relevant data of the Bullet.   Bullet should be added to the BulletEnviro...">Bullet</a> penetrated the surface (value &gt; 0) and how much velocity should be lost (value between 0 and 1 is the percentage).</dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_bullet_utility_8cs_source.html#l00035">35</a> of file <a class="el" href="_bullet_utility_8cs_source.html">BulletUtility.cs</a>.</p>
 
 </div>
 </div>
@@ -574,14 +589,16 @@ Static Public Member Functions</h2></td></tr>
 <p>Calculates the ricochet velocity based on the Vector3.Reflect(Vector3, Vector3) and the <em>penetrationPercentage</em> . </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">currentVelocity</td><td>Current velocity of the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Component that marks the object as a bullet.   Bullet should be added to the BulletEnvironment using ...">Bullet</a>.</td></tr>
-    <tr><td class="paramname">currentNormalizedVelocity</td><td>Current normalized velocity of the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Component that marks the object as a bullet.   Bullet should be added to the BulletEnvironment using ...">Bullet</a>.</td></tr>
-    <tr><td class="paramname">surfaceNormal</td><td>Normal of the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_dynamic_surface.html" title="Component that marks the object as the surface that the Bullets can interact with....">DynamicSurface</a> the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Component that marks the object as a bullet.   Bullet should be added to the BulletEnvironment using ...">Bullet</a> hit.</td></tr>
+    <tr><td class="paramname">currentVelocity</td><td>Current velocity of the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Class that holds all of the relevant data of the Bullet.   Bullet should be added to the BulletEnviro...">Bullet</a>.</td></tr>
+    <tr><td class="paramname">currentNormalizedVelocity</td><td>Current normalized velocity of the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Class that holds all of the relevant data of the Bullet.   Bullet should be added to the BulletEnviro...">Bullet</a>.</td></tr>
+    <tr><td class="paramname">surfaceNormal</td><td>Normal of the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_dynamic_surface.html" title="Component that marks the object as the surface that the Bullets can interact with....">DynamicSurface</a> the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Class that holds all of the relevant data of the Bullet.   Bullet should be added to the BulletEnviro...">Bullet</a> hit.</td></tr>
     <tr><td class="paramname">penetrationPercentage</td><td>Penetration percentage that can be calculated using <a class="el" href="#aecc51fff2fca2e487710f95f4a23d21e" title="Calculates the penetration percentage based on the angle between the bullet&#39;s velocity and the surfac...">GetPenetrationPercentage(float, Vector3, Vector3, float)</a>.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_bullet_utility_8cs_source.html#l00061">61</a> of file <a class="el" href="_bullet_utility_8cs_source.html">BulletUtility.cs</a>.</p>
 
 </div>
 </div>
@@ -618,17 +635,19 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p><br  />
- Calculates the velocity loss of the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Component that marks the object as a bullet.   Bullet should be added to the BulletEnvironment using ...">Bullet</a> based on the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_dynamic_surface.html" title="Component that marks the object as the surface that the Bullets can interact with....">DynamicSurface</a> that it hit and it's thickness. <br  />
+ Calculates the velocity loss of the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Class that holds all of the relevant data of the Bullet.   Bullet should be added to the BulletEnviro...">Bullet</a> based on the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_dynamic_surface.html" title="Component that marks the object as the surface that the Bullets can interact with....">DynamicSurface</a> that it hit and it's thickness. <br  />
  It uses <a class="el" href="struct_bullet_dynamics_1_1_core_1_1_surface_physic_material_1_1_material_data.html#a6efd7df76fc41ab9fd737b3f145fbd6b" title="Value that specifies how much speed will the bullet lose while traveling through this material.">SurfacePhysicMaterial.MaterialData.SpeedLossPerCentimeterOfThickness</a> of the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_dynamic_surface.html" title="Component that marks the object as the surface that the Bullets can interact with....">DynamicSurface</a> and the <em>surfaceThickness</em>  to calculate the velocity loss. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">normalizedVelocity</td><td>Normalized velocity of the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Component that marks the object as a bullet.   Bullet should be added to the BulletEnvironment using ...">Bullet</a>.</td></tr>
+    <tr><td class="paramname">normalizedVelocity</td><td>Normalized velocity of the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Class that holds all of the relevant data of the Bullet.   Bullet should be added to the BulletEnviro...">Bullet</a>.</td></tr>
     <tr><td class="paramname">velocityLossPerCentimeterOfThickness</td><td>Velocity loss of the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_dynamic_surface.html" title="Component that marks the object as the surface that the Bullets can interact with....">DynamicSurface</a> per centimeter of thickness.</td></tr>
-    <tr><td class="paramname">surfaceThickness</td><td>Thickness of the surface the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Component that marks the object as a bullet.   Bullet should be added to the BulletEnvironment using ...">Bullet</a> travels through.</td></tr>
+    <tr><td class="paramname">surfaceThickness</td><td>Thickness of the surface the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Class that holds all of the relevant data of the Bullet.   Bullet should be added to the BulletEnviro...">Bullet</a> travels through.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_bullet_utility_8cs_source.html#l00048">48</a> of file <a class="el" href="_bullet_utility_8cs_source.html">BulletUtility.cs</a>.</p>
 
 </div>
 </div>
@@ -663,6 +682,8 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Normalized vector.</dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_bullet_utility_8cs_source.html#l00212">212</a> of file <a class="el" href="_bullet_utility_8cs_source.html">BulletUtility.cs</a>.</p>
 
 </div>
 </div>

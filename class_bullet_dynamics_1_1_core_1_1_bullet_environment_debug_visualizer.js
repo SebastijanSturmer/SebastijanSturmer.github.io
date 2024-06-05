@@ -10,5 +10,7 @@ var class_bullet_dynamics_1_1_core_1_1_bullet_environment_debug_visualizer =
     [ "OnEnable", "class_bullet_dynamics_1_1_core_1_1_bullet_environment_debug_visualizer.html#a0e54ecc54fe8dacc2165ce6d30f583c4", null ],
     [ "_bulletEnvironment", "class_bullet_dynamics_1_1_core_1_1_bullet_environment_debug_visualizer.html#a55d35153cc8dcc9bc1e03a39714c6ada", null ],
     [ "_debugBulletsAndPositions", "class_bullet_dynamics_1_1_core_1_1_bullet_environment_debug_visualizer.html#a3a3c60e4026f97d3be19be175ae9855c", null ],
-    [ "_isEnabled", "class_bullet_dynamics_1_1_core_1_1_bullet_environment_debug_visualizer.html#a99b3c6ef23b93c33fb5b225c405fa4ae", null ]
+    [ "_isEnabled", "class_bullet_dynamics_1_1_core_1_1_bullet_environment_debug_visualizer.html#a99b3c6ef23b93c33fb5b225c405fa4ae", null ],
+    [ "_maxNumberOfTrackedBullets", "class_bullet_dynamics_1_1_core_1_1_bullet_environment_debug_visualizer.html#a0d15cb7208c1740c8ff097dce80ce900", null ],
+    [ "_removeTrajectoryOnBulletExpiration", "class_bullet_dynamics_1_1_core_1_1_bullet_environment_debug_visualizer.html#a7a606c8c0f048b30a8330d09a198c5d2", null ]
 ];

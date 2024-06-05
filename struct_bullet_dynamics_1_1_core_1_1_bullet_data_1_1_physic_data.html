@@ -26,6 +26,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="BulletDynamicsLogoSmall.png"/></td>
   <td id="projectalign">
    <div id="projectname">Bullet Dynamics<span id="projectnumber">&#160;v1.0.0</span>
    </div>
@@ -115,16 +116,22 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a727d447288aabeb6f3c48ea2143cc884" id="r_a727d447288aabeb6f3c48ea2143cc884"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a727d447288aabeb6f3c48ea2143cc884">InitialVelocity</a></td></tr>
+<tr class="memdesc:a727d447288aabeb6f3c48ea2143cc884"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initial velocity of the bullet when the bullet exits the barrel.  <br /></td></tr>
 <tr class="separator:a727d447288aabeb6f3c48ea2143cc884"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b71f60145d80291d6c292386b9581ed" id="r_a1b71f60145d80291d6c292386b9581ed"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1b71f60145d80291d6c292386b9581ed">PenetrationAbility</a></td></tr>
+<tr class="memdesc:a1b71f60145d80291d6c292386b9581ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies the ability of the bullet to penetrate the collider surface based on the surface hardness.  <br /></td></tr>
 <tr class="separator:a1b71f60145d80291d6c292386b9581ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada83b592fb6d6c6f23f3d13fa7e0ec3f" id="r_ada83b592fb6d6c6f23f3d13fa7e0ec3f"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ada83b592fb6d6c6f23f3d13fa7e0ec3f">DragCoefficient</a></td></tr>
+<tr class="memdesc:ada83b592fb6d6c6f23f3d13fa7e0ec3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Drag that will be applied to the bullet while it travels through the air.  <br /></td></tr>
 <tr class="separator:ada83b592fb6d6c6f23f3d13fa7e0ec3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff64d6c45eaad048575b5eab42eabb4c" id="r_aff64d6c45eaad048575b5eab42eabb4c"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aff64d6c45eaad048575b5eab42eabb4c">ReferenceArea</a></td></tr>
+<tr class="memdesc:aff64d6c45eaad048575b5eab42eabb4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Area of the bullet that the drag is applied to (in m^2).  <br /></td></tr>
 <tr class="separator:aff64d6c45eaad048575b5eab42eabb4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Data that describes the physical behaviour of the bullet. </p>
+
+<p class="definition">Definition at line <a class="el" href="_bullet_data_8cs_source.html#l00016">16</a> of file <a class="el" href="_bullet_data_8cs_source.html">BulletData.cs</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ab46d4dc6b44a541665a0e9b3c38c583e" name="ab46d4dc6b44a541665a0e9b3c38c583e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab46d4dc6b44a541665a0e9b3c38c583e">&#9670;&#160;</a></span>PhysicData()</h2>
@@ -155,6 +162,8 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="_bullet_data_8cs_source.html#l00035">35</a> of file <a class="el" href="_bullet_data_8cs_source.html">BulletData.cs</a>.</p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -170,6 +179,10 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Drag that will be applied to the bullet while it travels through the air. </p>
+
+<p class="definition">Definition at line <a class="el" href="_bullet_data_8cs_source.html#l00029">29</a> of file <a class="el" href="_bullet_data_8cs_source.html">BulletData.cs</a>.</p>
+
 </div>
 </div>
 <a id="a727d447288aabeb6f3c48ea2143cc884" name="a727d447288aabeb6f3c48ea2143cc884"></a>
@@ -183,6 +196,10 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Initial velocity of the bullet when the bullet exits the barrel. </p>
+
+<p class="definition">Definition at line <a class="el" href="_bullet_data_8cs_source.html#l00021">21</a> of file <a class="el" href="_bullet_data_8cs_source.html">BulletData.cs</a>.</p>
 
 </div>
 </div>
@@ -198,6 +215,10 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Specifies the ability of the bullet to penetrate the collider surface based on the surface hardness. </p>
+
+<p class="definition">Definition at line <a class="el" href="_bullet_data_8cs_source.html#l00025">25</a> of file <a class="el" href="_bullet_data_8cs_source.html">BulletData.cs</a>.</p>
+
 </div>
 </div>
 <a id="aff64d6c45eaad048575b5eab42eabb4c" name="aff64d6c45eaad048575b5eab42eabb4c"></a>
@@ -211,6 +232,10 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Area of the bullet that the drag is applied to (in m^2). </p>
+
+<p class="definition">Definition at line <a class="el" href="_bullet_data_8cs_source.html#l00033">33</a> of file <a class="el" href="_bullet_data_8cs_source.html">BulletData.cs</a>.</p>
 
 </div>
 </div>

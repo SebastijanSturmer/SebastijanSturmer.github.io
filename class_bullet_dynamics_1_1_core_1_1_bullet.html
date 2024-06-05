@@ -26,6 +26,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="BulletDynamicsLogoSmall.png"/></td>
   <td id="projectalign">
    <div id="projectname">Bullet Dynamics<span id="projectnumber">&#160;v1.0.0</span>
    </div>
@@ -99,7 +100,6 @@ $(function(){initNavTree('class_bullet_dynamics_1_1_core_1_1_bullet.html',''); i
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="#properties">Properties</a> &#124;
 <a href="class_bullet_dynamics_1_1_core_1_1_bullet-members.html">List of all members</a>  </div>
@@ -108,21 +108,20 @@ $(function(){initNavTree('class_bullet_dynamics_1_1_core_1_1_bullet.html',''); i
 <div class="contents">
 
 <p><br  />
- Component that marks the object as a bullet. <br  />
- <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Component that marks the object as a bullet.   Bullet should be added to the BulletEnvironment using ...">Bullet</a> should be added to the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet_environment.html" title="Environment for the Bullet Dynamics.   This component handles the bullet physics using FixedUpdate an...">BulletEnvironment</a> using a method <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet_environment.html#a0730e6f13c5f99a8def47f8724e0897d" title="Adds a bullet  to the BulletHandler so that it can be processed every frame.   Use this method if the...">BulletEnvironment.AddBullet(Bullet)</a> so that the physics can be calculated by the handler. <br  />
- Easiest way to create a bullet is to use a <a class="el" href="class_bullet_dynamics_1_1_core_1_1_weapon.html" title="Component that allows the object to shoot the Bullets using Shoot method.   It supports fire rate set...">Weapon</a> and call the method <a class="el" href="class_bullet_dynamics_1_1_core_1_1_weapon.html#ac811c53f33bd53f9266e6e43c6a40b5c" title="Method that will create a new Bullet and shoot it from the OutputPoint.   It will raise the OnShoot a...">Weapon.Shoot</a> which will call <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet_environment.html#a1ba61602ac407aefaf8a49e4fbdd8d88" title="Creates and adds the new bullet from the bulletData  to the BulletHandler. It uses the outputPoint  f...">BulletEnvironment.AddBullet(BulletData, Transform)</a>. <br  />
- Bullets do not support colliders. They are used as a visual and physics data only.  
+ Class that holds all of the relevant data of the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Class that holds all of the relevant data of the Bullet.   Bullet should be added to the BulletEnviro...">Bullet</a>. <br  />
+ <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Class that holds all of the relevant data of the Bullet.   Bullet should be added to the BulletEnviro...">Bullet</a> should be added to the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet_environment.html" title="Environment for the Bullet Dynamics.   This component handles the bullet physics using FixedUpdate an...">BulletEnvironment</a> using a method <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet_environment.html#a0730e6f13c5f99a8def47f8724e0897d" title="Adds a bullet  to the BulletHandler so that it can be processed every frame.   Use this method if the...">BulletEnvironment.AddBullet(Bullet)</a> so that the physics can be calculated by the handler. <br  />
+ Easiest way to create a bullet is to use a <a class="el" href="class_bullet_dynamics_1_1_core_1_1_weapon.html" title="Component that allows the object to shoot the Bullets using Shoot method.   It supports fire rate set...">Weapon</a> and call the method <a class="el" href="class_bullet_dynamics_1_1_core_1_1_weapon.html#ac811c53f33bd53f9266e6e43c6a40b5c" title="Method that will create a new Bullet and shoot it from the OutputPoint.   It will raise the OnShoot a...">Weapon.Shoot</a> which will call <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet_environment.html#a1ba61602ac407aefaf8a49e4fbdd8d88" title="Creates and adds the new bullet from the bulletData  to the BulletHandler. It uses the outputPoint  f...">BulletEnvironment.AddBullet(BulletData, Transform)</a>.  
  <a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a6a8cfb0ea57ed15fa0e27032d11c677c" id="r_a6a8cfb0ea57ed15fa0e27032d11c677c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6a8cfb0ea57ed15fa0e27032d11c677c">Initialize</a> (<a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet_data.html">BulletData</a> bulletData, Vector3 initialVelocity)</td></tr>
-<tr class="memdesc:a6a8cfb0ea57ed15fa0e27032d11c677c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the bullet with it's data and velocity.  <br /></td></tr>
-<tr class="separator:a6a8cfb0ea57ed15fa0e27032d11c677c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a157ee9ba8923c5273ba8185c2c57bad0" id="r_a157ee9ba8923c5273ba8185c2c57bad0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a157ee9ba8923c5273ba8185c2c57bad0">Bullet</a> (<a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet_data.html">BulletData</a> bulletData, Vector3 initialPosition, Vector3 initialVelocity)</td></tr>
+<tr class="memdesc:a157ee9ba8923c5273ba8185c2c57bad0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the bullet with it's data and velocity.  <br /></td></tr>
+<tr class="separator:a157ee9ba8923c5273ba8185c2c57bad0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a75c6addc391d82adc7fcdd4e2845ed00" id="r_a75c6addc391d82adc7fcdd4e2845ed00"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a75c6addc391d82adc7fcdd4e2845ed00">HandleCollision</a> (<a class="el" href="class_bullet_dynamics_1_1_core_1_1_dynamic_surface.html">DynamicSurface</a> hitSurface, <a class="el" href="struct_bullet_dynamics_1_1_core_1_1_bullet_hit_info.html">BulletHitInfo</a> hitInfo)</td></tr>
 <tr class="memdesc:a75c6addc391d82adc7fcdd4e2845ed00"><td class="mdescLeft">&#160;</td><td class="mdescRight"><br  />
  Method that handles the collision of this bullet. <br  />
- It will raise <a class="el" href="#a0bf7f051e8376585bdddb341d40926da" title="Action that is raised when this Bullet collides with the DynamicSurface.   DynamicSurface will be nul...">OnCollision</a> action.  <br /></td></tr>
+ It will raise <a class="el" href="#ae33380402d140e0a853670c9092597e1" title="Action that is raised when this Bullet collides with the DynamicSurface.   DynamicSurface will be nul...">OnCollision</a> action.  <br /></td></tr>
 <tr class="separator:a75c6addc391d82adc7fcdd4e2845ed00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac6e476b4cdc45e879334122ad7a9dc07" id="r_ac6e476b4cdc45e879334122ad7a9dc07"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac6e476b4cdc45e879334122ad7a9dc07">HandleExpiration</a> ()</td></tr>
 <tr class="memdesc:ac6e476b4cdc45e879334122ad7a9dc07"><td class="mdescLeft">&#160;</td><td class="mdescRight"><br  />
@@ -132,19 +131,20 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a0bf7f051e8376585bdddb341d40926da" id="r_a0bf7f051e8376585bdddb341d40926da"><td class="memItemLeft" align="right" valign="top">UnityEvent&lt; <a class="el" href="class_bullet_dynamics_1_1_core_1_1_dynamic_surface.html">DynamicSurface</a>, <a class="el" href="struct_bullet_dynamics_1_1_core_1_1_bullet_hit_info.html">BulletHitInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0bf7f051e8376585bdddb341d40926da">OnCollision</a></td></tr>
-<tr class="memdesc:a0bf7f051e8376585bdddb341d40926da"><td class="mdescLeft">&#160;</td><td class="mdescRight"><br  />
-Action that is raised when this <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Component that marks the object as a bullet.   Bullet should be added to the BulletEnvironment using ...">Bullet</a> collides with the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_dynamic_surface.html" title="Component that marks the object as the surface that the Bullets can interact with....">DynamicSurface</a>. <br  />
+<tr class="memitem:ae33380402d140e0a853670c9092597e1" id="r_ae33380402d140e0a853670c9092597e1"><td class="memItemLeft" align="right" valign="top">Action&lt; <a class="el" href="class_bullet_dynamics_1_1_core_1_1_dynamic_surface.html">DynamicSurface</a>, <a class="el" href="struct_bullet_dynamics_1_1_core_1_1_bullet_hit_info.html">BulletHitInfo</a>, <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html">Bullet</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae33380402d140e0a853670c9092597e1">OnCollision</a></td></tr>
+<tr class="memdesc:ae33380402d140e0a853670c9092597e1"><td class="mdescLeft">&#160;</td><td class="mdescRight"><br  />
+ Action that is raised when this <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Class that holds all of the relevant data of the Bullet.   Bullet should be added to the BulletEnviro...">Bullet</a> collides with the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_dynamic_surface.html" title="Component that marks the object as the surface that the Bullets can interact with....">DynamicSurface</a>. <br  />
  <a class="el" href="class_bullet_dynamics_1_1_core_1_1_dynamic_surface.html" title="Component that marks the object as the surface that the Bullets can interact with....">DynamicSurface</a> will be null if the surface doesn't have the component assigned.  <br /></td></tr>
-<tr class="separator:a0bf7f051e8376585bdddb341d40926da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:a0547a9a06857990ddd3abf99d3c95b81" id="r_a0547a9a06857990ddd3abf99d3c95b81"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0547a9a06857990ddd3abf99d3c95b81">Awake</a> ()</td></tr>
-<tr class="separator:a0547a9a06857990ddd3abf99d3c95b81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:ae33380402d140e0a853670c9092597e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b6d3d4634bc047174f71e2c58f2c0f2" id="r_a4b6d3d4634bc047174f71e2c58f2c0f2"><td class="memItemLeft" align="right" valign="top">Action&lt; <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html">Bullet</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4b6d3d4634bc047174f71e2c58f2c0f2">OnExpiration</a></td></tr>
+<tr class="memdesc:a4b6d3d4634bc047174f71e2c58f2c0f2"><td class="mdescLeft">&#160;</td><td class="mdescRight"><br  />
+ Action that is raised when this <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Class that holds all of the relevant data of the Bullet.   Bullet should be added to the BulletEnviro...">Bullet</a> expires (either lost all velocity or hit the inpenetratable surface and didn't ricochet).  <br /></td></tr>
+<tr class="separator:a4b6d3d4634bc047174f71e2c58f2c0f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
+<tr class="memitem:a60cfb59aceea0bf6185430eb53ec1e72" id="r_a60cfb59aceea0bf6185430eb53ec1e72"><td class="memItemLeft" align="right" valign="top">Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a60cfb59aceea0bf6185430eb53ec1e72">_position</a> = Vector3.zero</td></tr>
+<tr class="separator:a60cfb59aceea0bf6185430eb53ec1e72"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab27212bcf7b8a3bc621fdf9c93e13945" id="r_ab27212bcf7b8a3bc621fdf9c93e13945"><td class="memItemLeft" align="right" valign="top">Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab27212bcf7b8a3bc621fdf9c93e13945">_velocity</a> = Vector3.zero</td></tr>
 <tr class="separator:ab27212bcf7b8a3bc621fdf9c93e13945"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0feb3471affe896232333d274c92f242" id="r_a0feb3471affe896232333d274c92f242"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet_data.html">BulletData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0feb3471affe896232333d274c92f242">_bulletData</a> = null</td></tr>
@@ -152,6 +152,9 @@ Protected Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="properties" name="properties"></a>
 Properties</h2></td></tr>
+<tr class="memitem:acc6729058ba1195aea22827d839b5d50" id="r_acc6729058ba1195aea22827d839b5d50"><td class="memItemLeft" align="right" valign="top">Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acc6729058ba1195aea22827d839b5d50">Position</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:acc6729058ba1195aea22827d839b5d50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current velocity of this bullet.  <br /></td></tr>
+<tr class="separator:acc6729058ba1195aea22827d839b5d50"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49a5f6ae14498e08f6bc3ca6e0b9b822" id="r_a49a5f6ae14498e08f6bc3ca6e0b9b822"><td class="memItemLeft" align="right" valign="top">Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a49a5f6ae14498e08f6bc3ca6e0b9b822">Velocity</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:a49a5f6ae14498e08f6bc3ca6e0b9b822"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current velocity of this bullet.  <br /></td></tr>
 <tr class="separator:a49a5f6ae14498e08f6bc3ca6e0b9b822"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -161,36 +164,50 @@ Properties</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><br  />
- Component that marks the object as a bullet. <br  />
- <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Component that marks the object as a bullet.   Bullet should be added to the BulletEnvironment using ...">Bullet</a> should be added to the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet_environment.html" title="Environment for the Bullet Dynamics.   This component handles the bullet physics using FixedUpdate an...">BulletEnvironment</a> using a method <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet_environment.html#a0730e6f13c5f99a8def47f8724e0897d" title="Adds a bullet  to the BulletHandler so that it can be processed every frame.   Use this method if the...">BulletEnvironment.AddBullet(Bullet)</a> so that the physics can be calculated by the handler. <br  />
- Easiest way to create a bullet is to use a <a class="el" href="class_bullet_dynamics_1_1_core_1_1_weapon.html" title="Component that allows the object to shoot the Bullets using Shoot method.   It supports fire rate set...">Weapon</a> and call the method <a class="el" href="class_bullet_dynamics_1_1_core_1_1_weapon.html#ac811c53f33bd53f9266e6e43c6a40b5c" title="Method that will create a new Bullet and shoot it from the OutputPoint.   It will raise the OnShoot a...">Weapon.Shoot</a> which will call <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet_environment.html#a1ba61602ac407aefaf8a49e4fbdd8d88" title="Creates and adds the new bullet from the bulletData  to the BulletHandler. It uses the outputPoint  f...">BulletEnvironment.AddBullet(BulletData, Transform)</a>. <br  />
- Bullets do not support colliders. They are used as a visual and physics data only. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a0547a9a06857990ddd3abf99d3c95b81" name="a0547a9a06857990ddd3abf99d3c95b81"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0547a9a06857990ddd3abf99d3c95b81">&#9670;&#160;</a></span>Awake()</h2>
+ Class that holds all of the relevant data of the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Class that holds all of the relevant data of the Bullet.   Bullet should be added to the BulletEnviro...">Bullet</a>. <br  />
+ <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Class that holds all of the relevant data of the Bullet.   Bullet should be added to the BulletEnviro...">Bullet</a> should be added to the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet_environment.html" title="Environment for the Bullet Dynamics.   This component handles the bullet physics using FixedUpdate an...">BulletEnvironment</a> using a method <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet_environment.html#a0730e6f13c5f99a8def47f8724e0897d" title="Adds a bullet  to the BulletHandler so that it can be processed every frame.   Use this method if the...">BulletEnvironment.AddBullet(Bullet)</a> so that the physics can be calculated by the handler. <br  />
+ Easiest way to create a bullet is to use a <a class="el" href="class_bullet_dynamics_1_1_core_1_1_weapon.html" title="Component that allows the object to shoot the Bullets using Shoot method.   It supports fire rate set...">Weapon</a> and call the method <a class="el" href="class_bullet_dynamics_1_1_core_1_1_weapon.html#ac811c53f33bd53f9266e6e43c6a40b5c" title="Method that will create a new Bullet and shoot it from the OutputPoint.   It will raise the OnShoot a...">Weapon.Shoot</a> which will call <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet_environment.html#a1ba61602ac407aefaf8a49e4fbdd8d88" title="Creates and adds the new bullet from the bulletData  to the BulletHandler. It uses the outputPoint  f...">BulletEnvironment.AddBullet(BulletData, Transform)</a>. </p>
+
+<p class="definition">Definition at line <a class="el" href="_bullet_8cs_source.html#l00011">11</a> of file <a class="el" href="_bullet_8cs_source.html">Bullet.cs</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a157ee9ba8923c5273ba8185c2c57bad0" name="a157ee9ba8923c5273ba8185c2c57bad0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a157ee9ba8923c5273ba8185c2c57bad0">&#9670;&#160;</a></span>Bullet()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void BulletDynamics.Core.Bullet.Awake </td>
+          <td class="memname">BulletDynamics.Core.Bullet.Bullet </td>
           <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet_data.html">BulletData</a></td>          <td class="paramname"><span class="paramname"><em>bulletData</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">Vector3</td>          <td class="paramname"><span class="paramname"><em>initialPosition</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Vector3</td>          <td class="paramname"><span class="paramname"><em>initialVelocity</em></span>&#160;)</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
+
+<p>Initializes the bullet with it's data and velocity. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bulletData</td><td>Data of this bullet that will be set.</td></tr>
+    <tr><td class="paramname">initialVelocity</td><td>Initial velocity of the bullet when it exits the barrel.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_bullet_8cs_source.html#l00048">48</a> of file <a class="el" href="_bullet_8cs_source.html">Bullet.cs</a>.</p>
 
 </div>
 </div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="a75c6addc391d82adc7fcdd4e2845ed00" name="a75c6addc391d82adc7fcdd4e2845ed00"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a75c6addc391d82adc7fcdd4e2845ed00">&#9670;&#160;</a></span>HandleCollision()</h2>
 
@@ -220,7 +237,7 @@ Properties</h2></td></tr>
 
 <p><br  />
  Method that handles the collision of this bullet. <br  />
- It will raise <a class="el" href="#a0bf7f051e8376585bdddb341d40926da" title="Action that is raised when this Bullet collides with the DynamicSurface.   DynamicSurface will be nul...">OnCollision</a> action. </p>
+ It will raise <a class="el" href="#ae33380402d140e0a853670c9092597e1" title="Action that is raised when this Bullet collides with the DynamicSurface.   DynamicSurface will be nul...">OnCollision</a> action. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">hitSurface</td><td><a class="el" href="class_bullet_dynamics_1_1_core_1_1_dynamic_surface.html" title="Component that marks the object as the surface that the Bullets can interact with....">DynamicSurface</a> that this bullet collided with.</td></tr>
@@ -228,6 +245,8 @@ Properties</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="_bullet_8cs_source.html#l00061">61</a> of file <a class="el" href="_bullet_8cs_source.html">Bullet.cs</a>.</p>
 
 </div>
 </div>
@@ -258,43 +277,7 @@ Properties</h2></td></tr>
  Method that handles the expiration of this bullet. <br  />
  It will destroy the bullet. </p>
 
-</div>
-</div>
-<a id="a6a8cfb0ea57ed15fa0e27032d11c677c" name="a6a8cfb0ea57ed15fa0e27032d11c677c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6a8cfb0ea57ed15fa0e27032d11c677c">&#9670;&#160;</a></span>Initialize()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void BulletDynamics.Core.Bullet.Initialize </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet_data.html">BulletData</a></td>          <td class="paramname"><span class="paramname"><em>bulletData</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Vector3</td>          <td class="paramname"><span class="paramname"><em>initialVelocity</em></span>&#160;)</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Initializes the bullet with it's data and velocity. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">bulletData</td><td>Data of this bullet that will be set.</td></tr>
-    <tr><td class="paramname">initialVelocity</td><td>Initial velocity of the bullet when it exits the barrel.</td></tr>
-  </table>
-  </dd>
-</dl>
+<p class="definition">Definition at line <a class="el" href="_bullet_8cs_source.html#l00070">70</a> of file <a class="el" href="_bullet_8cs_source.html">Bullet.cs</a>.</p>
 
 </div>
 </div>
@@ -319,6 +302,32 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="_bullet_8cs_source.html#l00015">15</a> of file <a class="el" href="_bullet_8cs_source.html">Bullet.cs</a>.</p>
+
+</div>
+</div>
+<a id="a60cfb59aceea0bf6185430eb53ec1e72" name="a60cfb59aceea0bf6185430eb53ec1e72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60cfb59aceea0bf6185430eb53ec1e72">&#9670;&#160;</a></span>_position</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Vector3 BulletDynamics.Core.Bullet._position = Vector3.zero</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_bullet_8cs_source.html#l00013">13</a> of file <a class="el" href="_bullet_8cs_source.html">Bullet.cs</a>.</p>
+
 </div>
 </div>
 <a id="ab27212bcf7b8a3bc621fdf9c93e13945" name="ab27212bcf7b8a3bc621fdf9c93e13945"></a>
@@ -341,23 +350,46 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="_bullet_8cs_source.html#l00014">14</a> of file <a class="el" href="_bullet_8cs_source.html">Bullet.cs</a>.</p>
+
 </div>
 </div>
-<a id="a0bf7f051e8376585bdddb341d40926da" name="a0bf7f051e8376585bdddb341d40926da"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0bf7f051e8376585bdddb341d40926da">&#9670;&#160;</a></span>OnCollision</h2>
+<a id="ae33380402d140e0a853670c9092597e1" name="ae33380402d140e0a853670c9092597e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae33380402d140e0a853670c9092597e1">&#9670;&#160;</a></span>OnCollision</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">UnityEvent&lt;<a class="el" href="class_bullet_dynamics_1_1_core_1_1_dynamic_surface.html">DynamicSurface</a>, <a class="el" href="struct_bullet_dynamics_1_1_core_1_1_bullet_hit_info.html">BulletHitInfo</a>&gt; BulletDynamics.Core.Bullet.OnCollision</td>
+          <td class="memname">Action&lt;<a class="el" href="class_bullet_dynamics_1_1_core_1_1_dynamic_surface.html">DynamicSurface</a>, <a class="el" href="struct_bullet_dynamics_1_1_core_1_1_bullet_hit_info.html">BulletHitInfo</a>, <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html">Bullet</a>&gt; BulletDynamics.Core.Bullet.OnCollision</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p><br  />
-Action that is raised when this <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Component that marks the object as a bullet.   Bullet should be added to the BulletEnvironment using ...">Bullet</a> collides with the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_dynamic_surface.html" title="Component that marks the object as the surface that the Bullets can interact with....">DynamicSurface</a>. <br  />
+ Action that is raised when this <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Class that holds all of the relevant data of the Bullet.   Bullet should be added to the BulletEnviro...">Bullet</a> collides with the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_dynamic_surface.html" title="Component that marks the object as the surface that the Bullets can interact with....">DynamicSurface</a>. <br  />
  <a class="el" href="class_bullet_dynamics_1_1_core_1_1_dynamic_surface.html" title="Component that marks the object as the surface that the Bullets can interact with....">DynamicSurface</a> will be null if the surface doesn't have the component assigned. </p>
+
+<p class="definition">Definition at line <a class="el" href="_bullet_8cs_source.html#l00036">36</a> of file <a class="el" href="_bullet_8cs_source.html">Bullet.cs</a>.</p>
+
+</div>
+</div>
+<a id="a4b6d3d4634bc047174f71e2c58f2c0f2" name="a4b6d3d4634bc047174f71e2c58f2c0f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b6d3d4634bc047174f71e2c58f2c0f2">&#9670;&#160;</a></span>OnExpiration</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Action&lt;<a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html">Bullet</a>&gt; BulletDynamics.Core.Bullet.OnExpiration</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><br  />
+ Action that is raised when this <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Class that holds all of the relevant data of the Bullet.   Bullet should be added to the BulletEnviro...">Bullet</a> expires (either lost all velocity or hit the inpenetratable surface and didn't ricochet). </p>
+
+<p class="definition">Definition at line <a class="el" href="_bullet_8cs_source.html#l00041">41</a> of file <a class="el" href="_bullet_8cs_source.html">Bullet.cs</a>.</p>
 
 </div>
 </div>
@@ -384,6 +416,34 @@ Action that is raised when this <a class="el" href="class_bullet_dynamics_1_1_co
 
 <p><a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet_data.html" title="Data that describes the physical behaviour of the bullet and holds the references of the bullet visua...">BulletData</a> of this bullet. </p>
 
+<p class="definition">Definition at line <a class="el" href="_bullet_8cs_source.html#l00030">30</a> of file <a class="el" href="_bullet_8cs_source.html">Bullet.cs</a>.</p>
+
+</div>
+</div>
+<a id="acc6729058ba1195aea22827d839b5d50" name="acc6729058ba1195aea22827d839b5d50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc6729058ba1195aea22827d839b5d50">&#9670;&#160;</a></span>Position</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Vector3 BulletDynamics.Core.Bullet.Position</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the current velocity of this bullet. </p>
+
+<p class="definition">Definition at line <a class="el" href="_bullet_8cs_source.html#l00020">20</a> of file <a class="el" href="_bullet_8cs_source.html">Bullet.cs</a>.</p>
+
 </div>
 </div>
 <a id="a49a5f6ae14498e08f6bc3ca6e0b9b822" name="a49a5f6ae14498e08f6bc3ca6e0b9b822"></a>
@@ -407,6 +467,8 @@ Action that is raised when this <a class="el" href="class_bullet_dynamics_1_1_co
 </div><div class="memdoc">
 
 <p>Returns the current velocity of this bullet. </p>
+
+<p class="definition">Definition at line <a class="el" href="_bullet_8cs_source.html#l00025">25</a> of file <a class="el" href="_bullet_8cs_source.html">Bullet.cs</a>.</p>
 
 </div>
 </div>

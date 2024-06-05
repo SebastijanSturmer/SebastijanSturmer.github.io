@@ -1,10 +1,10 @@
 var searchData=
 [
-  ['bullet_0',['Bullet',['../class_bullet_dynamics_1_1_core_1_1_bullet.html',1,'BulletDynamics::Core']]],
-  ['bulletcollisioneffect_1',['BulletCollisionEffect',['../class_bullet_dynamics_1_1_core_1_1_bullet_collision_effect.html',1,'BulletDynamics::Core']]],
-  ['bulletcountchanged_2',['BulletCountChanged',['../class_bullet_dynamics_1_1_core_1_1_weapon_magazine.html#a77fdb8fea6bff57fb40d79b85293da29',1,'BulletDynamics::Core::WeaponMagazine']]],
-  ['bulletdamage_3',['BulletDamage',['../class_bullet_dynamics_1_1_damage_1_1_bullet_damage.html',1,'BulletDynamics::Damage']]],
-  ['bulletdata_4',['BulletData',['../class_bullet_dynamics_1_1_core_1_1_bullet_data.html',1,'BulletDynamics.Core.BulletData'],['../class_bullet_dynamics_1_1_core_1_1_weapon.html#aeb70a6d36e13207ef7958ce69c4211ae',1,'BulletDynamics.Core.Weapon.BulletData']]],
+  ['bullet_0',['Bullet',['../class_bullet_dynamics_1_1_core_1_1_bullet.html',1,'BulletDynamics.Core.Bullet'],['../class_bullet_dynamics_1_1_core_1_1_bullet.html#a157ee9ba8923c5273ba8185c2c57bad0',1,'BulletDynamics.Core.Bullet.Bullet()']]],
+  ['bulletcountchanged_1',['BulletCountChanged',['../class_bullet_dynamics_1_1_core_1_1_weapon_magazine.html#a77fdb8fea6bff57fb40d79b85293da29',1,'BulletDynamics::Core::WeaponMagazine']]],
+  ['bulletdamageconnection_2',['BulletDamageConnection',['../class_bullet_dynamics_1_1_damage_1_1_bullet_damage_handler_1_1_bullet_damage_connection.html',1,'BulletDynamics::Damage::BulletDamageHandler']]],
+  ['bulletdamagehandler_3',['BulletDamageHandler',['../class_bullet_dynamics_1_1_damage_1_1_bullet_damage_handler.html',1,'BulletDynamics::Damage']]],
+  ['bulletdata_4',['BulletData',['../class_bullet_dynamics_1_1_core_1_1_bullet_data.html',1,'BulletDynamics.Core.BulletData'],['../class_bullet_dynamics_1_1_damage_1_1_bullet_damage_handler_1_1_bullet_damage_connection.html#ad7cb99acfc6965c6446eddff9fd0fb28',1,'BulletDynamics.Damage.BulletDamageHandler.BulletDamageConnection.BulletData'],['../class_bullet_dynamics_1_1_core_1_1_weapon.html#aeb70a6d36e13207ef7958ce69c4211ae',1,'BulletDynamics.Core.Weapon.BulletData']]],
   ['bulletdynamics_5',['BulletDynamics',['../namespace_bullet_dynamics.html',1,'']]],
   ['bulletdynamics_3a_3acore_6',['Core',['../namespace_bullet_dynamics_1_1_core.html',1,'BulletDynamics']]],
   ['bulletdynamics_3a_3adamage_7',['Damage',['../namespace_bullet_dynamics_1_1_damage.html',1,'BulletDynamics']]],
@@ -18,11 +18,13 @@ var searchData=
   ['bullethandler_15',['BulletHandler',['../class_bullet_dynamics_1_1_core_1_1_bullet_handler.html',1,'BulletDynamics.Core.BulletHandler'],['../class_bullet_dynamics_1_1_core_1_1_bullet_handler.html#a8ccd740fbb65845082333d2a5c578a1f',1,'BulletDynamics.Core.BulletHandler.BulletHandler()']]],
   ['bullethitinfo_16',['BulletHitInfo',['../struct_bullet_dynamics_1_1_core_1_1_bullet_hit_info.html',1,'BulletDynamics.Core.BulletHitInfo'],['../struct_bullet_dynamics_1_1_core_1_1_bullet_hit_info.html#a4d8f668d290a95ce968f1980c1e1dce8',1,'BulletDynamics.Core.BulletHitInfo.BulletHitInfo()']]],
   ['bullethitinfos_17',['BulletHitInfos',['../struct_bullet_dynamics_1_1_core_1_1_bullet_job.html#affe2b8c56d3a97786ba1cd13cd1613da',1,'BulletDynamics::Core::BulletJob']]],
-  ['bulletholder_18',['BulletHolder',['../class_bullet_dynamics_1_1_core_1_1_bullet_environment.html#a32b23e53dc6f6fe766ad35fac42eb099',1,'BulletDynamics::Core::BulletEnvironment']]],
+  ['bulletholder_18',['BulletHolder',['../class_bullet_dynamics_1_1_core_1_1_bullet_visuals_handler.html#a7c0941f6ce819f678c11fd36215fac6d',1,'BulletDynamics::Core::BulletVisualsHandler']]],
   ['bulletjob_19',['BulletJob',['../struct_bullet_dynamics_1_1_core_1_1_bullet_job.html',1,'BulletDynamics::Core']]],
-  ['bulletonhiteffectsholder_20',['BulletOnHitEffectsHolder',['../class_bullet_dynamics_1_1_core_1_1_bullet_environment.html#a2b0bdd2eb91a3352253e0fd4fe9f7524',1,'BulletDynamics::Core::BulletEnvironment']]],
+  ['bulletonhiteffectsholder_20',['BulletOnHitEffectsHolder',['../class_bullet_dynamics_1_1_core_1_1_bullet_visuals_handler.html#ab7baed6171d795921e55baede14d665a',1,'BulletDynamics::Core::BulletVisualsHandler']]],
   ['bulletphysicsdata_21',['BulletPhysicsData',['../struct_bullet_dynamics_1_1_core_1_1_bullet_job.html#adada3bb836e0c2a61b85dcf01601a0e2',1,'BulletDynamics::Core::BulletJob']]],
   ['bullets_22',['Bullets',['../class_bullet_dynamics_1_1_core_1_1_bullet_environment.html#a53afabf4f44fd0deced3353e976632f7',1,'BulletDynamics.Core.BulletEnvironment.Bullets'],['../class_bullet_dynamics_1_1_core_1_1_bullet_handler.html#a6a4c12219823b83cb15c03987cbcda66',1,'BulletDynamics.Core.BulletHandler.Bullets']]],
-  ['bulletsinmagazine_23',['BulletsInMagazine',['../class_bullet_dynamics_1_1_core_1_1_weapon_magazine.html#ae42477bfa4061f01dac92b6ac1772a8b',1,'BulletDynamics::Core::WeaponMagazine']]],
-  ['bulletutility_24',['BulletUtility',['../class_bullet_dynamics_1_1_core_1_1_bullet_utility.html',1,'BulletDynamics::Core']]]
+  ['bulletsandtheirvisuals_23',['BulletsAndTheirVisuals',['../class_bullet_dynamics_1_1_core_1_1_bullet_visuals_handler.html#aaf7b59dfcf546d4a5aec20fbfbaa1e07',1,'BulletDynamics::Core::BulletVisualsHandler']]],
+  ['bulletsinmagazine_24',['BulletsInMagazine',['../class_bullet_dynamics_1_1_core_1_1_weapon_magazine.html#ae42477bfa4061f01dac92b6ac1772a8b',1,'BulletDynamics::Core::WeaponMagazine']]],
+  ['bulletutility_25',['BulletUtility',['../class_bullet_dynamics_1_1_core_1_1_bullet_utility.html',1,'BulletDynamics::Core']]],
+  ['bulletvisualshandler_26',['BulletVisualsHandler',['../class_bullet_dynamics_1_1_core_1_1_bullet_visuals_handler.html',1,'BulletDynamics::Core']]]
 ];
