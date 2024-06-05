@@ -4,7 +4,7 @@ var class_bullet_dynamics_1_1_core_1_1_bullet_handler =
     [ "AddBullet", "class_bullet_dynamics_1_1_core_1_1_bullet_handler.html#abcac681c83b24ff52048748a6228e6e2", null ],
     [ "CreateBulletJob", "class_bullet_dynamics_1_1_core_1_1_bullet_handler.html#a014b1e85d6cef017a4308f728dbbeaa4", null ],
     [ "CreateDefaultCollisionData", "class_bullet_dynamics_1_1_core_1_1_bullet_handler.html#ab1bfebf2a80709e401dc09648f3eb7e8", null ],
-    [ "GetAdditionalInformationFromRaycastResults", "class_bullet_dynamics_1_1_core_1_1_bullet_handler.html#ade13ec30175c5d3003865d492f3ac166", null ],
+    [ "GetAdditionalInformationFromRaycastResults", "class_bullet_dynamics_1_1_core_1_1_bullet_handler.html#a99a34d6cef009798801db9b39620b3d8", null ],
     [ "HandleCollision", "class_bullet_dynamics_1_1_core_1_1_bullet_handler.html#a5d0b00d8446dd3451fd06dbb3b19f436", null ],
     [ "HandleExpiration", "class_bullet_dynamics_1_1_core_1_1_bullet_handler.html#a2514a459a5bd0988d20e74c60481efd3", null ],
     [ "ProcessBulletsAtThisFrame", "class_bullet_dynamics_1_1_core_1_1_bullet_handler.html#aa4d2093093f1a1ce30ab041375b6e267", null ],

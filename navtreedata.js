@@ -45,7 +45,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"class_bullet_dynamics_1_1_core_1_1_weapon_magazine.html#a20eb29e51db7a0aa6f918500c2311898"
+"class_bullet_dynamics_1_1_core_1_1_weapon_magazine.html#a0d1f169affcd0d892c2f8b1ca0803382"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

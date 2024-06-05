@@ -1,5 +1,9 @@
 var NAVTREEINDEX1 =
 {
+"class_bullet_dynamics_1_1_core_1_1_weapon_magazine.html#a0d1f169affcd0d892c2f8b1ca0803382":[1,0,0,0,14,1],
+"class_bullet_dynamics_1_1_core_1_1_weapon_magazine.html#a1fae0abfb49be25a86b26d20c345f65b":[0,0,0,0,14,11],
+"class_bullet_dynamics_1_1_core_1_1_weapon_magazine.html#a1fae0abfb49be25a86b26d20c345f65b":[1,0,0,0,14,11],
+"class_bullet_dynamics_1_1_core_1_1_weapon_magazine.html#a20eb29e51db7a0aa6f918500c2311898":[0,0,0,0,14,3],
 "class_bullet_dynamics_1_1_core_1_1_weapon_magazine.html#a20eb29e51db7a0aa6f918500c2311898":[1,0,0,0,14,3],
 "class_bullet_dynamics_1_1_core_1_1_weapon_magazine.html#a39ba86f281161a7e4e8208565630a121":[0,0,0,0,14,6],
 "class_bullet_dynamics_1_1_core_1_1_weapon_magazine.html#a39ba86f281161a7e4e8208565630a121":[1,0,0,0,14,6],

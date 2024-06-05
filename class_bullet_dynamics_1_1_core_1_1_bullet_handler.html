@@ -136,11 +136,11 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a2514a459a5bd0988d20e74c60481efd3" id="r_a2514a459a5bd0988d20e74c60481efd3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2514a459a5bd0988d20e74c60481efd3">HandleExpiration</a> (<a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html">Bullet</a> bullet)</td></tr>
 <tr class="memdesc:a2514a459a5bd0988d20e74c60481efd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the expiration of the <em>bullet</em> .  <br /></td></tr>
 <tr class="separator:a2514a459a5bd0988d20e74c60481efd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade13ec30175c5d3003865d492f3ac166" id="r_ade13ec30175c5d3003865d492f3ac166"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ade13ec30175c5d3003865d492f3ac166">GetAdditionalInformationFromRaycastResults</a> (NativeArray&lt; RaycastHit &gt; raycastResults, ref NativeArray&lt; <a class="el" href="struct_bullet_dynamics_1_1_core_1_1_bullet_hit_info.html">BulletHitInfo</a> &gt; bulletHitInfos, ref NativeArray&lt; <a class="el" href="struct_bullet_dynamics_1_1_core_1_1_surface_physic_material_1_1_material_data.html">SurfacePhysicMaterial.MaterialData</a> &gt; collisionMaterials, ref List&lt; <a class="el" href="class_bullet_dynamics_1_1_core_1_1_dynamic_surface.html">DynamicSurface</a> &gt; surfaces)</td></tr>
-<tr class="memdesc:ade13ec30175c5d3003865d492f3ac166"><td class="mdescLeft">&#160;</td><td class="mdescRight"><br  />
+<tr class="memitem:a99a34d6cef009798801db9b39620b3d8" id="r_a99a34d6cef009798801db9b39620b3d8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a99a34d6cef009798801db9b39620b3d8">GetAdditionalInformationFromRaycastResults</a> (NativeArray&lt; RaycastHit &gt; raycastResults, ref NativeArray&lt; <a class="el" href="struct_bullet_dynamics_1_1_core_1_1_bullet_hit_info.html">BulletHitInfo</a> &gt; bulletHitInfos, ref NativeArray&lt; <a class="el" href="struct_bullet_dynamics_1_1_core_1_1_surface_physic_material_1_1_material_data.html">SurfacePhysicMaterial.MaterialData</a> &gt; collisionMaterials, ref List&lt; <a class="el" href="class_bullet_dynamics_1_1_core_1_1_dynamic_surface.html">DynamicSurface</a> &gt; surfaces, LayerMask bulletCollisionLayerMask)</td></tr>
+<tr class="memdesc:a99a34d6cef009798801db9b39620b3d8"><td class="mdescLeft">&#160;</td><td class="mdescRight"><br  />
  Retrieves additional information about the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Class that holds all of the relevant data of the Bullet.   Bullet should be added to the BulletEnviro...">Bullet</a>s collisions by back-tracking the raycast to get the exit point and storing those values to <em>bulletHitInfos</em>  <br  />
  as well as filling <em>collisionMaterials</em>  and <em>surfaces</em>  of the collided <a class="el" href="class_bullet_dynamics_1_1_core_1_1_dynamic_surface.html" title="Component that marks the object as the surface that the Bullets can interact with....">DynamicSurface</a>s.  <br /></td></tr>
-<tr class="separator:ade13ec30175c5d3003865d492f3ac166"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a99a34d6cef009798801db9b39620b3d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a014b1e85d6cef017a4308f728dbbeaa4" id="r_a014b1e85d6cef017a4308f728dbbeaa4"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_bullet_dynamics_1_1_core_1_1_bullet_job.html">BulletJob</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a014b1e85d6cef017a4308f728dbbeaa4">CreateBulletJob</a> (NativeArray&lt; Vector3 &gt; positions, NativeArray&lt; Vector3 &gt; velocities, NativeArray&lt; <a class="el" href="struct_bullet_dynamics_1_1_core_1_1_surface_physic_material_1_1_material_data.html">SurfacePhysicMaterial.MaterialData</a> &gt; collisionMaterials, NativeArray&lt; <a class="el" href="struct_bullet_dynamics_1_1_core_1_1_bullet_data_1_1_physic_data.html">BulletData.PhysicData</a> &gt; bulletPhysicsData, NativeArray&lt; <a class="el" href="struct_bullet_dynamics_1_1_core_1_1_bullet_hit_info.html">BulletHitInfo</a> &gt; bulletHitInfos, NativeArray&lt; bool &gt; expired, Vector3 wind, float airDensity, Vector3 gravity, float timeStep)</td></tr>
 <tr class="memdesc:a014b1e85d6cef017a4308f728dbbeaa4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new <a class="el" href="struct_bullet_dynamics_1_1_core_1_1_bullet_job.html" title="Job that calculates and moves the bullet according to the current velocity, hit information and penet...">BulletJob</a> that is used to move <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Class that holds all of the relevant data of the Bullet.   Bullet should be added to the BulletEnviro...">Bullet</a>s across the scene.  <br /></td></tr>
 <tr class="separator:a014b1e85d6cef017a4308f728dbbeaa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -229,7 +229,7 @@ Properties</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_bullet_handler_8cs_source.html#l00106">106</a> of file <a class="el" href="_bullet_handler_8cs_source.html">BulletHandler.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_bullet_handler_8cs_source.html#l00108">108</a> of file <a class="el" href="_bullet_handler_8cs_source.html">BulletHandler.cs</a>.</p>
 
 </div>
 </div>
@@ -318,7 +318,7 @@ Properties</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="struct_bullet_dynamics_1_1_core_1_1_bullet_job.html" title="Job that calculates and moves the bullet according to the current velocity, hit information and penet...">BulletJob</a> that moves the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Class that holds all of the relevant data of the Bullet.   Bullet should be added to the BulletEnviro...">Bullet</a>s.</dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_bullet_handler_8cs_source.html#l00244">244</a> of file <a class="el" href="_bullet_handler_8cs_source.html">BulletHandler.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_bullet_handler_8cs_source.html#l00247">247</a> of file <a class="el" href="_bullet_handler_8cs_source.html">BulletHandler.cs</a>.</p>
 
 </div>
 </div>
@@ -347,12 +347,12 @@ Properties</h2></td></tr>
 
 <p>Creates and assigns a new <a class="el" href="struct_bullet_dynamics_1_1_core_1_1_surface_physic_material_1_1_material_data.html" title="Data that holds the information about the surface.">SurfacePhysicMaterial.MaterialData</a> that is used if the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Class that holds all of the relevant data of the Bullet.   Bullet should be added to the BulletEnviro...">Bullet</a> hits the surface that doesn't have <a class="el" href="class_bullet_dynamics_1_1_core_1_1_dynamic_surface.html" title="Component that marks the object as the surface that the Bullets can interact with....">DynamicSurface</a> component. </p>
 
-<p class="definition">Definition at line <a class="el" href="_bullet_handler_8cs_source.html#l00310">310</a> of file <a class="el" href="_bullet_handler_8cs_source.html">BulletHandler.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_bullet_handler_8cs_source.html#l00313">313</a> of file <a class="el" href="_bullet_handler_8cs_source.html">BulletHandler.cs</a>.</p>
 
 </div>
 </div>
-<a id="ade13ec30175c5d3003865d492f3ac166" name="ade13ec30175c5d3003865d492f3ac166"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ade13ec30175c5d3003865d492f3ac166">&#9670;&#160;</a></span>GetAdditionalInformationFromRaycastResults()</h2>
+<a id="a99a34d6cef009798801db9b39620b3d8" name="a99a34d6cef009798801db9b39620b3d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99a34d6cef009798801db9b39620b3d8">&#9670;&#160;</a></span>GetAdditionalInformationFromRaycastResults()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -378,7 +378,12 @@ Properties</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">ref List&lt; <a class="el" href="class_bullet_dynamics_1_1_core_1_1_dynamic_surface.html">DynamicSurface</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>surfaces</em></span>&#160;)</td>
+          <td class="paramtype">ref List&lt; <a class="el" href="class_bullet_dynamics_1_1_core_1_1_dynamic_surface.html">DynamicSurface</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>surfaces</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">LayerMask</td>          <td class="paramname"><span class="paramname"><em>bulletCollisionLayerMask</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -397,11 +402,12 @@ Properties</h2></td></tr>
     <tr><td class="paramname">bulletHitInfos</td><td>Array of <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Class that holds all of the relevant data of the Bullet.   Bullet should be added to the BulletEnviro...">Bullet</a>s hit informations to which the <em>raycastResults</em>  will be stored into.</td></tr>
     <tr><td class="paramname">collisionMaterials</td><td>Array of the materials on <a class="el" href="class_bullet_dynamics_1_1_core_1_1_dynamic_surface.html" title="Component that marks the object as the surface that the Bullets can interact with....">DynamicSurface</a>s found on collisions.</td></tr>
     <tr><td class="paramname">surfaces</td><td>List of the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_dynamic_surface.html" title="Component that marks the object as the surface that the Bullets can interact with....">DynamicSurface</a>s found on collisions.</td></tr>
+    <tr><td class="paramname">bulletCollisionLayerMask</td><td>LayerMask used for detecting collisions.</td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_bullet_handler_8cs_source.html#l00151">151</a> of file <a class="el" href="_bullet_handler_8cs_source.html">BulletHandler.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_bullet_handler_8cs_source.html#l00154">154</a> of file <a class="el" href="_bullet_handler_8cs_source.html">BulletHandler.cs</a>.</p>
 
 </div>
 </div>
@@ -453,7 +459,7 @@ Properties</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_bullet_handler_8cs_source.html#l00127">127</a> of file <a class="el" href="_bullet_handler_8cs_source.html">BulletHandler.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_bullet_handler_8cs_source.html#l00129">129</a> of file <a class="el" href="_bullet_handler_8cs_source.html">BulletHandler.cs</a>.</p>
 
 </div>
 </div>
@@ -488,7 +494,7 @@ Properties</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_bullet_handler_8cs_source.html#l00137">137</a> of file <a class="el" href="_bullet_handler_8cs_source.html">BulletHandler.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_bullet_handler_8cs_source.html#l00139">139</a> of file <a class="el" href="_bullet_handler_8cs_source.html">BulletHandler.cs</a>.</p>
 
 </div>
 </div>
@@ -552,7 +558,7 @@ Properties</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_bullet_handler_8cs_source.html#l00280">280</a> of file <a class="el" href="_bullet_handler_8cs_source.html">BulletHandler.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_bullet_handler_8cs_source.html#l00283">283</a> of file <a class="el" href="_bullet_handler_8cs_source.html">BulletHandler.cs</a>.</p>
 
 </div>
 </div>
@@ -587,7 +593,7 @@ Properties</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_bullet_handler_8cs_source.html#l00115">115</a> of file <a class="el" href="_bullet_handler_8cs_source.html">BulletHandler.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_bullet_handler_8cs_source.html#l00117">117</a> of file <a class="el" href="_bullet_handler_8cs_source.html">BulletHandler.cs</a>.</p>
 
 </div>
 </div>

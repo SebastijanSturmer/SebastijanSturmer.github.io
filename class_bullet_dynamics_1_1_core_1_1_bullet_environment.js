@@ -18,6 +18,7 @@ var class_bullet_dynamics_1_1_core_1_1_bullet_environment =
     [ "OnBulletRemoved", "class_bullet_dynamics_1_1_core_1_1_bullet_environment.html#a257111ed8cfe65e9a09e649115952c82", null ],
     [ "OnBulletsUpdated", "class_bullet_dynamics_1_1_core_1_1_bullet_environment.html#a6018ccb4b16df190b93234664c4e4c68", null ],
     [ "AirDensity", "class_bullet_dynamics_1_1_core_1_1_bullet_environment.html#a0aeca4e2d5ede87b40a43327ee9e7220", null ],
+    [ "BulletCollisionLayerMask", "class_bullet_dynamics_1_1_core_1_1_bullet_environment.html#aaace759925269e62a3d45930685b420f", null ],
     [ "Bullets", "class_bullet_dynamics_1_1_core_1_1_bullet_environment.html#a53afabf4f44fd0deced3353e976632f7", null ],
     [ "EnvironmentData", "class_bullet_dynamics_1_1_core_1_1_bullet_environment.html#a1190df7b4a20ece69f1b4e8ad989b71d", null ],
     [ "Gravity", "class_bullet_dynamics_1_1_core_1_1_bullet_environment.html#a49d98272151ec15df4878c0c5eda4eef", null ],
