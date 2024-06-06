@@ -98,6 +98,8 @@ $(function(){initNavTree('class_bullet_dynamics_1_1_core_1_1_dynamic_surface.htm
 
 <div class="header">
   <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="#properties">Properties</a> &#124;
 <a href="class_bullet_dynamics_1_1_core_1_1_dynamic_surface-members.html">List of all members</a>  </div>
@@ -110,6 +112,18 @@ $(function(){initNavTree('class_bullet_dynamics_1_1_core_1_1_dynamic_surface.htm
  If the object does not have this component, <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Class that holds all of the relevant data of the Bullet.   Bullet should be added to the BulletEnviro...">Bullet</a> will not have any data for calculating penetration or ricochet so the bullet will stop at the collision point.  
  <a href="#details">More...</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a61ce7a7088ced02e35bc6242d8be3781" id="r_a61ce7a7088ced02e35bc6242d8be3781"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a61ce7a7088ced02e35bc6242d8be3781">HandleCollision</a> (<a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html">Bullet</a> bullet, <a class="el" href="struct_bullet_dynamics_1_1_core_1_1_bullet_hit_info.html">BulletHitInfo</a> hitInfo)</td></tr>
+<tr class="memdesc:a61ce7a7088ced02e35bc6242d8be3781"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the collision between the <em>bullet</em> and this <a class="el" href="class_bullet_dynamics_1_1_core_1_1_dynamic_surface.html" title="Component that marks the object as the surface that the Bullets can interact with....">DynamicSurface</a>.  <br /></td></tr>
+<tr class="separator:a61ce7a7088ced02e35bc6242d8be3781"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a9b60d29c433220a109266d512e3eefd9" id="r_a9b60d29c433220a109266d512e3eefd9"><td class="memItemLeft" align="right" valign="top">UnityEvent&lt; <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html">Bullet</a>, <a class="el" href="struct_bullet_dynamics_1_1_core_1_1_bullet_hit_info.html">BulletHitInfo</a>, <a class="el" href="class_bullet_dynamics_1_1_core_1_1_dynamic_surface.html">DynamicSurface</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9b60d29c433220a109266d512e3eefd9">OnCollision</a></td></tr>
+<tr class="memdesc:a9b60d29c433220a109266d512e3eefd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event that is raised when the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Class that holds all of the relevant data of the Bullet.   Bullet should be added to the BulletEnviro...">Bullet</a> hit this <a class="el" href="class_bullet_dynamics_1_1_core_1_1_dynamic_surface.html" title="Component that marks the object as the surface that the Bullets can interact with....">DynamicSurface</a>.  <br /></td></tr>
+<tr class="separator:a9b60d29c433220a109266d512e3eefd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:ad9c53e6f26f52adf4bbe6e6f7836d9b4" id="r_ad9c53e6f26f52adf4bbe6e6f7836d9b4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_bullet_dynamics_1_1_core_1_1_surface_physic_material.html">SurfacePhysicMaterial</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad9c53e6f26f52adf4bbe6e6f7836d9b4">_surfacePhysicMaterial</a> = default</td></tr>
@@ -132,8 +146,49 @@ Properties</h2></td></tr>
  Component that marks the object as the surface that the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Class that holds all of the relevant data of the Bullet.   Bullet should be added to the BulletEnviro...">Bullet</a>s can interact with. <br  />
  If the object does not have this component, <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Class that holds all of the relevant data of the Bullet.   Bullet should be added to the BulletEnviro...">Bullet</a> will not have any data for calculating penetration or ricochet so the bullet will stop at the collision point. </p>
 
-<p class="definition">Definition at line <a class="el" href="_dynamic_surface_8cs_source.html#l00010">10</a> of file <a class="el" href="_dynamic_surface_8cs_source.html">DynamicSurface.cs</a>.</p>
-</div><h2 class="groupheader">Member Data Documentation</h2>
+<p class="definition">Definition at line <a class="el" href="_dynamic_surface_8cs_source.html#l00011">11</a> of file <a class="el" href="_dynamic_surface_8cs_source.html">DynamicSurface.cs</a>.</p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a61ce7a7088ced02e35bc6242d8be3781" name="a61ce7a7088ced02e35bc6242d8be3781"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61ce7a7088ced02e35bc6242d8be3781">&#9670;&#160;</a></span>HandleCollision()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void BulletDynamics.Core.DynamicSurface.HandleCollision </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html">Bullet</a></td>          <td class="paramname"><span class="paramname"><em>bullet</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_bullet_dynamics_1_1_core_1_1_bullet_hit_info.html">BulletHitInfo</a></td>          <td class="paramname"><span class="paramname"><em>hitInfo</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Handles the collision between the <em>bullet</em> and this <a class="el" href="class_bullet_dynamics_1_1_core_1_1_dynamic_surface.html" title="Component that marks the object as the surface that the Bullets can interact with....">DynamicSurface</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bullet</td><td><a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Class that holds all of the relevant data of the Bullet.   Bullet should be added to the BulletEnviro...">Bullet</a> that hit the surface.</td></tr>
+    <tr><td class="paramname">hitInfo</td><td>Infomation about hit.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_dynamic_surface_8cs_source.html#l00050">50</a> of file <a class="el" href="_dynamic_surface_8cs_source.html">DynamicSurface.cs</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
 <a id="ad9c53e6f26f52adf4bbe6e6f7836d9b4" name="ad9c53e6f26f52adf4bbe6e6f7836d9b4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad9c53e6f26f52adf4bbe6e6f7836d9b4">&#9670;&#160;</a></span>_surfacePhysicMaterial</h2>
 
@@ -154,7 +209,25 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_dynamic_surface_8cs_source.html#l00012">12</a> of file <a class="el" href="_dynamic_surface_8cs_source.html">DynamicSurface.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_dynamic_surface_8cs_source.html#l00013">13</a> of file <a class="el" href="_dynamic_surface_8cs_source.html">DynamicSurface.cs</a>.</p>
+
+</div>
+</div>
+<a id="a9b60d29c433220a109266d512e3eefd9" name="a9b60d29c433220a109266d512e3eefd9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b60d29c433220a109266d512e3eefd9">&#9670;&#160;</a></span>OnCollision</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UnityEvent&lt;<a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html">Bullet</a>, <a class="el" href="struct_bullet_dynamics_1_1_core_1_1_bullet_hit_info.html">BulletHitInfo</a>, <a class="el" href="class_bullet_dynamics_1_1_core_1_1_dynamic_surface.html">DynamicSurface</a>&gt; BulletDynamics.Core.DynamicSurface.OnCollision</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Event that is raised when the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Class that holds all of the relevant data of the Bullet.   Bullet should be added to the BulletEnviro...">Bullet</a> hit this <a class="el" href="class_bullet_dynamics_1_1_core_1_1_dynamic_surface.html" title="Component that marks the object as the surface that the Bullets can interact with....">DynamicSurface</a>. </p>
+
+<p class="definition">Definition at line <a class="el" href="_dynamic_surface_8cs_source.html#l00043">43</a> of file <a class="el" href="_dynamic_surface_8cs_source.html">DynamicSurface.cs</a>.</p>
 
 </div>
 </div>
@@ -181,7 +254,7 @@ Properties</h2></td></tr>
 
 <p><a class="el" href="struct_bullet_dynamics_1_1_core_1_1_surface_physic_material_1_1_material_data.html" title="Data that holds the information about the surface.">SurfacePhysicMaterial.MaterialData</a> of this surface. </p>
 
-<p class="definition">Definition at line <a class="el" href="_dynamic_surface_8cs_source.html#l00022">22</a> of file <a class="el" href="_dynamic_surface_8cs_source.html">DynamicSurface.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_dynamic_surface_8cs_source.html#l00023">23</a> of file <a class="el" href="_dynamic_surface_8cs_source.html">DynamicSurface.cs</a>.</p>
 
 </div>
 </div>
@@ -207,7 +280,7 @@ Properties</h2></td></tr>
 
 <p>Returns true if the <a class="el" href="#a76252bb011bb5ada81d6703536fd2dca" title="SurfacePhysicMaterial.MaterialData of this surface.">Data</a> is set. </p>
 
-<p class="definition">Definition at line <a class="el" href="_dynamic_surface_8cs_source.html#l00017">17</a> of file <a class="el" href="_dynamic_surface_8cs_source.html">DynamicSurface.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_dynamic_surface_8cs_source.html#l00018">18</a> of file <a class="el" href="_dynamic_surface_8cs_source.html">DynamicSurface.cs</a>.</p>
 
 </div>
 </div>
@@ -233,7 +306,7 @@ Properties</h2></td></tr>
 
 <p><a class="el" href="class_bullet_dynamics_1_1_core_1_1_surface_physic_material.html" title="Material of the surface.">Core.SurfacePhysicMaterial</a> of this surface. </p>
 
-<p class="definition">Definition at line <a class="el" href="_dynamic_surface_8cs_source.html#l00037">37</a> of file <a class="el" href="_dynamic_surface_8cs_source.html">DynamicSurface.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_dynamic_surface_8cs_source.html#l00038">38</a> of file <a class="el" href="_dynamic_surface_8cs_source.html">DynamicSurface.cs</a>.</p>
 
 </div>
 </div>

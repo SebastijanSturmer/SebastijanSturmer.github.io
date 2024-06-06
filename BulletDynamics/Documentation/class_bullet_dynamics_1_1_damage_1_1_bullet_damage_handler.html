@@ -106,7 +106,7 @@ $(function(){initNavTree('class_bullet_dynamics_1_1_damage_1_1_bullet_damage_han
 </div><!--header-->
 <div class="contents">
 
-<p>Component that subscribes to BulletEnvironment events and listens to <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html#ae33380402d140e0a853670c9092597e1" title="Action that is raised when this Bullet collides with the DynamicSurface.   DynamicSurface will be nul...">Bullet.OnCollision</a> event. It will apply the damage to the <a class="el" href="interface_bullet_dynamics_1_1_damage_1_1_i_damageable_by_bullet.html" title="Interface for the damageable objects.">IDamageableByBullet</a> found on the DynamicSurface that the Bullet collided with.  
+<p>Component that subscribes to BulletEnvironment events and listens to <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html#ae33380402d140e0a853670c9092597e1" title="Action that is raised when this Bullet collides with the surface.   DynamicSurface will be null if th...">Bullet.OnCollision</a> event. It will apply the damage to the <a class="el" href="interface_bullet_dynamics_1_1_damage_1_1_i_damageable_by_bullet.html" title="Interface for the damageable objects.">IDamageableByBullet</a> found on the DynamicSurface that the Bullet collided with.  
  <a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
@@ -121,18 +121,12 @@ Protected Member Functions</h2></td></tr>
 <tr class="separator:a2a51443b4e25e33e69f401a9fd70bfd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add8a90625817be60e82e02db83a76707" id="r_add8a90625817be60e82e02db83a76707"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#add8a90625817be60e82e02db83a76707">OnDestroy</a> ()</td></tr>
 <tr class="separator:add8a90625817be60e82e02db83a76707"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a78ffd1f27bdccff7b48c7d97c133be8f" id="r_a78ffd1f27bdccff7b48c7d97c133be8f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a78ffd1f27bdccff7b48c7d97c133be8f">OnBulletAdded</a> (<a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html">Bullet</a> bullet)</td></tr>
-<tr class="memdesc:a78ffd1f27bdccff7b48c7d97c133be8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handler for the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet_environment.html#a92fb7f19918e145a89b3edfab6fc4918" title="Event that is raised when the Bullet has been added to the environment.">BulletEnvironment.OnBulletAdded</a>. It will add the <em>bullet</em>  to the <a class="el" href="#aeeab77199d86dd4fcb4c6afce0875d99">_bullets</a> and subscribe to the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html#ae33380402d140e0a853670c9092597e1" title="Action that is raised when this Bullet collides with the DynamicSurface.   DynamicSurface will be nul...">Bullet.OnCollision</a> event.  <br /></td></tr>
-<tr class="separator:a78ffd1f27bdccff7b48c7d97c133be8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca8072d7d01922dd78f4635e8e2a6a3a" id="r_aca8072d7d01922dd78f4635e8e2a6a3a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aca8072d7d01922dd78f4635e8e2a6a3a">OnBulletRemoved</a> (<a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html">Bullet</a> bullet)</td></tr>
-<tr class="memdesc:aca8072d7d01922dd78f4635e8e2a6a3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handler for the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet_environment.html#a257111ed8cfe65e9a09e649115952c82" title="Event that is raised when the Bullet has been removed from the environment.">BulletEnvironment.OnBulletRemoved</a>. It will remove the <em>bullet</em>  from the <a class="el" href="#aeeab77199d86dd4fcb4c6afce0875d99">_bullets</a> and unsubscribe from the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html#ae33380402d140e0a853670c9092597e1" title="Action that is raised when this Bullet collides with the DynamicSurface.   DynamicSurface will be nul...">Bullet.OnCollision</a> event.  <br /></td></tr>
-<tr class="separator:aca8072d7d01922dd78f4635e8e2a6a3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a60be8e56b3275b67f4b7a3e63a2d045b" id="r_a60be8e56b3275b67f4b7a3e63a2d045b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a60be8e56b3275b67f4b7a3e63a2d045b">OnCollision</a> (<a class="el" href="class_bullet_dynamics_1_1_core_1_1_dynamic_surface.html">DynamicSurface</a> surface, <a class="el" href="struct_bullet_dynamics_1_1_core_1_1_bullet_hit_info.html">BulletHitInfo</a> hitInfo, <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html">Bullet</a> bullet)</td></tr>
-<tr class="memdesc:a60be8e56b3275b67f4b7a3e63a2d045b"><td class="mdescLeft">&#160;</td><td class="mdescRight"><br  />
- Handler for the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html#ae33380402d140e0a853670c9092597e1" title="Action that is raised when this Bullet collides with the DynamicSurface.   DynamicSurface will be nul...">Bullet.OnCollision</a> event. <br  />
+<tr class="memitem:a4ef1677707a32d7aa319ee63b1914bb5" id="r_a4ef1677707a32d7aa319ee63b1914bb5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4ef1677707a32d7aa319ee63b1914bb5">OnBulletCollision</a> (<a class="el" href="class_bullet_dynamics_1_1_core_1_1_dynamic_surface.html">DynamicSurface</a> surface, <a class="el" href="struct_bullet_dynamics_1_1_core_1_1_bullet_hit_info.html">BulletHitInfo</a> hitInfo, <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html">Bullet</a> bullet)</td></tr>
+<tr class="memdesc:a4ef1677707a32d7aa319ee63b1914bb5"><td class="mdescLeft">&#160;</td><td class="mdescRight"><br  />
+ Handler for the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html#ae33380402d140e0a853670c9092597e1" title="Action that is raised when this Bullet collides with the surface.   DynamicSurface will be null if th...">Bullet.OnCollision</a> event. <br  />
  It will apply damage to the <a class="el" href="interface_bullet_dynamics_1_1_damage_1_1_i_damageable_by_bullet.html" title="Interface for the damageable objects.">IDamageableByBullet</a> component found on the <em>surface</em>  game object or any parent object (using GameObject.GetComponentInParent(System.Type)). <br  />
  If the <em>surface</em>  or the <a class="el" href="interface_bullet_dynamics_1_1_damage_1_1_i_damageable_by_bullet.html" title="Interface for the damageable objects.">IDamageableByBullet</a> is null, damage won't be applied.  <br /></td></tr>
-<tr class="separator:a60be8e56b3275b67f4b7a3e63a2d045b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a4ef1677707a32d7aa319ee63b1914bb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a211497ca4ebd5012f38d7292014492c5" id="r_a211497ca4ebd5012f38d7292014492c5"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a211497ca4ebd5012f38d7292014492c5">GetApplicableDamage</a> (<a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html">Bullet</a> bullet)</td></tr>
 <tr class="memdesc:a211497ca4ebd5012f38d7292014492c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the damage that the Bullet will cause.  <br /></td></tr>
 <tr class="separator:a211497ca4ebd5012f38d7292014492c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -145,11 +139,9 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a055f3096defb4ec7172d912af9f4d3a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a888b51446bde36ed9faccfb653cdbbbf" id="r_a888b51446bde36ed9faccfb653cdbbbf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a888b51446bde36ed9faccfb653cdbbbf">_reduceDamageBasedOnBulletVelocity</a> = true</td></tr>
 <tr class="separator:a888b51446bde36ed9faccfb653cdbbbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeeab77199d86dd4fcb4c6afce0875d99" id="r_aeeab77199d86dd4fcb4c6afce0875d99"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html">Bullet</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeeab77199d86dd4fcb4c6afce0875d99">_bullets</a> = new List&lt;<a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html">Bullet</a>&gt;()</td></tr>
-<tr class="separator:aeeab77199d86dd4fcb4c6afce0875d99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Component that subscribes to BulletEnvironment events and listens to <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html#ae33380402d140e0a853670c9092597e1" title="Action that is raised when this Bullet collides with the DynamicSurface.   DynamicSurface will be nul...">Bullet.OnCollision</a> event. It will apply the damage to the <a class="el" href="interface_bullet_dynamics_1_1_damage_1_1_i_damageable_by_bullet.html" title="Interface for the damageable objects.">IDamageableByBullet</a> found on the DynamicSurface that the Bullet collided with. </p>
+<div class="textblock"><p>Component that subscribes to BulletEnvironment events and listens to <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html#ae33380402d140e0a853670c9092597e1" title="Action that is raised when this Bullet collides with the surface.   DynamicSurface will be null if th...">Bullet.OnCollision</a> event. It will apply the damage to the <a class="el" href="interface_bullet_dynamics_1_1_damage_1_1_i_damageable_by_bullet.html" title="Interface for the damageable objects.">IDamageableByBullet</a> found on the DynamicSurface that the Bullet collided with. </p>
 
 <p class="definition">Definition at line <a class="el" href="_bullet_damage_handler_8cs_source.html#l00012">12</a> of file <a class="el" href="_bullet_damage_handler_8cs_source.html">BulletDamageHandler.cs</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
@@ -179,12 +171,12 @@ Protected Attributes</h2></td></tr>
 <p>Returns the damage that the Bullet will cause. </p>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="namespace_bullet_dynamics_1_1_damage.html">Damage</a> that can be applied to the <a class="el" href="interface_bullet_dynamics_1_1_damage_1_1_i_damageable_by_bullet.html" title="Interface for the damageable objects.">IDamageableByBullet</a>s.</dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_bullet_damage_handler_8cs_source.html#l00119">119</a> of file <a class="el" href="_bullet_damage_handler_8cs_source.html">BulletDamageHandler.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_bullet_damage_handler_8cs_source.html#l00085">85</a> of file <a class="el" href="_bullet_damage_handler_8cs_source.html">BulletDamageHandler.cs</a>.</p>
 
 </div>
 </div>
-<a id="a78ffd1f27bdccff7b48c7d97c133be8f" name="a78ffd1f27bdccff7b48c7d97c133be8f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a78ffd1f27bdccff7b48c7d97c133be8f">&#9670;&#160;</a></span>OnBulletAdded()</h2>
+<a id="a4ef1677707a32d7aa319ee63b1914bb5" name="a4ef1677707a32d7aa319ee63b1914bb5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ef1677707a32d7aa319ee63b1914bb5">&#9670;&#160;</a></span>OnBulletCollision()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -193,65 +185,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void BulletDynamics.Damage.BulletDamageHandler.OnBulletAdded </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html">Bullet</a></td>          <td class="paramname"><span class="paramname"><em>bullet</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Handler for the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet_environment.html#a92fb7f19918e145a89b3edfab6fc4918" title="Event that is raised when the Bullet has been added to the environment.">BulletEnvironment.OnBulletAdded</a>. It will add the <em>bullet</em>  to the <a class="el" href="#aeeab77199d86dd4fcb4c6afce0875d99">_bullets</a> and subscribe to the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html#ae33380402d140e0a853670c9092597e1" title="Action that is raised when this Bullet collides with the DynamicSurface.   DynamicSurface will be nul...">Bullet.OnCollision</a> event. </p>
-
-<p class="definition">Definition at line <a class="el" href="_bullet_damage_handler_8cs_source.html#l00063">63</a> of file <a class="el" href="_bullet_damage_handler_8cs_source.html">BulletDamageHandler.cs</a>.</p>
-
-</div>
-</div>
-<a id="aca8072d7d01922dd78f4635e8e2a6a3a" name="aca8072d7d01922dd78f4635e8e2a6a3a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aca8072d7d01922dd78f4635e8e2a6a3a">&#9670;&#160;</a></span>OnBulletRemoved()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void BulletDynamics.Damage.BulletDamageHandler.OnBulletRemoved </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html">Bullet</a></td>          <td class="paramname"><span class="paramname"><em>bullet</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Handler for the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet_environment.html#a257111ed8cfe65e9a09e649115952c82" title="Event that is raised when the Bullet has been removed from the environment.">BulletEnvironment.OnBulletRemoved</a>. It will remove the <em>bullet</em>  from the <a class="el" href="#aeeab77199d86dd4fcb4c6afce0875d99">_bullets</a> and unsubscribe from the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html#ae33380402d140e0a853670c9092597e1" title="Action that is raised when this Bullet collides with the DynamicSurface.   DynamicSurface will be nul...">Bullet.OnCollision</a> event. </p>
-
-<p class="definition">Definition at line <a class="el" href="_bullet_damage_handler_8cs_source.html#l00078">78</a> of file <a class="el" href="_bullet_damage_handler_8cs_source.html">BulletDamageHandler.cs</a>.</p>
-
-</div>
-</div>
-<a id="a60be8e56b3275b67f4b7a3e63a2d045b" name="a60be8e56b3275b67f4b7a3e63a2d045b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a60be8e56b3275b67f4b7a3e63a2d045b">&#9670;&#160;</a></span>OnCollision()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void BulletDynamics.Damage.BulletDamageHandler.OnCollision </td>
+          <td class="memname">virtual void BulletDynamics.Damage.BulletDamageHandler.OnBulletCollision </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_bullet_dynamics_1_1_core_1_1_dynamic_surface.html">DynamicSurface</a></td>          <td class="paramname"><span class="paramname"><em>surface</em></span>, </td>
         </tr>
@@ -274,7 +208,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p><br  />
- Handler for the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html#ae33380402d140e0a853670c9092597e1" title="Action that is raised when this Bullet collides with the DynamicSurface.   DynamicSurface will be nul...">Bullet.OnCollision</a> event. <br  />
+ Handler for the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html#ae33380402d140e0a853670c9092597e1" title="Action that is raised when this Bullet collides with the surface.   DynamicSurface will be null if th...">Bullet.OnCollision</a> event. <br  />
  It will apply damage to the <a class="el" href="interface_bullet_dynamics_1_1_damage_1_1_i_damageable_by_bullet.html" title="Interface for the damageable objects.">IDamageableByBullet</a> component found on the <em>surface</em>  game object or any parent object (using GameObject.GetComponentInParent(System.Type)). <br  />
  If the <em>surface</em>  or the <a class="el" href="interface_bullet_dynamics_1_1_damage_1_1_i_damageable_by_bullet.html" title="Interface for the damageable objects.">IDamageableByBullet</a> is null, damage won't be applied. </p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -286,7 +220,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_bullet_damage_handler_8cs_source.html#l00097">97</a> of file <a class="el" href="_bullet_damage_handler_8cs_source.html">BulletDamageHandler.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_bullet_damage_handler_8cs_source.html#l00063">63</a> of file <a class="el" href="_bullet_damage_handler_8cs_source.html">BulletDamageHandler.cs</a>.</p>
 
 </div>
 </div>
@@ -313,7 +247,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_bullet_damage_handler_8cs_source.html#l00049">49</a> of file <a class="el" href="_bullet_damage_handler_8cs_source.html">BulletDamageHandler.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_bullet_damage_handler_8cs_source.html#l00046">46</a> of file <a class="el" href="_bullet_damage_handler_8cs_source.html">BulletDamageHandler.cs</a>.</p>
 
 </div>
 </div>
@@ -340,35 +274,11 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_bullet_damage_handler_8cs_source.html#l00039">39</a> of file <a class="el" href="_bullet_damage_handler_8cs_source.html">BulletDamageHandler.cs</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="aeeab77199d86dd4fcb4c6afce0875d99" name="aeeab77199d86dd4fcb4c6afce0875d99"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeeab77199d86dd4fcb4c6afce0875d99">&#9670;&#160;</a></span>_bullets</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">List&lt;<a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html">Bullet</a>&gt; BulletDynamics.Damage.BulletDamageHandler._bullets = new List&lt;<a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html">Bullet</a>&gt;()</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
 <p class="definition">Definition at line <a class="el" href="_bullet_damage_handler_8cs_source.html#l00037">37</a> of file <a class="el" href="_bullet_damage_handler_8cs_source.html">BulletDamageHandler.cs</a>.</p>
 
 </div>
 </div>
+<h2 class="groupheader">Member Data Documentation</h2>
 <a id="a143294f5e048c70dcb575d4ab458934a" name="a143294f5e048c70dcb575d4ab458934a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a143294f5e048c70dcb575d4ab458934a">&#9670;&#160;</a></span>_damageConnections</h2>
 

@@ -25,8 +25,10 @@ var hierarchy =
       [ "BulletDynamics.Core.WeaponZeroing", "class_bullet_dynamics_1_1_core_1_1_weapon_zeroing.html", null ],
       [ "BulletDynamics.Damage.BulletDamageHandler", "class_bullet_dynamics_1_1_damage_1_1_bullet_damage_handler.html", null ],
       [ "BulletDynamics.Example.BulletDynamicsExampleDamageableTarget", "class_bullet_dynamics_1_1_example_1_1_bullet_dynamics_example_damageable_target.html", null ],
+      [ "BulletDynamics.Example.BulletDynamicsExampleDestructableGlass", "class_bullet_dynamics_1_1_example_1_1_bullet_dynamics_example_destructable_glass.html", null ],
       [ "BulletDynamics.Example.BulletDynamicsExampleOnHitEffectController", "class_bullet_dynamics_1_1_example_1_1_bullet_dynamics_example_on_hit_effect_controller.html", null ],
-      [ "BulletDynamics.Example.BulletDynamicsExamplePlayerController", "class_bullet_dynamics_1_1_example_1_1_bullet_dynamics_example_player_controller.html", null ]
+      [ "BulletDynamics.Example.BulletDynamicsExamplePlayerController", "class_bullet_dynamics_1_1_example_1_1_bullet_dynamics_example_player_controller.html", null ],
+      [ "BulletDynamics.Example.BulletDynamicsExampleTargetSurfaceOnCollision", "class_bullet_dynamics_1_1_example_1_1_bullet_dynamics_example_target_surface_on_collision.html", null ]
     ] ],
     [ "BulletDynamics.Core.BulletData.PhysicData", "struct_bullet_dynamics_1_1_core_1_1_bullet_data_1_1_physic_data.html", null ],
     [ "ScriptableObject", null, [
