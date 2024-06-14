@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['physicdata_0',['PhysicData',['../struct_bullet_dynamics_1_1_core_1_1_bullet_data_1_1_physic_data.html',1,'BulletDynamics::Core::BulletData']]]
+  ['materialdata_0',['MaterialData',['../struct_bullet_dynamics_1_1_core_1_1_surface_physic_material_1_1_material_data.html',1,'BulletDynamics::Core::SurfacePhysicMaterial']]]
 ];

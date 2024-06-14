@@ -139,6 +139,12 @@ Protected Member Functions</h2></td></tr>
  Creates the hit effect that is assigned to the <em>surface</em> . <br  />
  If the <em>surface</em>  is null or it doesn't have hit effect assigned, it will return <a class="el" href="#a5e7bc58d29f8d2f9cb1961a54015f6ec">_defaultHitEffect</a>.  <br /></td></tr>
 <tr class="separator:adfd9c04b7419bd725011d12fb72a07fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a914cbbb34ff6194fb47014a87989cbc3" id="r_a914cbbb34ff6194fb47014a87989cbc3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a914cbbb34ff6194fb47014a87989cbc3">OnSurfaceHitCompleted</a> (<a class="el" href="class_bullet_dynamics_1_1_core_1_1_surface_physic_material.html">SurfacePhysicMaterial</a> surfacePhysicMaterial, <a class="el" href="class_bullet_dynamics_1_1_core_1_1_surface_on_hit_effect.html">SurfaceOnHitEffect</a> hitEffect)</td></tr>
+<tr class="memdesc:a914cbbb34ff6194fb47014a87989cbc3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handler for the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_surface_on_hit_effect.html#a3f2c14b020eda09d68be9d6e74264bfe" title="Event that is raised when this effect has been completed.">SurfaceOnHitEffect.OnCompleted</a> event. It will move the the effect back to the pool.  <br /></td></tr>
+<tr class="separator:a914cbbb34ff6194fb47014a87989cbc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8bdf4435c07e7d5666551057414dae2" id="r_ac8bdf4435c07e7d5666551057414dae2"><td class="memItemLeft" align="right" valign="top">virtual IEnumerator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac8bdf4435c07e7d5666551057414dae2">RemoveBulletCoroutine</a> (<a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html">Bullet</a> bullet)</td></tr>
+<tr class="memdesc:ac8bdf4435c07e7d5666551057414dae2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the <em>bullet</em> 's gameobject position and forward direction to the last <em>bullet</em>  collision frame and removes a <em>bullet</em>  the very next next frame.  <br /></td></tr>
+<tr class="separator:ac8bdf4435c07e7d5666551057414dae2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -150,6 +156,12 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a371f9ad9be69604d3d2b1fb277fd5c84"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeec946cd9c2632caf9f6866826170634" id="r_aeec946cd9c2632caf9f6866826170634"><td class="memItemLeft" align="right" valign="top">Dictionary&lt; <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html">Bullet</a>, GameObject &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeec946cd9c2632caf9f6866826170634">_bulletsAndTheirVisuals</a> = new Dictionary&lt;<a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html">Bullet</a>, GameObject&gt;()</td></tr>
 <tr class="separator:aeec946cd9c2632caf9f6866826170634"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1488742237577675bd5c9c78af530f8c" id="r_a1488742237577675bd5c9c78af530f8c"><td class="memItemLeft" align="right" valign="top">Dictionary&lt; <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet_data.html">BulletData</a>, <a class="el" href="class_bullet_dynamics_1_1_core_1_1_object_pool.html">ObjectPool</a>&lt; GameObject &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1488742237577675bd5c9c78af530f8c">_objectPoolsForBullets</a> = new Dictionary&lt;<a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet_data.html">BulletData</a>, <a class="el" href="class_bullet_dynamics_1_1_core_1_1_object_pool.html">ObjectPool</a>&lt;GameObject&gt;&gt;()</td></tr>
+<tr class="separator:a1488742237577675bd5c9c78af530f8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc647f71d29cdad94548f28e79f79042" id="r_abc647f71d29cdad94548f28e79f79042"><td class="memItemLeft" align="right" valign="top">Dictionary&lt; <a class="el" href="class_bullet_dynamics_1_1_core_1_1_surface_physic_material.html">SurfacePhysicMaterial</a>, <a class="el" href="class_bullet_dynamics_1_1_core_1_1_object_pool.html">ObjectPool</a>&lt; <a class="el" href="class_bullet_dynamics_1_1_core_1_1_surface_on_hit_effect.html">SurfaceOnHitEffect</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abc647f71d29cdad94548f28e79f79042">_objectPoolsForSurfaceHits</a> = new Dictionary&lt;<a class="el" href="class_bullet_dynamics_1_1_core_1_1_surface_physic_material.html">SurfacePhysicMaterial</a>, <a class="el" href="class_bullet_dynamics_1_1_core_1_1_object_pool.html">ObjectPool</a>&lt;<a class="el" href="class_bullet_dynamics_1_1_core_1_1_surface_on_hit_effect.html">SurfaceOnHitEffect</a>&gt;&gt;()</td></tr>
+<tr class="separator:abc647f71d29cdad94548f28e79f79042"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a075230b4ddafcdaa5c620e07403f9a97" id="r_a075230b4ddafcdaa5c620e07403f9a97"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_bullet_dynamics_1_1_core_1_1_object_pool.html">ObjectPool</a>&lt; <a class="el" href="class_bullet_dynamics_1_1_core_1_1_surface_on_hit_effect.html">SurfaceOnHitEffect</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a075230b4ddafcdaa5c620e07403f9a97">_objectPoolForDefaultHitEffect</a></td></tr>
+<tr class="separator:a075230b4ddafcdaa5c620e07403f9a97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="properties" name="properties"></a>
 Properties</h2></td></tr>
@@ -166,7 +178,7 @@ Properties</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Component that listens to <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet_environment.html" title="Environment for the Bullet Dynamics.   This component handles the bullet physics using FixedUpdate an...">BulletEnvironment</a> events, instantiates a bullet visual if it is assigned, moves it across the scene and creates hit effect when the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Class that holds all of the relevant data of the Bullet.   Bullet should be added to the BulletEnviro...">Bullet</a> collides with the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_dynamic_surface.html" title="Component that marks the object as the surface that the Bullets can interact with....">DynamicSurface</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="_bullet_visuals_handler_8cs_source.html#l00010">10</a> of file <a class="el" href="_bullet_visuals_handler_8cs_source.html">BulletVisualsHandler.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_bullet_visuals_handler_8cs_source.html#l00013">13</a> of file <a class="el" href="_bullet_visuals_handler_8cs_source.html">BulletVisualsHandler.cs</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a1b902f333af01d03edea43f4fb3f673d" name="a1b902f333af01d03edea43f4fb3f673d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1b902f333af01d03edea43f4fb3f673d">&#9670;&#160;</a></span>Awake()</h2>
@@ -191,7 +203,7 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_bullet_visuals_handler_8cs_source.html#l00033">33</a> of file <a class="el" href="_bullet_visuals_handler_8cs_source.html">BulletVisualsHandler.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_bullet_visuals_handler_8cs_source.html#l00039">39</a> of file <a class="el" href="_bullet_visuals_handler_8cs_source.html">BulletVisualsHandler.cs</a>.</p>
 
 </div>
 </div>
@@ -227,7 +239,7 @@ Properties</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Instantiated <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Class that holds all of the relevant data of the Bullet.   Bullet should be added to the BulletEnviro...">Bullet</a>'s prefab.</dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_bullet_visuals_handler_8cs_source.html#l00133">133</a> of file <a class="el" href="_bullet_visuals_handler_8cs_source.html">BulletVisualsHandler.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_bullet_visuals_handler_8cs_source.html#l00136">136</a> of file <a class="el" href="_bullet_visuals_handler_8cs_source.html">BulletVisualsHandler.cs</a>.</p>
 
 </div>
 </div>
@@ -276,7 +288,7 @@ Properties</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Hit effect that has been instantiated.</dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_bullet_visuals_handler_8cs_source.html#l00151">151</a> of file <a class="el" href="_bullet_visuals_handler_8cs_source.html">BulletVisualsHandler.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_bullet_visuals_handler_8cs_source.html#l00162">162</a> of file <a class="el" href="_bullet_visuals_handler_8cs_source.html">BulletVisualsHandler.cs</a>.</p>
 
 </div>
 </div>
@@ -305,7 +317,7 @@ Properties</h2></td></tr>
 
 <p>Handler for the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet_environment.html#a92fb7f19918e145a89b3edfab6fc4918" title="Event that is raised when the Bullet has been added to the environment.">BulletEnvironment.OnBulletAdded</a>. It will add the <em>bullet</em>  to the dictionary of <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Class that holds all of the relevant data of the Bullet.   Bullet should be added to the BulletEnviro...">Bullet</a>s with it's game object reference if the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet_data.html#a6dcd16fb4dfe7b281b91dae91a145310" title="Prefab that will be instantiated when the Bullet is created.">BulletData.Prefab</a> is assigned. </p>
 
-<p class="definition">Definition at line <a class="el" href="_bullet_visuals_handler_8cs_source.html#l00069">69</a> of file <a class="el" href="_bullet_visuals_handler_8cs_source.html">BulletVisualsHandler.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_bullet_visuals_handler_8cs_source.html#l00082">82</a> of file <a class="el" href="_bullet_visuals_handler_8cs_source.html">BulletVisualsHandler.cs</a>.</p>
 
 </div>
 </div>
@@ -353,7 +365,7 @@ Properties</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_bullet_visuals_handler_8cs_source.html#l00115">115</a> of file <a class="el" href="_bullet_visuals_handler_8cs_source.html">BulletVisualsHandler.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_bullet_visuals_handler_8cs_source.html#l00126">126</a> of file <a class="el" href="_bullet_visuals_handler_8cs_source.html">BulletVisualsHandler.cs</a>.</p>
 
 </div>
 </div>
@@ -382,7 +394,7 @@ Properties</h2></td></tr>
 
 <p>Handler for the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet_environment.html#a257111ed8cfe65e9a09e649115952c82" title="Event that is raised when the Bullet has been removed from the environment.">BulletEnvironment.OnBulletRemoved</a>. It will remove the <em>bullet</em>  from <a class="el" href="#aeec946cd9c2632caf9f6866826170634">_bulletsAndTheirVisuals</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="_bullet_visuals_handler_8cs_source.html#l00083">83</a> of file <a class="el" href="_bullet_visuals_handler_8cs_source.html">BulletVisualsHandler.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_bullet_visuals_handler_8cs_source.html#l00096">96</a> of file <a class="el" href="_bullet_visuals_handler_8cs_source.html">BulletVisualsHandler.cs</a>.</p>
 
 </div>
 </div>
@@ -411,7 +423,7 @@ Properties</h2></td></tr>
 
 <p>Handler for the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet_environment.html#a6018ccb4b16df190b93234664c4e4c68" title="Event that is raised when the Bullets has been updated by this environment.">BulletEnvironment.OnBulletsUpdated</a>. It will update positions and rotations of the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Class that holds all of the relevant data of the Bullet.   Bullet should be added to the BulletEnviro...">Bullet</a>'s visual. </p>
 
-<p class="definition">Definition at line <a class="el" href="_bullet_visuals_handler_8cs_source.html#l00099">99</a> of file <a class="el" href="_bullet_visuals_handler_8cs_source.html">BulletVisualsHandler.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_bullet_visuals_handler_8cs_source.html#l00110">110</a> of file <a class="el" href="_bullet_visuals_handler_8cs_source.html">BulletVisualsHandler.cs</a>.</p>
 
 </div>
 </div>
@@ -438,7 +450,83 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_bullet_visuals_handler_8cs_source.html#l00053">53</a> of file <a class="el" href="_bullet_visuals_handler_8cs_source.html">BulletVisualsHandler.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_bullet_visuals_handler_8cs_source.html#l00066">66</a> of file <a class="el" href="_bullet_visuals_handler_8cs_source.html">BulletVisualsHandler.cs</a>.</p>
+
+</div>
+</div>
+<a id="a914cbbb34ff6194fb47014a87989cbc3" name="a914cbbb34ff6194fb47014a87989cbc3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a914cbbb34ff6194fb47014a87989cbc3">&#9670;&#160;</a></span>OnSurfaceHitCompleted()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void BulletDynamics.Core.BulletVisualsHandler.OnSurfaceHitCompleted </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_bullet_dynamics_1_1_core_1_1_surface_physic_material.html">SurfacePhysicMaterial</a></td>          <td class="paramname"><span class="paramname"><em>surfacePhysicMaterial</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_bullet_dynamics_1_1_core_1_1_surface_on_hit_effect.html">SurfaceOnHitEffect</a></td>          <td class="paramname"><span class="paramname"><em>hitEffect</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Handler for the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_surface_on_hit_effect.html#a3f2c14b020eda09d68be9d6e74264bfe" title="Event that is raised when this effect has been completed.">SurfaceOnHitEffect.OnCompleted</a> event. It will move the the effect back to the pool. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">surfacePhysicMaterial</td><td><a class="el" href="class_bullet_dynamics_1_1_core_1_1_surface_physic_material.html" title="Material of the surface.">SurfacePhysicMaterial</a> that was used to create this effect.</td></tr>
+    <tr><td class="paramname">hitEffect</td><td><a class="el" href="class_bullet_dynamics_1_1_core_1_1_surface_on_hit_effect.html" title="Component that will raise the event OnCompleted after Duration.">SurfaceOnHitEffect</a> that has been completed.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_bullet_visuals_handler_8cs_source.html#l00207">207</a> of file <a class="el" href="_bullet_visuals_handler_8cs_source.html">BulletVisualsHandler.cs</a>.</p>
+
+</div>
+</div>
+<a id="ac8bdf4435c07e7d5666551057414dae2" name="ac8bdf4435c07e7d5666551057414dae2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8bdf4435c07e7d5666551057414dae2">&#9670;&#160;</a></span>RemoveBulletCoroutine()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual IEnumerator BulletDynamics.Core.BulletVisualsHandler.RemoveBulletCoroutine </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html">Bullet</a></td>          <td class="paramname"><span class="paramname"><em>bullet</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the <em>bullet</em> 's gameobject position and forward direction to the last <em>bullet</em>  collision frame and removes a <em>bullet</em>  the very next next frame. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bullet</td><td><a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Class that holds all of the relevant data of the Bullet.   Bullet should be added to the BulletEnviro...">Bullet</a> that will be removed.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_bullet_visuals_handler_8cs_source.html#l00226">226</a> of file <a class="el" href="_bullet_visuals_handler_8cs_source.html">BulletVisualsHandler.cs</a>.</p>
 
 </div>
 </div>
@@ -465,7 +553,7 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_bullet_visuals_handler_8cs_source.html#l00041">41</a> of file <a class="el" href="_bullet_visuals_handler_8cs_source.html">BulletVisualsHandler.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_bullet_visuals_handler_8cs_source.html#l00054">54</a> of file <a class="el" href="_bullet_visuals_handler_8cs_source.html">BulletVisualsHandler.cs</a>.</p>
 
 </div>
 </div>
@@ -490,7 +578,7 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_bullet_visuals_handler_8cs_source.html#l00014">14</a> of file <a class="el" href="_bullet_visuals_handler_8cs_source.html">BulletVisualsHandler.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_bullet_visuals_handler_8cs_source.html#l00017">17</a> of file <a class="el" href="_bullet_visuals_handler_8cs_source.html">BulletVisualsHandler.cs</a>.</p>
 
 </div>
 </div>
@@ -514,7 +602,7 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_bullet_visuals_handler_8cs_source.html#l00015">15</a> of file <a class="el" href="_bullet_visuals_handler_8cs_source.html">BulletVisualsHandler.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_bullet_visuals_handler_8cs_source.html#l00018">18</a> of file <a class="el" href="_bullet_visuals_handler_8cs_source.html">BulletVisualsHandler.cs</a>.</p>
 
 </div>
 </div>
@@ -538,7 +626,7 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_bullet_visuals_handler_8cs_source.html#l00016">16</a> of file <a class="el" href="_bullet_visuals_handler_8cs_source.html">BulletVisualsHandler.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_bullet_visuals_handler_8cs_source.html#l00019">19</a> of file <a class="el" href="_bullet_visuals_handler_8cs_source.html">BulletVisualsHandler.cs</a>.</p>
 
 </div>
 </div>
@@ -562,7 +650,79 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_bullet_visuals_handler_8cs_source.html#l00012">12</a> of file <a class="el" href="_bullet_visuals_handler_8cs_source.html">BulletVisualsHandler.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_bullet_visuals_handler_8cs_source.html#l00015">15</a> of file <a class="el" href="_bullet_visuals_handler_8cs_source.html">BulletVisualsHandler.cs</a>.</p>
+
+</div>
+</div>
+<a id="a075230b4ddafcdaa5c620e07403f9a97" name="a075230b4ddafcdaa5c620e07403f9a97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a075230b4ddafcdaa5c620e07403f9a97">&#9670;&#160;</a></span>_objectPoolForDefaultHitEffect</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_bullet_dynamics_1_1_core_1_1_object_pool.html">ObjectPool</a>&lt;<a class="el" href="class_bullet_dynamics_1_1_core_1_1_surface_on_hit_effect.html">SurfaceOnHitEffect</a>&gt; BulletDynamics.Core.BulletVisualsHandler._objectPoolForDefaultHitEffect</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_bullet_visuals_handler_8cs_source.html#l00022">22</a> of file <a class="el" href="_bullet_visuals_handler_8cs_source.html">BulletVisualsHandler.cs</a>.</p>
+
+</div>
+</div>
+<a id="a1488742237577675bd5c9c78af530f8c" name="a1488742237577675bd5c9c78af530f8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1488742237577675bd5c9c78af530f8c">&#9670;&#160;</a></span>_objectPoolsForBullets</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Dictionary&lt;<a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet_data.html">BulletData</a>, <a class="el" href="class_bullet_dynamics_1_1_core_1_1_object_pool.html">ObjectPool</a>&lt;GameObject&gt; &gt; BulletDynamics.Core.BulletVisualsHandler._objectPoolsForBullets = new Dictionary&lt;<a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet_data.html">BulletData</a>, <a class="el" href="class_bullet_dynamics_1_1_core_1_1_object_pool.html">ObjectPool</a>&lt;GameObject&gt;&gt;()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_bullet_visuals_handler_8cs_source.html#l00020">20</a> of file <a class="el" href="_bullet_visuals_handler_8cs_source.html">BulletVisualsHandler.cs</a>.</p>
+
+</div>
+</div>
+<a id="abc647f71d29cdad94548f28e79f79042" name="abc647f71d29cdad94548f28e79f79042"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc647f71d29cdad94548f28e79f79042">&#9670;&#160;</a></span>_objectPoolsForSurfaceHits</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Dictionary&lt;<a class="el" href="class_bullet_dynamics_1_1_core_1_1_surface_physic_material.html">SurfacePhysicMaterial</a>, <a class="el" href="class_bullet_dynamics_1_1_core_1_1_object_pool.html">ObjectPool</a>&lt;<a class="el" href="class_bullet_dynamics_1_1_core_1_1_surface_on_hit_effect.html">SurfaceOnHitEffect</a>&gt; &gt; BulletDynamics.Core.BulletVisualsHandler._objectPoolsForSurfaceHits = new Dictionary&lt;<a class="el" href="class_bullet_dynamics_1_1_core_1_1_surface_physic_material.html">SurfacePhysicMaterial</a>, <a class="el" href="class_bullet_dynamics_1_1_core_1_1_object_pool.html">ObjectPool</a>&lt;<a class="el" href="class_bullet_dynamics_1_1_core_1_1_surface_on_hit_effect.html">SurfaceOnHitEffect</a>&gt;&gt;()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_bullet_visuals_handler_8cs_source.html#l00021">21</a> of file <a class="el" href="_bullet_visuals_handler_8cs_source.html">BulletVisualsHandler.cs</a>.</p>
 
 </div>
 </div>
@@ -589,7 +749,7 @@ Properties</h2></td></tr>
 
 <p>Transform reference to the game object that holds all of the Bullets. </p>
 
-<p class="definition">Definition at line <a class="el" href="_bullet_visuals_handler_8cs_source.html#l00021">21</a> of file <a class="el" href="_bullet_visuals_handler_8cs_source.html">BulletVisualsHandler.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_bullet_visuals_handler_8cs_source.html#l00027">27</a> of file <a class="el" href="_bullet_visuals_handler_8cs_source.html">BulletVisualsHandler.cs</a>.</p>
 
 </div>
 </div>
@@ -615,7 +775,7 @@ Properties</h2></td></tr>
 
 <p>Transform reference to the game object that holds all of the Bullets on hit effects created by the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet_visuals_handler.html" title="Component that listens to BulletEnvironment events, instantiates a bullet visual if it is assigned,...">BulletVisualsHandler</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="_bullet_visuals_handler_8cs_source.html#l00026">26</a> of file <a class="el" href="_bullet_visuals_handler_8cs_source.html">BulletVisualsHandler.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_bullet_visuals_handler_8cs_source.html#l00032">32</a> of file <a class="el" href="_bullet_visuals_handler_8cs_source.html">BulletVisualsHandler.cs</a>.</p>
 
 </div>
 </div>
@@ -641,7 +801,7 @@ Properties</h2></td></tr>
 
 <p>Dictionary that holds the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Class that holds all of the relevant data of the Bullet.   Bullet should be added to the BulletEnviro...">Bullet</a>s along with their GameObject visual reference. </p>
 
-<p class="definition">Definition at line <a class="el" href="_bullet_visuals_handler_8cs_source.html#l00031">31</a> of file <a class="el" href="_bullet_visuals_handler_8cs_source.html">BulletVisualsHandler.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_bullet_visuals_handler_8cs_source.html#l00037">37</a> of file <a class="el" href="_bullet_visuals_handler_8cs_source.html">BulletVisualsHandler.cs</a>.</p>
 
 </div>
 </div>

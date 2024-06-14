@@ -9,5 +9,7 @@ var searchData=
   ['reloadfinished_6',['ReloadFinished',['../class_bullet_dynamics_1_1_weapons_1_1_weapon_magazine.html#ad1f08f753bf6aaabf747e9b86d3370ef',1,'BulletDynamics::Weapons::WeaponMagazine']]],
   ['reloadstarted_7',['ReloadStarted',['../class_bullet_dynamics_1_1_weapons_1_1_weapon_magazine.html#a64c9af4baa06ac16f67aa4643eb27d76',1,'BulletDynamics::Weapons::WeaponMagazine']]],
   ['removebullet_8',['RemoveBullet',['../class_bullet_dynamics_1_1_core_1_1_bullet_environment.html#adb8f696bfd124755d2d235664155cad0',1,'BulletDynamics.Core.BulletEnvironment.RemoveBullet()'],['../class_bullet_dynamics_1_1_core_1_1_bullet_handler.html#a6411c3ed0aaef674b6353897b545db3a',1,'BulletDynamics.Core.BulletHandler.RemoveBullet()']]],
-  ['ricochetability_9',['RicochetAbility',['../struct_bullet_dynamics_1_1_core_1_1_surface_physic_material_1_1_material_data.html#a528f06b55478a3c9e46b3a3013ad5a30',1,'BulletDynamics::Core::SurfacePhysicMaterial::MaterialData']]]
+  ['removebulletcoroutine_9',['RemoveBulletCoroutine',['../class_bullet_dynamics_1_1_core_1_1_bullet_visuals_handler.html#ac8bdf4435c07e7d5666551057414dae2',1,'BulletDynamics::Core::BulletVisualsHandler']]],
+  ['returnobject_10',['ReturnObject',['../class_bullet_dynamics_1_1_core_1_1_object_pool.html#a4d975b419fa28b56bda0d2e4efeea6d6',1,'BulletDynamics::Core::ObjectPool']]],
+  ['ricochetability_11',['RicochetAbility',['../struct_bullet_dynamics_1_1_core_1_1_surface_physic_material_1_1_material_data.html#a528f06b55478a3c9e46b3a3013ad5a30',1,'BulletDynamics::Core::SurfacePhysicMaterial::MaterialData']]]
 ];

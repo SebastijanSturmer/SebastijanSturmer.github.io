@@ -16,20 +16,28 @@ var hierarchy =
     ] ],
     [ "BulletDynamics.Core.SurfacePhysicMaterial.MaterialData", "struct_bullet_dynamics_1_1_core_1_1_surface_physic_material_1_1_material_data.html", null ],
     [ "MonoBehaviour", null, [
+      [ "BulletDynamics.Core.AudioManager", "class_bullet_dynamics_1_1_core_1_1_audio_manager.html", null ],
       [ "BulletDynamics.Core.BulletEnvironment", "class_bullet_dynamics_1_1_core_1_1_bullet_environment.html", null ],
       [ "BulletDynamics.Core.BulletEnvironmentDebugVisualizer", "class_bullet_dynamics_1_1_core_1_1_bullet_environment_debug_visualizer.html", null ],
       [ "BulletDynamics.Core.BulletVisualsHandler", "class_bullet_dynamics_1_1_core_1_1_bullet_visuals_handler.html", null ],
-      [ "BulletDynamics.Core.DynamicSurface", "class_bullet_dynamics_1_1_core_1_1_dynamic_surface.html", null ],
+      [ "BulletDynamics.Core.DynamicSurface", "class_bullet_dynamics_1_1_core_1_1_dynamic_surface.html", [
+        [ "BulletDynamics.Core.DynamicSurfaceRigidbody", "class_bullet_dynamics_1_1_core_1_1_dynamic_surface_rigidbody.html", null ]
+      ] ],
+      [ "BulletDynamics.Core.PooledAudioSource", "class_bullet_dynamics_1_1_core_1_1_pooled_audio_source.html", null ],
+      [ "BulletDynamics.Core.SurfaceOnHitEffect", "class_bullet_dynamics_1_1_core_1_1_surface_on_hit_effect.html", null ],
       [ "BulletDynamics.Damage.BulletDamageHandler", "class_bullet_dynamics_1_1_damage_1_1_bullet_damage_handler.html", null ],
+      [ "BulletDynamics.Example.BulletDynamicsExampleBulletTrail", "class_bullet_dynamics_1_1_example_1_1_bullet_dynamics_example_bullet_trail.html", null ],
       [ "BulletDynamics.Example.BulletDynamicsExampleDamageableTarget", "class_bullet_dynamics_1_1_example_1_1_bullet_dynamics_example_damageable_target.html", null ],
       [ "BulletDynamics.Example.BulletDynamicsExampleDestructableGlass", "class_bullet_dynamics_1_1_example_1_1_bullet_dynamics_example_destructable_glass.html", null ],
-      [ "BulletDynamics.Example.BulletDynamicsExampleOnHitEffectController", "class_bullet_dynamics_1_1_example_1_1_bullet_dynamics_example_on_hit_effect_controller.html", null ],
       [ "BulletDynamics.Example.BulletDynamicsExamplePlayerController", "class_bullet_dynamics_1_1_example_1_1_bullet_dynamics_example_player_controller.html", null ],
       [ "BulletDynamics.Example.BulletDynamicsExampleTargetSurfaceOnCollision", "class_bullet_dynamics_1_1_example_1_1_bullet_dynamics_example_target_surface_on_collision.html", null ],
       [ "BulletDynamics.Weapons.Weapon", "class_bullet_dynamics_1_1_weapons_1_1_weapon.html", null ],
       [ "BulletDynamics.Weapons.WeaponMagazine", "class_bullet_dynamics_1_1_weapons_1_1_weapon_magazine.html", null ],
       [ "BulletDynamics.Weapons.WeaponZeroing", "class_bullet_dynamics_1_1_weapons_1_1_weapon_zeroing.html", null ]
     ] ],
+    [ "BulletDynamics.Core.ObjectPool< T >", "class_bullet_dynamics_1_1_core_1_1_object_pool.html", null ],
+    [ "BulletDynamics.Core.ObjectPool< AudioSource >", "class_bullet_dynamics_1_1_core_1_1_object_pool.html", null ],
+    [ "BulletDynamics.Core.ObjectPool< BulletDynamics.Core.SurfaceOnHitEffect >", "class_bullet_dynamics_1_1_core_1_1_object_pool.html", null ],
     [ "BulletDynamics.Core.BulletData.PhysicData", "struct_bullet_dynamics_1_1_core_1_1_bullet_data_1_1_physic_data.html", null ],
     [ "ScriptableObject", null, [
       [ "BulletDynamics.Core.BulletData", "class_bullet_dynamics_1_1_core_1_1_bullet_data.html", null ],

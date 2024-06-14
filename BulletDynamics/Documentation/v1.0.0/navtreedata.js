@@ -33,7 +33,7 @@ var NAVTREE =
       [ "Class Index", "classes.html", null ],
       [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
       [ "Class Members", "functions.html", [
-        [ "All", "functions.html", null ],
+        [ "All", "functions.html", "functions_dup" ],
         [ "Functions", "functions_func.html", null ],
         [ "Variables", "functions_vars.html", null ],
         [ "Properties", "functions_prop.html", null ]
@@ -45,7 +45,8 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"class_bullet_dynamics_1_1_example_1_1_bullet_dynamics_example_on_hit_effect_controller.html"
+"class_bullet_dynamics_1_1_core_1_1_object_pool.html#a0648bd506758b2be3192a7865b21a420",
+"struct_bullet_dynamics_1_1_core_1_1_bullet_data_1_1_physic_data.html#a727d447288aabeb6f3c48ea2143cc884"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

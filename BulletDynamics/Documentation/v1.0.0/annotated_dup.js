@@ -2,6 +2,7 @@ var annotated_dup =
 [
     [ "BulletDynamics", "namespace_bullet_dynamics.html", [
       [ "Core", "namespace_bullet_dynamics_1_1_core.html", [
+        [ "AudioManager", "class_bullet_dynamics_1_1_core_1_1_audio_manager.html", "class_bullet_dynamics_1_1_core_1_1_audio_manager" ],
         [ "Bullet", "class_bullet_dynamics_1_1_core_1_1_bullet.html", "class_bullet_dynamics_1_1_core_1_1_bullet" ],
         [ "BulletData", "class_bullet_dynamics_1_1_core_1_1_bullet_data.html", "class_bullet_dynamics_1_1_core_1_1_bullet_data" ],
         [ "BulletEnvironment", "class_bullet_dynamics_1_1_core_1_1_bullet_environment.html", "class_bullet_dynamics_1_1_core_1_1_bullet_environment" ],
@@ -13,7 +14,11 @@ var annotated_dup =
         [ "BulletUtility", "class_bullet_dynamics_1_1_core_1_1_bullet_utility.html", null ],
         [ "BulletVisualsHandler", "class_bullet_dynamics_1_1_core_1_1_bullet_visuals_handler.html", "class_bullet_dynamics_1_1_core_1_1_bullet_visuals_handler" ],
         [ "DynamicSurface", "class_bullet_dynamics_1_1_core_1_1_dynamic_surface.html", "class_bullet_dynamics_1_1_core_1_1_dynamic_surface" ],
+        [ "DynamicSurfaceRigidbody", "class_bullet_dynamics_1_1_core_1_1_dynamic_surface_rigidbody.html", "class_bullet_dynamics_1_1_core_1_1_dynamic_surface_rigidbody" ],
+        [ "ObjectPool", "class_bullet_dynamics_1_1_core_1_1_object_pool.html", "class_bullet_dynamics_1_1_core_1_1_object_pool" ],
+        [ "PooledAudioSource", "class_bullet_dynamics_1_1_core_1_1_pooled_audio_source.html", "class_bullet_dynamics_1_1_core_1_1_pooled_audio_source" ],
         [ "RaycastDistanceComparer", "class_bullet_dynamics_1_1_core_1_1_raycast_distance_comparer.html", "class_bullet_dynamics_1_1_core_1_1_raycast_distance_comparer" ],
+        [ "SurfaceOnHitEffect", "class_bullet_dynamics_1_1_core_1_1_surface_on_hit_effect.html", "class_bullet_dynamics_1_1_core_1_1_surface_on_hit_effect" ],
         [ "SurfacePhysicMaterial", "class_bullet_dynamics_1_1_core_1_1_surface_physic_material.html", "class_bullet_dynamics_1_1_core_1_1_surface_physic_material" ]
       ] ],
       [ "Damage", "namespace_bullet_dynamics_1_1_damage.html", [
@@ -21,9 +26,9 @@ var annotated_dup =
         [ "IDamageableByBullet", "interface_bullet_dynamics_1_1_damage_1_1_i_damageable_by_bullet.html", "interface_bullet_dynamics_1_1_damage_1_1_i_damageable_by_bullet" ]
       ] ],
       [ "Example", "namespace_bullet_dynamics_1_1_example.html", [
+        [ "BulletDynamicsExampleBulletTrail", "class_bullet_dynamics_1_1_example_1_1_bullet_dynamics_example_bullet_trail.html", null ],
         [ "BulletDynamicsExampleDamageableTarget", "class_bullet_dynamics_1_1_example_1_1_bullet_dynamics_example_damageable_target.html", "class_bullet_dynamics_1_1_example_1_1_bullet_dynamics_example_damageable_target" ],
         [ "BulletDynamicsExampleDestructableGlass", "class_bullet_dynamics_1_1_example_1_1_bullet_dynamics_example_destructable_glass.html", null ],
-        [ "BulletDynamicsExampleOnHitEffectController", "class_bullet_dynamics_1_1_example_1_1_bullet_dynamics_example_on_hit_effect_controller.html", null ],
         [ "BulletDynamicsExamplePlayerController", "class_bullet_dynamics_1_1_example_1_1_bullet_dynamics_example_player_controller.html", null ],
         [ "BulletDynamicsExampleTargetSurfaceOnCollision", "class_bullet_dynamics_1_1_example_1_1_bullet_dynamics_example_target_surface_on_collision.html", null ]
       ] ],

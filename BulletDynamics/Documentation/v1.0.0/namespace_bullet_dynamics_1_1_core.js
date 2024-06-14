@@ -1,5 +1,6 @@
 var namespace_bullet_dynamics_1_1_core =
 [
+    [ "AudioManager", "class_bullet_dynamics_1_1_core_1_1_audio_manager.html", "class_bullet_dynamics_1_1_core_1_1_audio_manager" ],
     [ "Bullet", "class_bullet_dynamics_1_1_core_1_1_bullet.html", "class_bullet_dynamics_1_1_core_1_1_bullet" ],
     [ "BulletData", "class_bullet_dynamics_1_1_core_1_1_bullet_data.html", "class_bullet_dynamics_1_1_core_1_1_bullet_data" ],
     [ "BulletEnvironment", "class_bullet_dynamics_1_1_core_1_1_bullet_environment.html", "class_bullet_dynamics_1_1_core_1_1_bullet_environment" ],
@@ -11,6 +12,10 @@ var namespace_bullet_dynamics_1_1_core =
     [ "BulletUtility", "class_bullet_dynamics_1_1_core_1_1_bullet_utility.html", null ],
     [ "BulletVisualsHandler", "class_bullet_dynamics_1_1_core_1_1_bullet_visuals_handler.html", "class_bullet_dynamics_1_1_core_1_1_bullet_visuals_handler" ],
     [ "DynamicSurface", "class_bullet_dynamics_1_1_core_1_1_dynamic_surface.html", "class_bullet_dynamics_1_1_core_1_1_dynamic_surface" ],
+    [ "DynamicSurfaceRigidbody", "class_bullet_dynamics_1_1_core_1_1_dynamic_surface_rigidbody.html", "class_bullet_dynamics_1_1_core_1_1_dynamic_surface_rigidbody" ],
+    [ "ObjectPool", "class_bullet_dynamics_1_1_core_1_1_object_pool.html", "class_bullet_dynamics_1_1_core_1_1_object_pool" ],
+    [ "PooledAudioSource", "class_bullet_dynamics_1_1_core_1_1_pooled_audio_source.html", "class_bullet_dynamics_1_1_core_1_1_pooled_audio_source" ],
     [ "RaycastDistanceComparer", "class_bullet_dynamics_1_1_core_1_1_raycast_distance_comparer.html", "class_bullet_dynamics_1_1_core_1_1_raycast_distance_comparer" ],
+    [ "SurfaceOnHitEffect", "class_bullet_dynamics_1_1_core_1_1_surface_on_hit_effect.html", "class_bullet_dynamics_1_1_core_1_1_surface_on_hit_effect" ],
     [ "SurfacePhysicMaterial", "class_bullet_dynamics_1_1_core_1_1_surface_physic_material.html", "class_bullet_dynamics_1_1_core_1_1_surface_physic_material" ]
 ];
