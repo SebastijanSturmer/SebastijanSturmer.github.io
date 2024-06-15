@@ -4,5 +4,6 @@ var searchData=
   ['reloadcoroutine_1',['ReloadCoroutine',['../class_bullet_dynamics_1_1_weapons_1_1_weapon_magazine.html#a53eac2d8a44f727515557af886273e9c',1,'BulletDynamics::Weapons::WeaponMagazine']]],
   ['removebullet_2',['RemoveBullet',['../class_bullet_dynamics_1_1_core_1_1_bullet_environment.html#adb8f696bfd124755d2d235664155cad0',1,'BulletDynamics.Core.BulletEnvironment.RemoveBullet()'],['../class_bullet_dynamics_1_1_core_1_1_bullet_handler.html#a6411c3ed0aaef674b6353897b545db3a',1,'BulletDynamics.Core.BulletHandler.RemoveBullet()']]],
   ['removebulletcoroutine_3',['RemoveBulletCoroutine',['../class_bullet_dynamics_1_1_core_1_1_bullet_visuals_handler.html#ac8bdf4435c07e7d5666551057414dae2',1,'BulletDynamics::Core::BulletVisualsHandler']]],
-  ['returnobject_4',['ReturnObject',['../class_bullet_dynamics_1_1_core_1_1_object_pool.html#a4d975b419fa28b56bda0d2e4efeea6d6',1,'BulletDynamics::Core::ObjectPool']]]
+  ['removetrajectoryofbulletwithdelay_4',['RemoveTrajectoryOfBulletWithDelay',['../class_bullet_dynamics_1_1_core_1_1_bullet_environment_debug_visualizer.html#a5f881d88cbcafc4cc061cb7d18b5126d',1,'BulletDynamics::Core::BulletEnvironmentDebugVisualizer']]],
+  ['returnobject_5',['ReturnObject',['../class_bullet_dynamics_1_1_core_1_1_object_pool.html#a4d975b419fa28b56bda0d2e4efeea6d6',1,'BulletDynamics::Core::ObjectPool']]]
 ];

@@ -125,6 +125,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a06201c6be29c4ccb7baff783c88fd758" id="r_a06201c6be29c4ccb7baff783c88fd758"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a06201c6be29c4ccb7baff783c88fd758">OnBulletsUpdated</a> ()</td></tr>
 <tr class="memdesc:a06201c6be29c4ccb7baff783c88fd758"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handler for the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet_environment.html#a6018ccb4b16df190b93234664c4e4c68" title="Event that is raised when the Bullets has been updated by this environment.">BulletEnvironment.OnBulletsUpdated</a> event.  <br /></td></tr>
 <tr class="separator:a06201c6be29c4ccb7baff783c88fd758"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f881d88cbcafc4cc061cb7d18b5126d" id="r_a5f881d88cbcafc4cc061cb7d18b5126d"><td class="memItemLeft" align="right" valign="top">virtual IEnumerator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5f881d88cbcafc4cc061cb7d18b5126d">RemoveTrajectoryOfBulletWithDelay</a> (<a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html">Bullet</a> bullet)</td></tr>
+<tr class="memdesc:a5f881d88cbcafc4cc061cb7d18b5126d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Coroutine that will remove the <em>bullet</em> s trajectory with delay.  <br /></td></tr>
+<tr class="separator:a5f881d88cbcafc4cc061cb7d18b5126d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87009c4e5be9ea368a1d0aff926d16ae" id="r_a87009c4e5be9ea368a1d0aff926d16ae"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a87009c4e5be9ea368a1d0aff926d16ae">GetDebugBulletPositions</a> ()</td></tr>
 <tr class="memdesc:a87009c4e5be9ea368a1d0aff926d16ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the positions of the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Class that holds all of the relevant data of the Bullet.   Bullet should be added to the BulletEnviro...">Bullet</a>s from the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet_handler.html" title="Handler for the Bullet physics. It uses BulletJob for calculating the trajectories.">BulletHandler</a> and stores them in the <a class="el" href="#a3a3c60e4026f97d3be19be175ae9855c">_debugBulletsAndPositions</a> for gizmo drawing.  <br /></td></tr>
 <tr class="separator:a87009c4e5be9ea368a1d0aff926d16ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -138,17 +141,21 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a99b3c6ef23b93c33fb5b225c405fa4ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a606c8c0f048b30a8330d09a198c5d2" id="r_a7a606c8c0f048b30a8330d09a198c5d2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7a606c8c0f048b30a8330d09a198c5d2">_removeTrajectoryOnBulletExpiration</a> = false</td></tr>
 <tr class="separator:a7a606c8c0f048b30a8330d09a198c5d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f07f7acdf2e08e52079cca7f40f4886" id="r_a2f07f7acdf2e08e52079cca7f40f4886"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2f07f7acdf2e08e52079cca7f40f4886">_delayForRemovingTrajectory</a> = 5f</td></tr>
+<tr class="separator:a2f07f7acdf2e08e52079cca7f40f4886"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d15cb7208c1740c8ff097dce80ce900" id="r_a0d15cb7208c1740c8ff097dce80ce900"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0d15cb7208c1740c8ff097dce80ce900">_maxNumberOfTrackedBullets</a> = 1000</td></tr>
 <tr class="separator:a0d15cb7208c1740c8ff097dce80ce900"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a3c60e4026f97d3be19be175ae9855c" id="r_a3a3c60e4026f97d3be19be175ae9855c"><td class="memItemLeft" align="right" valign="top">Dictionary&lt; <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html">Bullet</a>, List&lt; Vector3 &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3a3c60e4026f97d3be19be175ae9855c">_debugBulletsAndPositions</a> = new Dictionary&lt;<a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html">Bullet</a>, List&lt;Vector3&gt;&gt;()</td></tr>
 <tr class="separator:a3a3c60e4026f97d3be19be175ae9855c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a55d35153cc8dcc9bc1e03a39714c6ada" id="r_a55d35153cc8dcc9bc1e03a39714c6ada"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet_environment.html">BulletEnvironment</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a55d35153cc8dcc9bc1e03a39714c6ada">_bulletEnvironment</a></td></tr>
 <tr class="separator:a55d35153cc8dcc9bc1e03a39714c6ada"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae704b720bf51538d84427d891da258de" id="r_ae704b720bf51538d84427d891da258de"><td class="memItemLeft" align="right" valign="top">Dictionary&lt; <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html">Bullet</a>, Coroutine &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae704b720bf51538d84427d891da258de">_trajectoryRemovalCoroutinesByBullets</a> = new Dictionary&lt;<a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html">Bullet</a>, Coroutine&gt;()</td></tr>
+<tr class="separator:ae704b720bf51538d84427d891da258de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Component that draws the debug visuals of the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Class that holds all of the relevant data of the Bullet.   Bullet should be added to the BulletEnviro...">Bullet</a>s. </p>
 
-<p class="definition">Definition at line <a class="el" href="_bullet_environment_debug_visualizer_8cs_source.html#l00010">10</a> of file <a class="el" href="_bullet_environment_debug_visualizer_8cs_source.html">BulletEnvironmentDebugVisualizer.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_bullet_environment_debug_visualizer_8cs_source.html#l00011">11</a> of file <a class="el" href="_bullet_environment_debug_visualizer_8cs_source.html">BulletEnvironmentDebugVisualizer.cs</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a733a1dadd24d3b5f8bdb9017616b59a0" name="a733a1dadd24d3b5f8bdb9017616b59a0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a733a1dadd24d3b5f8bdb9017616b59a0">&#9670;&#160;</a></span>Awake()</h2>
@@ -173,7 +180,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_bullet_environment_debug_visualizer_8cs_source.html#l00024">24</a> of file <a class="el" href="_bullet_environment_debug_visualizer_8cs_source.html">BulletEnvironmentDebugVisualizer.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_bullet_environment_debug_visualizer_8cs_source.html#l00028">28</a> of file <a class="el" href="_bullet_environment_debug_visualizer_8cs_source.html">BulletEnvironmentDebugVisualizer.cs</a>.</p>
 
 </div>
 </div>
@@ -202,7 +209,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Draws the trajectory gizmos behind the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Class that holds all of the relevant data of the Bullet.   Bullet should be added to the BulletEnviro...">Bullet</a>s using <a class="el" href="#a3a3c60e4026f97d3be19be175ae9855c">_debugBulletsAndPositions</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="_bullet_environment_debug_visualizer_8cs_source.html#l00115">115</a> of file <a class="el" href="_bullet_environment_debug_visualizer_8cs_source.html">BulletEnvironmentDebugVisualizer.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_bullet_environment_debug_visualizer_8cs_source.html#l00139">139</a> of file <a class="el" href="_bullet_environment_debug_visualizer_8cs_source.html">BulletEnvironmentDebugVisualizer.cs</a>.</p>
 
 </div>
 </div>
@@ -231,7 +238,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Retrieves the positions of the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Class that holds all of the relevant data of the Bullet.   Bullet should be added to the BulletEnviro...">Bullet</a>s from the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet_handler.html" title="Handler for the Bullet physics. It uses BulletJob for calculating the trajectories.">BulletHandler</a> and stores them in the <a class="el" href="#a3a3c60e4026f97d3be19be175ae9855c">_debugBulletsAndPositions</a> for gizmo drawing. </p>
 
-<p class="definition">Definition at line <a class="el" href="_bullet_environment_debug_visualizer_8cs_source.html#l00091">91</a> of file <a class="el" href="_bullet_environment_debug_visualizer_8cs_source.html">BulletEnvironmentDebugVisualizer.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_bullet_environment_debug_visualizer_8cs_source.html#l00115">115</a> of file <a class="el" href="_bullet_environment_debug_visualizer_8cs_source.html">BulletEnvironmentDebugVisualizer.cs</a>.</p>
 
 </div>
 </div>
@@ -266,7 +273,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_bullet_environment_debug_visualizer_8cs_source.html#l00060">60</a> of file <a class="el" href="_bullet_environment_debug_visualizer_8cs_source.html">BulletEnvironmentDebugVisualizer.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_bullet_environment_debug_visualizer_8cs_source.html#l00072">72</a> of file <a class="el" href="_bullet_environment_debug_visualizer_8cs_source.html">BulletEnvironmentDebugVisualizer.cs</a>.</p>
 
 </div>
 </div>
@@ -301,7 +308,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_bullet_environment_debug_visualizer_8cs_source.html#l00047">47</a> of file <a class="el" href="_bullet_environment_debug_visualizer_8cs_source.html">BulletEnvironmentDebugVisualizer.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_bullet_environment_debug_visualizer_8cs_source.html#l00059">59</a> of file <a class="el" href="_bullet_environment_debug_visualizer_8cs_source.html">BulletEnvironmentDebugVisualizer.cs</a>.</p>
 
 </div>
 </div>
@@ -330,7 +337,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Handler for the <a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet_environment.html#a6018ccb4b16df190b93234664c4e4c68" title="Event that is raised when the Bullets has been updated by this environment.">BulletEnvironment.OnBulletsUpdated</a> event. </p>
 
-<p class="definition">Definition at line <a class="el" href="_bullet_environment_debug_visualizer_8cs_source.html#l00078">78</a> of file <a class="el" href="_bullet_environment_debug_visualizer_8cs_source.html">BulletEnvironmentDebugVisualizer.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_bullet_environment_debug_visualizer_8cs_source.html#l00090">90</a> of file <a class="el" href="_bullet_environment_debug_visualizer_8cs_source.html">BulletEnvironmentDebugVisualizer.cs</a>.</p>
 
 </div>
 </div>
@@ -357,7 +364,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_bullet_environment_debug_visualizer_8cs_source.html#l00036">36</a> of file <a class="el" href="_bullet_environment_debug_visualizer_8cs_source.html">BulletEnvironmentDebugVisualizer.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_bullet_environment_debug_visualizer_8cs_source.html#l00040">40</a> of file <a class="el" href="_bullet_environment_debug_visualizer_8cs_source.html">BulletEnvironmentDebugVisualizer.cs</a>.</p>
 
 </div>
 </div>
@@ -384,7 +391,43 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_bullet_environment_debug_visualizer_8cs_source.html#l00029">29</a> of file <a class="el" href="_bullet_environment_debug_visualizer_8cs_source.html">BulletEnvironmentDebugVisualizer.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_bullet_environment_debug_visualizer_8cs_source.html#l00033">33</a> of file <a class="el" href="_bullet_environment_debug_visualizer_8cs_source.html">BulletEnvironmentDebugVisualizer.cs</a>.</p>
+
+</div>
+</div>
+<a id="a5f881d88cbcafc4cc061cb7d18b5126d" name="a5f881d88cbcafc4cc061cb7d18b5126d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f881d88cbcafc4cc061cb7d18b5126d">&#9670;&#160;</a></span>RemoveTrajectoryOfBulletWithDelay()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual IEnumerator BulletDynamics.Core.BulletEnvironmentDebugVisualizer.RemoveTrajectoryOfBulletWithDelay </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html">Bullet</a></td>          <td class="paramname"><span class="paramname"><em>bullet</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Coroutine that will remove the <em>bullet</em> s trajectory with delay. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bullet</td><td><a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html" title="Class that holds all of the relevant data of the Bullet.   Bullet should be added to the BulletEnviro...">Bullet</a> reference of the bullet that will be removed.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_bullet_environment_debug_visualizer_8cs_source.html#l00105">105</a> of file <a class="el" href="_bullet_environment_debug_visualizer_8cs_source.html">BulletEnvironmentDebugVisualizer.cs</a>.</p>
 
 </div>
 </div>
@@ -409,7 +452,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_bullet_environment_debug_visualizer_8cs_source.html#l00017">17</a> of file <a class="el" href="_bullet_environment_debug_visualizer_8cs_source.html">BulletEnvironmentDebugVisualizer.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_bullet_environment_debug_visualizer_8cs_source.html#l00019">19</a> of file <a class="el" href="_bullet_environment_debug_visualizer_8cs_source.html">BulletEnvironmentDebugVisualizer.cs</a>.</p>
 
 </div>
 </div>
@@ -433,7 +476,31 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_bullet_environment_debug_visualizer_8cs_source.html#l00016">16</a> of file <a class="el" href="_bullet_environment_debug_visualizer_8cs_source.html">BulletEnvironmentDebugVisualizer.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_bullet_environment_debug_visualizer_8cs_source.html#l00018">18</a> of file <a class="el" href="_bullet_environment_debug_visualizer_8cs_source.html">BulletEnvironmentDebugVisualizer.cs</a>.</p>
+
+</div>
+</div>
+<a id="a2f07f7acdf2e08e52079cca7f40f4886" name="a2f07f7acdf2e08e52079cca7f40f4886"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f07f7acdf2e08e52079cca7f40f4886">&#9670;&#160;</a></span>_delayForRemovingTrajectory</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float BulletDynamics.Core.BulletEnvironmentDebugVisualizer._delayForRemovingTrajectory = 5f</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_bullet_environment_debug_visualizer_8cs_source.html#l00015">15</a> of file <a class="el" href="_bullet_environment_debug_visualizer_8cs_source.html">BulletEnvironmentDebugVisualizer.cs</a>.</p>
 
 </div>
 </div>
@@ -457,7 +524,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_bullet_environment_debug_visualizer_8cs_source.html#l00012">12</a> of file <a class="el" href="_bullet_environment_debug_visualizer_8cs_source.html">BulletEnvironmentDebugVisualizer.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_bullet_environment_debug_visualizer_8cs_source.html#l00013">13</a> of file <a class="el" href="_bullet_environment_debug_visualizer_8cs_source.html">BulletEnvironmentDebugVisualizer.cs</a>.</p>
 
 </div>
 </div>
@@ -481,7 +548,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_bullet_environment_debug_visualizer_8cs_source.html#l00014">14</a> of file <a class="el" href="_bullet_environment_debug_visualizer_8cs_source.html">BulletEnvironmentDebugVisualizer.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_bullet_environment_debug_visualizer_8cs_source.html#l00016">16</a> of file <a class="el" href="_bullet_environment_debug_visualizer_8cs_source.html">BulletEnvironmentDebugVisualizer.cs</a>.</p>
 
 </div>
 </div>
@@ -505,7 +572,31 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_bullet_environment_debug_visualizer_8cs_source.html#l00013">13</a> of file <a class="el" href="_bullet_environment_debug_visualizer_8cs_source.html">BulletEnvironmentDebugVisualizer.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_bullet_environment_debug_visualizer_8cs_source.html#l00014">14</a> of file <a class="el" href="_bullet_environment_debug_visualizer_8cs_source.html">BulletEnvironmentDebugVisualizer.cs</a>.</p>
+
+</div>
+</div>
+<a id="ae704b720bf51538d84427d891da258de" name="ae704b720bf51538d84427d891da258de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae704b720bf51538d84427d891da258de">&#9670;&#160;</a></span>_trajectoryRemovalCoroutinesByBullets</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Dictionary&lt;<a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html">Bullet</a>, Coroutine&gt; BulletDynamics.Core.BulletEnvironmentDebugVisualizer._trajectoryRemovalCoroutinesByBullets = new Dictionary&lt;<a class="el" href="class_bullet_dynamics_1_1_core_1_1_bullet.html">Bullet</a>, Coroutine&gt;()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_bullet_environment_debug_visualizer_8cs_source.html#l00021">21</a> of file <a class="el" href="_bullet_environment_debug_visualizer_8cs_source.html">BulletEnvironmentDebugVisualizer.cs</a>.</p>
 
 </div>
 </div>
